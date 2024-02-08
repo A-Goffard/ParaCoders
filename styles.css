@@ -16,7 +16,44 @@
     --gris: #D4E1DA;
 }
 
+.logo {
+    max-width: 5rem;
+}
 
+.burua {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--azulomedio);
+    display: none;
+}
+
+.navegador {
+    margin: 0.5rem;
+}
+
+h1 {
+    margin-top: 2rem;
+}
+
+.navv {
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr); 
+}
+
+.fila1, .fila2 {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid black;
+}
+
+a {
+    border: solid 2px red;
+}
 
 /* SEBAS */
 
@@ -77,3 +114,170 @@
 
 /* AINTZANE */
 
+
+
+
+
+
+
+
+
+/* NAVEGADOR */
+
+
+/*NAV*/
+
+.navv {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+
+
+
+#home {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+}
+.hamburguesa {
+    display: none;
+}
+
+
+#boton_ham {
+    display: none;
+}
+
+#label_boton {
+    display: none;
+}
+#i {
+    display: none;
+}
+      
+.ham {position: absolute;
+        top: 0.5rem;
+        right: 0.5rem;
+        border-radius: 0.8rem;
+
+}
+#label_boton {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 100;
+}
+
+#boton_ham:checked ~ .topnav {
+    flex-direction: column;
+}
+
+#boton_ham:checked ~ .topnav a {
+    text-align: left;
+    display: block;
+}
+
+.topnav {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem;
+
+}
+.navv {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem;
+
+}
+
+.navv a {
+    text-decoration: none;
+    padding: 0.3rem;
+    border-radius: 0.5rem;
+}
+
+.navv a.active,
+.navv a:hover {
+    color: white;
+    background-color: red;
+}
+
+@media screen and (max-width: 600px) {
+    .navv {
+        display: none;
+    }
+    .hamburguesa {
+        display: flex;
+    }
+
+
+    /* Estilos para la hamburguesa */
+
+
+
+
+
+
+    .topnav {display: none;}
+
+    #boton_ham:checked ~ #myTopnav {
+        display: block;
+    	text-align: left;
+  }
+  #i {display: block;}
+  .topnav { 
+    flex-direction: column; 
+  }
+  #home {margin-right: auto;
+    }
+  
+}
+
+.topnav a {
+
+  text-align: center; }
+
+#label_boton { position: absolute;
+                top: 0;
+                right: 0;
+                z-index:100;
+                display:block;
+
+               }
+        
+.topnav.responsive {position: relative;}
+
+#boton_ham:checked ~ #myTopnav a {
+    display: block;
+    text-align: center;
+}
+                
+.topnav.responsive a {
+             
+    display: block;
+    justify-content: left;
+}
+              
+
+#myTopnav {
+    position: absolute;
+    top: 0rem;
+    right: 0rem;
+}
+
+.topnav a {
+    margin: 0.5rem;
+}
+
+.topnav a:hover {
+    color: blue;
+    padding: 0.3rem;
+    border-radius: 0.5rem;
+    background-color: red;
+}
