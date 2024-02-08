@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root {
+    --white: white;
+    --black: black;
+    --azulclaro: #CFFCFF;
+    --azulomedio: #64EEF6;
+    --azuloscuro: #1976D2;
+    --verdeclaro: #00D264;
+    --gris: #D4E1DA;
+}
+
