@@ -23,6 +23,47 @@
 
 
 /* ABDERAHMANE */
+ 
+ form {
+    background-color: var(--gris);
+    text-align: center;
+    border-radius: 10rem;
+    width: 50%;
+    margin: auto;
+    margin-top: 20rem;
+    height: 50rem;
+    
+    /*Agrega las siguientes propiedades para centrar*/ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .forma {
+    width: 35%;
+    height: 2rem;
+    margin: 1%;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  h6 {
+    text-align: center;
+    color: gray;
+  }
+  
+  .button {
+    background-color: #00D264;
+    width: 7rem;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+  }
+   
+
 
 
 
