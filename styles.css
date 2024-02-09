@@ -28,7 +28,38 @@
 
 /* OUSSAMMA */
 
+.h1Catalogo, .h2Catalogo{
+    display: flex;
+    justify-content: center;
+    grid-column: 1/-1;
+}
+.carta{
+  
+ 
 
+}
+.h3catalogo{
+    display: flex;
+    text-align: center;
+}
+.imagen-producto{
+    grid-column: 1/-1;
+    display: flex;
+    justify-content: center;
+}
+.contenedor-Catalogo{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+
+}
+/* .btn-Cat1{
+    grid-column: 1/2;
+}
+.btn-Cat2{
+    grid-column: 2/-1;
+} */
 
 /* TINA */ 
 
