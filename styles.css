@@ -18,42 +18,92 @@
 
 .logo {
     max-width: 5rem;
+    margin: 0.5rem;
+}
+header {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(5rem,1fr));
+    grid-template-rows: 1fr 1fr; 
+    background-color: var(--azulomedio);
 }
 
-.burua {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--azulomedio);
+#boton_ham {
     display: none;
 }
 
-.navegador {
-    margin: 0.5rem;
+#label_boton {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 100;
 }
 
-h1 {
+.title {
     margin-top: 2rem;
+    margin-right: 2.5rem; 
 }
 
-.navv {
-    display:grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr); 
+#i {
+    margin: 1rem;
+    font-size: xx-large;
 }
 
-.fila1, .fila2 {
+i {
+    font-size: x-large;
+}
+
+
+#boton_ham:checked ~ .topnav {
+    flex-direction: column;
+}
+
+#boton_ham:checked ~ .topnav a {
+    text-align: left;
+    display: block;
+}
+
+.topnav {
     display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: space-between;
-    border: 2px solid black;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem;
+
 }
 
-a {
-    border: solid 2px red;
+
+.fila1, .fila2{
+    grid-column: 1/-1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: solid ;
 }
+
+
+.idioma{
+    display: none;
+}
+
+.logo-movil{
+    display: none;
+}
+
+.icono{
+    gap: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* Categorias */
+
+.categorias {
+display: flex;
+
+}
+
+
+
 
 /* SEBAS */
 
@@ -86,137 +136,39 @@ a {
 
 /*NAV*/
 
-.navv {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    padding: 1rem;
-}
-
-
-
-
-#home {
-    display: flex;
-    flex-direction: column;
-    position: relative;
+@media screen and (min-width: 600px) {
+    .fila1 {
+        display: none;
+    }
+    .menu-btn{
+        display: none;
+    }
+    .idioma{
+        display: block;
+    }
+    .logo-movil{
+        display: block;
+    }
 
 }
 .hamburguesa {
-    display: none;
-}
-
-
-#boton_ham {
-    display: none;
-}
-
-#label_boton {
-    display: none;
-}
-#i {
-    display: none;
-}
-      
-.ham {position: absolute;
-        top: 0.5rem;
-        right: 0.5rem;
-        border-radius: 0.8rem;
+    display: flex;
 
 }
-#label_boton {
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 100;
-}
 
-#boton_ham:checked ~ .topnav {
-    flex-direction: column;
-}
+.topnav {display: none;}
 
-#boton_ham:checked ~ .topnav a {
+#boton_ham:checked ~ #myTopnav {
+    display: block;
     text-align: left;
-    display: block;
+}
+#i {display: block;}
+.topnav { 
+flex-direction: column; 
+}
+#home {margin-right: auto;
 }
 
-.topnav {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    padding: 1rem;
-
-}
-.navv {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    padding: 1rem;
-
-}
-
-.navv a {
-    text-decoration: none;
-    padding: 0.3rem;
-    border-radius: 0.5rem;
-}
-
-.navv a.active,
-.navv a:hover {
-    color: white;
-    background-color: red;
-}
-
-@media screen and (max-width: 600px) {
-    .navv {
-        display: none;
-    }
-    .hamburguesa {
-        display: flex;
-    }
-
-
-    /* Estilos para la hamburguesa */
-
-
-
-
-
-
-    .topnav {display: none;}
-
-    #boton_ham:checked ~ #myTopnav {
-        display: block;
-    	text-align: left;
-  }
-  #i {display: block;}
-  .topnav { 
-    flex-direction: column; 
-  }
-  #home {margin-right: auto;
-    }
-  
-}
-
-.topnav a {
-
-  text-align: center; }
-
-#label_boton { position: absolute;
-                top: 0;
-                right: 0;
-                z-index:100;
-                display:block;
-
-               }
-        
-.topnav.responsive {position: relative;}
-
-#boton_ham:checked ~ #myTopnav a {
-    display: block;
-    text-align: center;
-}
-                
 .topnav.responsive a {
              
     display: block;
@@ -226,17 +178,35 @@ a {
 
 #myTopnav {
     position: absolute;
-    top: 0rem;
+    top: 3rem;
     right: 0rem;
+    background-color: var(--gris);
+
+}
+
+.active {
+    margin: 3rem;
 }
 
 .topnav a {
-    margin: 0.5rem;
+
+text-align: center; }
+
+#label_boton { position: absolute;
+            top: 0;
+            right: 0;
+            z-index:100;
+            display:block;
+
+           }
+    
+.topnav.responsive {position: relative;}
+
+#boton_ham:checked ~ #myTopnav a {
+display: block;
+text-align: center;
 }
 
-.topnav a:hover {
-    color: blue;
-    padding: 0.3rem;
-    border-radius: 0.5rem;
-    background-color: red;
+.categorias {
+    display: none;
 }
