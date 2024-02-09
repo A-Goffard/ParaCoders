@@ -57,7 +57,41 @@ a {
 
 /* SEBAS */
 
+  .tienda_mobile_superior{
+    width: 90%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 auto;
+    padding-top: 4rem;
+} 
 
+.limpiar{
+    border: 2px solid red;
+    grid-column: 2/4;
+}
+.productos{
+    border: 2px solid red;
+    width: auto;
+    height: 15rem;
+}
+
+.tienda_mobile_inferior{
+    width: 90%;
+    height: auto;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    margin: 0 auto;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    border: 0.1rem solid red;
+}
+/* .resumen{
+    border: 2px solid red;
+    width: auto;
+    height: 15rem;
+    grid-column: 1/4;
+} */
 
 /* ABDERAHMANE */
  
