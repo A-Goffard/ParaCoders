@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+
     font-family: 'Comfortaa', sans-serif;
 }
 
@@ -16,14 +17,193 @@
     --gris: #D4E1DA;
 }
 
+.home {
+    background-color: var(--azulomedio);
+    padding: 1rem;
+}
+
+a {
+    color: var(--black);
+}
+
+a:visited {
+    color: var(--black);
+}
+
+.logo {
+    max-width: 5rem;
+}
+
+#boton_ham {
+    display: none;
+}
+
+#label_boton {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 100;
+}
+
+.categorias {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.cat {
+    margin: 1rem;
+    font-size: x-large;
+}
+
+h1 {
+    margin-top: 2rem;
+    margin-right: 2.5rem; 
+}
+
+#i {
+    margin: 1rem;
+    font-size: xx-large;
+}
+
+i {
+    font-size: x-large;
+
+}
+
+
+#boton_ham:checked ~ .topnav {
+    flex-direction: column;
+}
+
+#boton_ham:checked ~ .topnav a {
+    text-align: left;
+    display: block;
+}
+
+.topnav {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem;
+
+}
+
+
+.fila1, .fila2{
+    grid-column: 1/-1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+
+.idioma{
+    display: none;
+}
+
+.logo-movil{
+    display: none;
+}
+
+.icono{
+    gap: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* categorias */
+
+.fecha {
+    background-color: var(--verdeclaro);
+    color: var(--black);
+    padding: 1rem;
+    border-radius: 0.8rem;
+    border: solid 0.3rem var(--azuloscuro);
+}
+
+
+/* ABDERAHMANE */
+ 
+ .formacceso {
+    background-color: var(--gris);
+    text-align: center;
+    border-radius: 10rem;
+    width: 50%;
+    margin: auto;
+    margin-top: 20rem;
+    height: 50rem;
+    
+    /*Agrega las siguientes propiedades para centrar*/ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .forma {
+    width: 35%;
+    height: 2rem;
+    margin: 1%;
+  }
+  
+  .tittle{
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  h6 {
+    text-align: center;
+    color: gray;
+  }
+  
+  .buttonAcceso {
+    background-color: #00D264;
+    width: 7rem;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+  }
 
 
 /* SEBAS */
 
+  .tienda_mobile_superior{
+    width: 90%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 auto;
+    padding-top: 4rem;
+} 
 
+.limpiar{
+    border: 2px solid red;
+    grid-column: 2/4;
+}
+.productos{
+    border: 2px solid red;
+    width: auto;
+    height: 15rem;
+}
 
-/* ABDERAHMANE */
-
+.tienda_mobile_inferior{
+    width: 90%;
+    height: auto;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    margin: 0 auto;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    border: 0.1rem solid red;
+}
+/* .resumen{
+    border: 2px solid red;
+    width: auto;
+    height: 15rem;
+    grid-column: 1/4;
+} */
 
 
 /* OUSSAMMA */
@@ -62,8 +242,130 @@
 } */
 
 /* TINA */ 
+.h2Checkout{
+    text-align: center;
+    background-color: #00D264;
+}
+.inputCheckout{
+    display: flex;
+}
+label{
+    display: flex;
+}
 
+.aCheckout{
+    background-color: #64EEF6;
+    margin: 0 20px;
+    border: #64EEF6;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+}
 
 
 /* AINTZANE */
 
+
+
+
+
+
+
+
+
+/* NAVEGADOR */
+
+
+/*NAV*/
+
+@media screen and (min-width: 700px) {
+    .fila1 {
+        display: none;
+    }
+    .menu-btn{
+        display: none;
+    }
+    .idioma{
+        display: block;
+    }
+    .logo-movil{
+        display: block;
+    }
+
+}
+.hamburguesa {
+    display: flex;
+
+}
+
+.topnav {display: none;}
+
+#boton_ham:checked ~ #myTopnav {
+    display: block;
+    text-align: left;
+}
+#i {display: block;}
+.topnav { 
+flex-direction: column; 
+}
+/* #home {margin-right: auto;
+} */
+
+.topnav.responsive a {
+             
+    display: block;
+    justify-content: left;
+}
+              
+
+#myTopnav {
+    position: absolute;
+    top: 3rem;
+    right: 0rem;
+    background-color: var(--gris);
+
+}
+
+.topnav a {
+
+text-align: center; }
+
+#label_boton { position: absolute;
+            top: 0;
+            right: 0;
+            z-index:100;
+            display:block;
+
+           }
+    
+.topnav.responsive {position: relative;}
+
+#boton_ham:checked ~ #myTopnav a {
+display: block;
+text-align: center;
+}
+
+/* .categorias {
+    display: none;
+} */
+              
+
+#myTopnav {
+    position: absolute;
+    top: 3rem;
+    right: 0rem;
+}
+
+.topnav a {
+    margin: 0.5rem;
+    margin: 2rem;
+    font-size: larger;
+}
+
+.topnav a:hover {
+    color: blue;
+    padding: 0.3rem;
+    border-radius: 0.5rem;
+    background-color: red;
+}

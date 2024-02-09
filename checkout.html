@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>checkout</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <section class="check">
+    <h2 class="h2Checkout">Modo de envio</h1>
+
+    <label>Domicilio</label> 
+    <input class="inputCheckout" type="checkbox">
+    
+    <label>Recogida en tienda</label>
+    <input class="inputCheckout" type="checkbox">
+   
+  </section>  
+  <section class="formulario">
+    <h2 class="h2Checkout">Dirección de entrega</h1>
+
+    <label>Nombre y apellidos</label>
+    <input class="inputCheckout" type="text">
+    <label>Dirección</label>
+    <input class="inputCheckout" type="text">
+    <label>Código postal</label>
+    <input class="inputCheckout" type="text">
+    <label>Ciudad</label>
+    <input class="inputCheckout" type="text">
+    <label>Provincia</label>
+    <input class="inputCheckout" type="text">
+    <label>País</label>
+    <input class="inputCheckout" type="text">
+  </section>
+
+  <section class="pago">
+    <h2 class="h2Checkout">Forma de pago</h1>
+    <label>Tarjeta</label>
+    <input class="inputCheckout" type="checkbox"id ="miCheckbox">
+    
+    <label>Contrareembolso</label>
+    <input class="inputCheckout" type="checkbox">
+ </section>
+
+ <section class="pedido">
+    <h2 class="h2Checkout">Resumen del pedido</h1>
+    <label>Productos</label>
+    <label>Subtotal</label>
+    <label>Gastos de envio</label>
+    <label>Total</label>
+ </section>
+
+ <section class="btn">
+    <a class="aCheckout" href="carrito.html"class="boton">Revisar carrito</a>
+    <a class="aCheckout" href="carrito.html"class="boton">Continuar y pagar</a>  
+ </section>
+<script>
+    var checkbox = document.getElementById('miCheckbox');
+    checkbox.addEventListener('change',function(){
+        if(this.checked){
+            window.location = "acceso.html";
+        }
+    });
+
+</script>
+
+
+
+
+
+</body>
+</html>
