@@ -109,7 +109,26 @@ a {
 
 
 /* TINA */ 
+h1{
+    text-align: center;
+    background-color: #00D264;
+}
+input{
+    display: flex;
+}
+label{
+    display: flex;
+}
 
+a{
+    background-color: #64EEF6;
+    margin: 0 20px;
+    border: #64EEF6;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+}
 
 
 /* AINTZANE */
