@@ -18,13 +18,237 @@
 
 .logo {
     max-width: 5rem;
-    margin: 0.5rem;
 }
-header {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(5rem,1fr));
-    grid-template-rows: 1fr 1fr; 
+
+.burua {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     background-color: var(--azulomedio);
+}
+
+#boton_ham {
+    display: none;
+}
+
+#label_boton {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 100;
+}
+
+h1 {
+    margin-top: 2rem;
+    margin-right: 2.5rem; 
+}
+
+#i {
+    margin: 1rem;
+    font-size: xx-large;
+}
+
+i {
+    font-size: x-large;
+}
+
+
+#boton_ham:checked ~ .topnav {
+    flex-direction: column;
+}
+
+#boton_ham:checked ~ .topnav a {
+    text-align: left;
+    display: block;
+}
+
+.topnav {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem;
+
+}
+
+
+.fila1, .fila2{
+    grid-column: 1/-1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: solid ;
+}
+
+
+.idioma{
+    display: none;
+}
+
+.logo-movil{
+    display: none;
+}
+
+.icono{
+    gap: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* Categorias */
+
+.categorias {
+display: flex;
+
+}
+
+
+
+
+/* SEBAS */
+
+  .tienda_mobile_superior{
+    width: 90%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 auto;
+    padding-top: 4rem;
+} 
+
+.limpiar{
+    border: 2px solid red;
+    grid-column: 2/4;
+}
+.productos{
+    border: 2px solid red;
+    width: auto;
+    height: 15rem;
+}
+
+.tienda_mobile_inferior{
+    width: 90%;
+    height: auto;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    margin: 0 auto;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    border: 0.1rem solid red;
+}
+/* .resumen{
+    border: 2px solid red;
+    width: auto;
+    height: 15rem;
+    grid-column: 1/4;
+} */
+
+/* ABDERAHMANE */
+ 
+ form {
+    background-color: var(--gris);
+    text-align: center;
+    border-radius: 10rem;
+    width: 50%;
+    margin: auto;
+    margin-top: 20rem;
+    height: 50rem;
+    
+    /*Agrega las siguientes propiedades para centrar*/ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .forma {
+    width: 35%;
+    height: 2rem;
+    margin: 1%;
+  }
+  
+  .tittle{
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  h6 {
+    text-align: center;
+    color: gray;
+  }
+  
+  .button {
+    background-color: #00D264;
+    width: 7rem;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+  }
+   
+
+
+
+
+/* OUSSAMMA */
+
+
+
+/* TINA */ 
+h1{
+    text-align: center;
+    background-color: #00D264;
+}
+input{
+    display: flex;
+}
+label{
+    display: flex;
+}
+
+a{
+    background-color: #64EEF6;
+    margin: 0 20px;
+    border: #64EEF6;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+}
+
+
+/* AINTZANE */
+
+
+
+
+
+
+
+
+
+/* NAVEGADOR */
+
+
+/*NAV*/
+
+.navv {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+
+
+
+#home {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+}
+.hamburguesa {
+    display: none;
 }
 
 #boton_ham {
@@ -107,9 +331,84 @@ display: flex;
 
 /* SEBAS */
 
+  .tienda_mobile_superior{
+    width: 90%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 auto;
+    padding-top: 4rem;
+} 
 
+.limpiar{
+    border: 2px solid red;
+    grid-column: 2/4;
+}
+.productos{
+    border: 2px solid red;
+    width: auto;
+    height: 15rem;
+}
+
+.tienda_mobile_inferior{
+    width: 90%;
+    height: auto;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    margin: 0 auto;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    border: 0.1rem solid red;
+}
+/* .resumen{
+    border: 2px solid red;
+    width: auto;
+    height: 15rem;
+    grid-column: 1/4;
+} */
 
 /* ABDERAHMANE */
+ 
+ form {
+    background-color: var(--gris);
+    text-align: center;
+    border-radius: 10rem;
+    width: 50%;
+    margin: auto;
+    margin-top: 20rem;
+    height: 50rem;
+    
+    /*Agrega las siguientes propiedades para centrar*/ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .forma {
+    width: 35%;
+    height: 2rem;
+    margin: 1%;
+  }
+  
+  .tittle{
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  h6 {
+    text-align: center;
+    color: gray;
+  }
+  
+  .button {
+    background-color: #00D264;
+    width: 7rem;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+  }
+   
+
 
 
 
@@ -118,7 +417,26 @@ display: flex;
 
 
 /* TINA */ 
+h1{
+    text-align: center;
+    background-color: #00D264;
+}
+input{
+    display: flex;
+}
+label{
+    display: flex;
+}
 
+a{
+    background-color: #64EEF6;
+    margin: 0 20px;
+    border: #64EEF6;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+}
 
 
 /* AINTZANE */
@@ -209,4 +527,22 @@ text-align: center;
 
 .categorias {
     display: none;
+}
+              
+
+#myTopnav {
+    position: absolute;
+    top: 0rem;
+    right: 0rem;
+}
+
+.topnav a {
+    margin: 0.5rem;
+}
+
+.topnav a:hover {
+    color: blue;
+    padding: 0.3rem;
+    border-radius: 0.5rem;
+    background-color: red;
 }
