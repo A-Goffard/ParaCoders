@@ -1,12 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catalogo</title>
+    <title>ParaCoders</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Kdam+Thmor+Pro&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400&family=Roboto:wght@300;400;500;900&display=swap');
+      </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+
+    <header id="home" class="home">
+
+            <div class="fila1">
+               <div><a href="index.html"><img class="logo" src="/img/logo.paracoders.webp" alt=""></a></div>
+               <h1 class="title">ParaCoders</h1>
+               
+
+                <div class="hamburguesa">
+                    <label id="label_boton" for="boton_ham"> <i id="i" class="fa fa-bars ham"></i></label> 
+                    <input id="boton_ham" type="checkbox" value="si">
+                    
+    
+                    <div class="topnav" id="myTopnav">
+            
+                        <a href="/index.html" class="active">Home</a>
+                        <a href="/catalogo.html" class="active">Categorías</a>
+                        <a href="#idiomas" class="active">Idiomas</a>
+    
+                
+                    </div>
+
+               </div>
+
+
+
+
+
+            </div>
+            <div  class="fila2">
+                    <div><a href="index.html"><img class="logo2" src="/img/logo.paracoders.webp" alt=""></a></div>
+                   <div class="buscar">
+                    <i class="fa-solid fa-magnifying-glass navegador"></i>
+                    <input type="text" placeholder=" Buscar...">
+                </div>
+                <div class="icono">
+                    <a href="/acceso.html"><i class="fa-solid fa-user navegador"></i></a>
+                    <a href="/carrito.html"><i class="fa-solid fa-cart-shopping navegador"></i></a>
+                    <a href="#"><i class="fa-solid fa-language"></i></a>
+                </div>
+            </div>
+
+    </header>
+
+<section class="categorias">
+    <div class="5 cat">
+        <i class="fa-solid fa-pills"></i>
+        <a href="#" class="N">Medicamentos</a>
+    </div>
+
+    <div class="6 cat">
+        <i class="fa-solid fa-seedling"></i>
+        <a href="#" class="N">Cuidado natural</a>
+    </div>
+                    
+    <div class="7 cat">
+        <i class="fa-brands fa-pagelines"></i>
+        <a href="#" class="N">Herbolario</a>
+    </div>
+       
+    <div class="8 cat">
+        <i class="fa-solid fa-person-cane"></i>
+        <a href="#" class="N">Ortopedia</a>
+    </div>
+
+
+<!--     <i class="fa-solid fa-cannabis"></i> -->
+</section>
     <section>
         <h1 id="h1Catalogo" class="h1Catalogo">Catalogo</h1>
         <h2 id="h2Catalogo" class="h1Catalogo">La mejor calidad comienza en una eleccion experta</h2>
@@ -22,6 +94,29 @@
         </div>
 
     </section>
+    <footer>
+        <div class="siguenos">
+            <h2 class="redesTit">Síguenos</h2>
+            <div class="RRSS">
+                <a href="#"><i class="fa-brands rrss fa-square-facebook"></i></a>
+                <a href="#"><i class="fa-brands rrss fa-square-instagram"></i></a>
+                <a href="#"><i class="fa-brands rrss fa-square-google-plus"></i></a>
+                <a href="#"><i class="fa-brands rrss fa-square-youtube"></i></a>
     
+    
+            </div>
+        </div>
+        <div class="derechos">
+            <p>© 2024 ParaCoders SL.</p>
+            <p>Todos los derechos reservados.</p>
+            <p>Todos los productos incluyen IVA.</p>
+        </div>
+        <div class="politicas">
+            <a href="#"><p>Política de Privacidad</p></a>
+            <a href="#"><p>Condiciones de Uso</p></a>
+            <a href="#"><p>Condiciones de Contratación</p></a>
+            <a href="#"><p>Política de Cookies</p></a>
+        </div>
+    </footer>
 </body>
 </html>
