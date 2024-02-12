@@ -54,12 +54,14 @@ a:visited {
     display: flex;
     justify-content: space-around;
     margin: 1rem;
+    
 
 }
 
 .cat {
     margin: 1rem;
     font-size: x-large;
+    
 }
 
 h1 {
@@ -329,6 +331,89 @@ label{
 
 /* AINTZANE */
 
+.intro{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1rem;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.intro1 {
+    width: 58%;
+}
+
+.introCostado {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.fotointro {
+/*     position: relative; */
+    width: 95%;
+    border-radius: 0.8rem;
+}
+
+.HB:hover {
+    box-shadow: 0rem 0rem 1rem 0.5rem var(--naranja);
+    transform: scale(1.01);
+    transition: 300ms ease;
+}
+
+.fotointroDescuento {
+    width: 95%;
+    border-radius: 0.8rem;
+/*     z-index: -1; */
+}
+
+.descuentoIVA {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+/*     position: relative; */
+}
+
+.descuentoEnvios {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+/*     position: relative; */
+}
+
+.fecha {
+    width: 100%;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    border: solid var(--verdeoscurillo);
+    border-radius: 0.8rem;
+    background-color: var(--naranjaoscurillado);
+    justify-content: center;
+    align-items: center;
+}
+
+#calendario {
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    font-size: large;
+}
+
+
+
 
 
 
@@ -384,6 +469,17 @@ footer {
 
 /* NAVEGADOR */
 
+@media screen and (max-width: 854px) {
+    .derechos{
+        display: none;
+    }
+
+    .politicas{
+        display: none;
+    }
+
+}
+
 
 @media screen and (min-width: 700px) {
     .fila1 {
@@ -419,8 +515,11 @@ footer {
         display: none;
     }
 
-/*     .fechadiv {
-        display: none;
-    } */
+.intro1,
+.introCostado,
+.fotointroDescuento,
+.fotointro {
+    width: 100%;
+}
 
 }
