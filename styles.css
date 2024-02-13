@@ -79,6 +79,9 @@ a:visited {
 
 }
 
+.N:hover {
+    color: var(--naranja);
+}
 .cat {
     margin: 1rem;
     font-size: x-large;
@@ -583,6 +586,7 @@ label{
     box-shadow: 0rem 0rem 1rem 0.35rem var(--naranja);
     border-radius: 0.8rem;
     position: relative;
+    transition: 300ms ease;
 }
 
 .productosGeneral:hover {
@@ -590,6 +594,8 @@ label{
     transition: 300ms ease;
     background-color: var(--verdeclaro);
 }
+
+
 
 #estrellaBacia {
     color: var(--verdeocuro);
