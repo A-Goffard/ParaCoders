@@ -17,6 +17,7 @@
     --verdeocuro: #165f03b3;
     --verdemedio: #84bd76b3;
     --verdeclaro: #f1ffeeb3;
+    --verdeclarosintransp: #f1ffee;
     --colorhuevo: #FFF0BA;
     --gris: #D9D9D9;
     --amarillo: yellow;
@@ -81,7 +82,6 @@ a:visited {
 .cat {
     margin: 1rem;
     font-size: x-large;
-    
 }
 
 h1 {
@@ -110,27 +110,35 @@ i {
 
 #boton_ham:checked ~ #myTopnav {
     display: block;
-    text-align: left;
+/*     text-align: left; */
 }
               
 
 #myTopnav {
     position: absolute;
-    top: 3rem;
+    top: 0rem;
     right: 0rem;
-    background-color: var(--gris);
-
+    background-color: var(--verdeclarosintransp);
+    width: 100%;
+    height: 100%;
+    z-index: 1;
 }
 
 #boton_ham:checked ~ #myTopnav a {
 display: block;
-text-align: center;
+text-align: right;
 }
 
+#boton_ham:checked ~ #myTopnav a:hover {
+    color: var(--naranja);
+
+    }
+
 .topnav a {
-    margin: 0.5rem;
-    margin: 2rem;
+
+    margin: 5rem;
     font-size: larger;
+    
 }
 
 .fila1, .fila2{
