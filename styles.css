@@ -479,7 +479,8 @@ label{
 .productosGeneral {
     display: flex;
     flex-direction: column;
-    max-width: 13rem;
+    width: 20rem;
+    height: 25rem;
     margin: 1rem;
     justify-content: center;
     align-items: center;
@@ -497,8 +498,8 @@ label{
 #estrellaBacia {
     color: var(--verdeocuro);
     position: absolute;
-    top: 14.3rem;
-    right: 0.9rem;
+    top: 20.8rem;
+    right: 1.7rem;
 }
 
 .puntuacion {
