@@ -668,6 +668,9 @@ footer {
     .politicas{
         display: none;
     }
+
+
+}
 /* ..................................................................................................... */
 /* .............................................ABDERAHMANE .............................................*/
 /* ..................................................................................................... */
@@ -682,6 +685,128 @@ footer {
 /* .............................................OUSSAMMA .............................................*/
 /* ..................................................................................................... */
 
+
+.producto-solo-descripcion{
+    display: grid;
+    grid-template-columns: minmax(auto, 1fr) 25vw minmax(auto, 1fr);
+
+}
+
+.producto-solo-descripcion .col1 h5{
+    margin: 1rem;
+    font-size: 32px;
+    text-align: start;
+}
+.producto-solo-descripcion .col1 h6{
+    margin: 1rem;
+    font-size: 20px;
+    text-align: start;
+}
+
+.producto-solo-descripcion .col1 p{
+   text-align: start;
+   font-size: 14px;
+   margin: 1rem;
+}
+
+.producto-solo-descripcion .col1 .lista-dolores {
+    margin-left: 1rem;
+}
+
+.producto-solo-descripcion .col1 .lista-dolores li{
+    text-align: justify;
+    font-size: 13px;
+    margin: 1rem;
+    text-align: start;
+}
+
+
+.col3 .butones-contador{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 150px;
+    padding: 5px;
+}
+
+.col3 .butones-anadir{
+    display: flex;
+    justify-content: space-around;
+
+}
+.NPo {
+    background-color: var(--verdemostaza);
+    border-radius: 0.8rem;
+    color: var(--black);
+    width: 100%;
+    height: 2.5rem;
+    margin: 1rem;
+}
+
+.NPa {
+    background-color: var(--naranja);
+    border-radius: 0.8rem;
+    color: var(--black);
+    width: 100%;
+    height: 2.5rem;
+    margin: 1rem;
+}
+
+
+.count {
+    font-size: 18px;
+  }
+  
+.col2{
+ margin: 1rem;
+ padding: 1rem;
+  }
+
+.col2 .span{
+    display: flex;
+  }
+
+.col2 .marijuana-list 
+  {
+    list-style: none;
+    padding: 0;
+  }
+
+  .col2 .marijuana-list li i{
+    color:var(--verdemedio);
+    font-size: 14px;
+    margin-bottom: 2rem;
+    
+  }
+
+.col2 .marijuana-list span{
+    display: flex;
+    justify-content: center;
+  }
+  
+
+  .col3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .col3 .imagen-producto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .col3 .imagen-producto .small-imagen-producto{
+    width: 80%;
+  }
+
+  .col3 .butones-contador{
+    display: flex;
+
+  }
 
 /* ..................................................................................................... */
 /* .............................................TINA .............................................*/
@@ -698,7 +823,6 @@ footer {
 
     
 
-}
 
 /* ESCRITORIO Y TABLET */
 
