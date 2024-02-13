@@ -5,19 +5,19 @@ function actualizarCalendario() {
     document.getElementById('calendario').innerText = fechaFormateada;
   }
 
-/*   function actualizarReloj() {
+  function actualizarReloj() {
     const hora = new Date();
     const opciones = { hour: 'numeric', minute: 'numeric', second: 'numeric' };
     const horaFormateada = hora.toLocaleTimeString('es-ES', opciones);
     document.getElementById('reloj').innerText = horaFormateada;
-  } */
+  }
 
   // Actualizar calendario y reloj cada segundo
   setInterval(() => {
     actualizarCalendario();
-/*     actualizarReloj(); */
+    actualizarReloj();
   }, 1000);
 
   // Inicializar al cargar la página
   actualizarCalendario();
-/*   actualizarReloj(); */
+  actualizarReloj();
