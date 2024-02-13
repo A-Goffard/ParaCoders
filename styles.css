@@ -44,8 +44,13 @@ a:visited {
     color: var(--black);
 }
 
+
 .buscador {
-   /*  width: ; */
+    align-items: center;
+    display: inline-block;
+    height: 2.8rem;
+    width: 18rem;
+    border-radius: 0.5rem;
 }
 
 .logo, .logo2 {
@@ -545,7 +550,7 @@ label{
     flex-direction: column;
     width: 20rem;
     height: 25rem;
-    margin: 1rem;
+    margin: 2rem;
     justify-content: center;
     align-items: center;
     box-shadow: 0rem 0rem 1rem 0.35rem var(--naranja);
@@ -575,7 +580,7 @@ label{
 /* ..................................................................................................... */
 
 footer {
-    margin-top: 1rem;
+    margin-top: 2rem;
     background-color: var(--verdemostaza);
     padding: 2rem;
     display: flex;
