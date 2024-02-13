@@ -238,16 +238,17 @@ text-align: center;
 
 
 /* SEBAS */
+
 .imagenes_carrito{
-    width: 27rem;
-    height: 18rem;
+    width: 100%;
+    height: auto;
     padding: 0.5rem;
     display: flex;
 }
 
   .tienda_mobile_superior{
     width: 90%;
-    height: 70rem;
+    height: 90rem;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, 1fr);
@@ -260,12 +261,45 @@ text-align: center;
     align-items: center;
 
 }
+.productos_carrito #caja7 p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+/* .productos_carrito .boton_check{
+    
+} */
+.productos_carrito p{
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-align: justify;
+    
+}
+.productos_carrito #boton_seleccion_carrito{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    
+}
+
 .seleccionar{
-    border: 0.1rem solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem
+    ;
+}
+.boton_check{
+    width: 2rem;
+    height: 2rem;
 }
 
 .limpiar{
-    border: 2px solid red;
     grid-column: 2/5;
     display: flex;
     flex-direction: row;
@@ -282,9 +316,6 @@ text-align: center;
     margin-top: 2rem;
 }
 
-.productos_carrito{
-    border: 2px solid red;
-}
 
 .tienda_mobile_inferior{
     width: 90%;
@@ -293,15 +324,26 @@ text-align: center;
     margin: 0 auto;
     padding-top: 4rem;
     padding-bottom: 4rem;
-    border: 0.1rem solid red;
+    
 }
-/* .resumen{
-    border: 2px solid red;
-    width: auto;
+.resumen{
+    width: 50%;
     height: 15rem;
-    grid-column: 1/4;
-} */
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+.comprar{
+    width: 50%;
+    height: 3rem;
+    display: flex;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
 
+}
 
 /* OUSSAMMA */
 
