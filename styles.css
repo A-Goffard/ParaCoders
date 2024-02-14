@@ -283,6 +283,36 @@ text-align: right;
 
 /* SEBAS */
 
+.contenedor-menu-carrito{
+    width: 90%;
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menus_carrito{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.seleccionar-todo{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.limpiar-todo{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    /* padding-left: 2rem;
+    padding-right: 2rem; */
+    align-items: center;
+}
+
 .imagenes_carrito{
     max-width: 100%;
     padding: 0.5rem;
@@ -296,7 +326,7 @@ text-align: right;
     height: 90rem;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     margin: 0 auto;
     padding-top: 4rem;
 } 
