@@ -541,8 +541,18 @@ display: none;
 
 }
 
+/* -----Producto ----- */
 
+#producto-solo{
+display: flex;
 
+width: 80vw;
+
+}
+.producto-solo-imagen{
+    width: 90%;
+
+}
 
 /* ..................................................................................................... */
 /* .............................................TINA .............................................*/
@@ -552,6 +562,16 @@ display: none;
     text-align: center;
     background-color: #00D264;
 }
+
+.NPq {
+   
+    border-radius: 0.8rem;
+    color: var(--black);
+    width: 45%;
+    height: 2.5rem;
+    margin: 1rem;
+}
+
 .inputCheckout{
     display: flex;
 
