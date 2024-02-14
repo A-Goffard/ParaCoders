@@ -276,6 +276,7 @@ text-align: right;
     align-items: center;
     flex-direction: column;
 }
+
 .productos_carrito p{
     padding: 1rem;
     display: flex;
@@ -310,6 +311,7 @@ text-align: right;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding-right: 12rem;
 }
 .limpiar h2{
     display: flex;
@@ -343,22 +345,54 @@ text-align: right;
     align-items: center;
     border: 0.1rem #B0A326 solid;
     border-radius: 0.8rem;
+    background-color: var(--verdemostaza);
 }
 
 .comprar{
     width: 50%;
-    height: 3rem;
+    height: 5rem;
     display: flex;
     display: flex;
     margin: 0 auto;
     justify-content: center;
     align-items: center;
     padding-top: 2rem;
+    
 }
 
-.comprar button{
-    width: 10rem;
-    height: auto;
+.boton-comprar{
+    width: 12rem;
+    height: 5rem;
+    font-size: 1.2rem;
+    border-radius: 1rem;
+    background-color: var(--verdemedio);
+}
+
+.boton_compra{
+    width: 8rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    
+}
+.btn_cm{
+    width: 3rem;
+    height: 3rem;
+    background-color: #B0A326;
+}
+.num_compra{
+    font-size: 1.5rem;
+}
+.detalles-compra{
+    width: 100%;
+    height: 100%;
+    padding-left: 1rem;
+    gap: 1rem;
+}
+.titulo-total{
+    font-weight: 900;
 }
 
 /* OUSSAMMA */
