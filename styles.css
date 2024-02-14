@@ -399,9 +399,11 @@ text-align: right;
 }
 .inputCheckout{
     display: flex;
+
 }
 label{
     display: flex;
+    padding: 5px;
 }
 
 .aCheckout{
@@ -412,6 +414,8 @@ label{
 .btn{
     display: flex;
     justify-content: center;
+    cursor: pointer;
+    
 }
 
 /* ..................................................................................................... */
