@@ -240,10 +240,11 @@ text-align: right;
 /* SEBAS */
 
 .imagenes_carrito{
-    width: 100%;
-    height: auto;
+    max-width: 100%;
     padding: 0.5rem;
     display: flex;
+    border-radius: 2rem;
+    cursor: pointer;
 }
 
   .tienda_mobile_superior{
@@ -311,7 +312,7 @@ text-align: right;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-right: 12rem;
+    
 }
 .limpiar h2{
     display: flex;
@@ -334,6 +335,9 @@ text-align: right;
     padding-bottom: 4rem;
     
 }
+.fa-cannabis{
+    color: var(--verdemedio);
+}
 .resumen{
     width: 50%;
     height: 15rem;
@@ -345,7 +349,7 @@ text-align: right;
     align-items: center;
     border: 0.1rem #B0A326 solid;
     border-radius: 0.8rem;
-    background-color: var(--verdemostaza);
+    background-color: var(--colorhuevo);
 }
 
 .comprar{
@@ -365,7 +369,8 @@ text-align: right;
     height: 5rem;
     font-size: 1.2rem;
     border-radius: 1rem;
-    background-color: var(--verdemedio);
+    background-color: var(--naranja);
+    cursor: pointer;
 }
 
 .boton_compra{
@@ -394,6 +399,48 @@ text-align: right;
 .titulo-total{
     font-weight: 900;
 }
+
+/* mediaquery carrito de compras */
+
+@media screen and (max-width: 700px){
+.tienda_mobile_superior{
+    display: flex;
+    flex-wrap: wrap;
+}
+.boton_compra{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tienda_mobile_superior{
+    height: auto;
+}
+.boton_check{
+    display: none;
+} 
+.productos_carrito{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+#caja9 .boton_check{
+display: none;
+}
+#caja5 .boton_check{
+    display: none;
+    }
+.seleccionar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.limpiar{
+    display: flex;
+    padding-right: 0;
+}
+}
+
 
 /* OUSSAMMA */
 
