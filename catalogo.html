@@ -9,6 +9,48 @@
         @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Kdam+Thmor+Pro&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400&family=Roboto:wght@300;400;500;900&display=swap');
       </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .imagenCategorias{
+
+         width: 90%;
+        margin: 1rem;
+        border-radius: 0.8rem;
+        }
+
+        .contenedorfichas{
+
+        display: flex;
+        flex-direction: column;
+        width: 20rem;
+        height: 25rem;
+        margin: 2rem;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0rem 0rem 1rem 0.35rem var(--naranja);
+        border-radius: 0.8rem;
+        position: relative;
+        transition: 300ms ease;
+        }
+
+        .parrafoPrecio{
+            font-size: x-large;
+            margin: 1rem;
+        }
+
+        .butonAgregar {
+        
+        background-color: var(--naranja);
+        border-radius: 0.8rem;
+        color: var(--black);
+        width: 40%;
+        height: 2.5rem;
+        margin: 1rem;
+        }
+
+
+
+        
+    </style>
 </head>
 <body>
 
@@ -77,25 +119,30 @@
 <!--     <i class="fa-solid fa-cannabis"></i> -->
 </section>
 
+<section class="container-products">
 
-    <section>
-        <h1 id="h1Catalogo" class="h1Catalogo">Catalogo</h1>
-        <h2 id="h2Catalogo" class="h1Catalogo">La mejor calidad comienza en una eleccion experta</h2>
-        <div id="carta" class="carta">
-            <img class="imagen-producto" src="img/vitaminasGominola.png" alt="vitaminas">
-            <h3 id="h3catalogo" class="h3catalogo">Medicamentos</h3>
-            <div id="contenedor-Catalogo" class="contenedor-Catalogo">
-                <button class="btn-Cat1">btn1</button>
-                <button class="btn-Cat2">btn2</button>
-                <button class="btn-Cat3">btn3</button>
-                <button class="btn-Cat4">btn4</button>
-            </div>
+    <div class="card-product">
+        <div class="productosGeneral content-card-product" data-product-id="1">
+            <button class="favorite">
+                <i class="fa-regular fa-star" id="favorite-regular" class="estrellaBacia"></i>
+                <i class="fa-solid fa-star" id="added-favorite" class="estrellaLLena"></i>
+            </button>
+            <img class="fotoCategoria" src="img/aceite-cannabis.jpg.webp" alt="">
+            <h3>Aceite de cannabis</h3>
+            <span class="precio">15,61 €</span>
+            <div class="puntuacion"><i id="cannabito" class="fa-solid fa-cannabis"></i><i id="cannabito" class="fa-solid fa-cannabis"></i><i id="cannabito" class="fa-solid fa-cannabis"></i><i id="cannabito" class="fa-solid fa-cannabis"></i><i id="cannabito" class="fa-solid fa-cannabis"></i></div>
+            <button class="NPq" id="añadir">Añadir</button>
         </div>
+    </div>
 
-    </section>
+</section>
+
+<section class="main">
+
+</section>
 
 
-    
+
     <footer>
         <div class="siguenos">
             <h2 class="redesTit">Síguenos</h2>
@@ -120,5 +167,90 @@
             <a href="#"><p>Política de Cookies</p></a>
         </div>
     </footer>
+
+<script>
+
+
+    const imagen_prod1="img/aceite-cannabis.jpg.webp";
+    const imagen_prod2="img/bastonBambu.jpg";
+    const productos=[
+        {id:1 ,nombre:"Balsamo", precio:"15 €",imagen:imagen_prod1},
+        {id:2 ,nombre:"baston", precio:"25 €",imagen:imagen_prod2}
+    ];
+
+    const contenedor=document.querySelector(".main");
+
+    productos.forEach(function (item){
+        console.log(item.nombre);
+        console.log(item.precio);
+
+        let caja=document.createElement("div");
+        let titulo=document.createElement("h3");
+        let valor=document.createElement("p");
+        let ima=document.createElement("img");
+        let btn=document.createElement("button");
+
+        let iconoMaria=document.getElementById("cannabito");
+        let iMaria=iconoMaria.cloneNode(true);
+
+
+
+        let textoTitulo=document.createTextNode(item.nombre);
+        let textoValor=document.createTextNode(item.precio);
+        ima.src=item.imagen;/* la imagen no funciona igual para llamarla */
+        /* iconoMaria=node.cloneNode("cannabito"); */
+
+
+
+        
+
+        titulo.appendChild(textoTitulo);
+        valor.appendChild(textoValor);
+        ima.classList.add("imagenCategorias");
+        caja.classList.add("contenedorfichas");
+        valor.classList.add("parrafoPrecio");
+
+
+       /*  caja.classList.add("content-card-product"); */
+
+        caja.appendChild(ima);
+        caja.appendChild(titulo);
+        caja.appendChild(valor);
+
+       /*  for(let i=0;i<5; i++){
+
+            iMaria=document.createElement("i");
+
+            iMaria.classList.add("fa-cannabis");
+
+            caja.appendChild(iMaria);
+        } */
+    
+       
+
+        
+
+
+         // Crear un botón
+        let boton = document.createElement("button");
+        boton.textContent = "Añadir";
+        boton.classList.add("butonAgregar"); // Agregar clases de CSS si es necesario
+
+        caja.appendChild(boton)
+
+        // Agregar un event listener al botón si deseas ejecutar alguna acción al hacer clic
+        boton.addEventListener("click", function() {
+            // Aquí puedes agregar la lógica para agregar el producto al carrito
+            console.log("Producto agregado al carrito:", item.nombre);
+        });
+
+
+        contenedor.appendChild(caja);
+
+    
+    });
+
+
+</script>
 </body>
 </html>
