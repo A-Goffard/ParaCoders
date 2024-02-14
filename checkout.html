@@ -82,7 +82,7 @@
 <!--     <i class="fa-solid fa-cannabis"></i> -->
 </section>
   <section class="check">
-    <h2 class="h2Checkout">Modo de envio</h1>
+    <h2 class="h2Checkout NPq">Modo de envio</h2>
 
     <label>Domicilio</label> 
     <input class="inputCheckout" type="checkbox">
@@ -91,7 +91,7 @@
     <input type="checkbox" id="irAGoogleMaps" onchange="redirigirAGoogleMaps()">
   </section>  
   <section class="formulario">
-    <h2 class="h2Checkout">Dirección de entrega</h1>
+    <h2 class="h2Checkout NPq">Dirección de entrega</h1>
 
     <label>Nombre y apellidos</label>
     <input type="text" id="input1" class="input-box" onkeydown="saltar(event, 'input2')">
@@ -108,7 +108,7 @@
   </section>
 
   <section class="pago">
-    <h2 class="h2Checkout">Forma de pago</h1>
+    <h2 class="h2Checkout NPq">Forma de pago</h1>
     <label>Tarjeta</label>
     <input class="inputCheckout" type="checkbox"id ="miCheckbox">
     
@@ -117,7 +117,7 @@
  </section>
 
  <section class="pedido">
-    <h2 class="h2Checkout">Resumen del pedido</h1>
+    <h2 class="h2Checkout NPq">Resumen del pedido</h1>
     <label>Productos</label>
     <label>Subtotal</label>
     <label>Gastos de envio</label>
@@ -128,32 +128,7 @@
     <a class="aCheckout" href="carrito.html"class="boton">Revisar carrito</a>
     <a class="aCheckout" href="carrito.html"class="boton">Continuar y pagar</a>  
  </section>
-<script>
-    var checkbox = document.getElementById('miCheckbox');
-    checkbox.addEventListener('change',function(){
-        if(this.checked){
-            window.location = "acceso.html";
-        }
-    });
 
-</script>
-
-<script src="script.js"></script>
-<script>
-    function redirigirAGoogleMaps() {
-        // Obtener el checkbox
-        var checkbox = document.getElementById("irAGoogleMaps");
-
-        // URL de Google Maps
-        var urlGoogleMaps = "https://www.google.es/maps/place/Pe%C3%B1ascal+Kooperatiba/@43.2474751,-2.9094779,17z/data=!3m1!5s0xd4e4fce9c2c2897:0x23a5cb723380a98c!4m14!1m7!3m6!1s0xd4e4fa9723128c7:0xbc3542d2f3c75723!2sPe%C3%B1ascal+Kooperatiba!8m2!3d43.2474712!4d-2.9069083!16s%2Fg%2F1tdknjrc!3m5!1s0xd4e4fa9723128c7:0xbc3542d2f3c75723!8m2!3d43.2474712!4d-2.9069083!16s%2Fg%2F1tdknjrc?entry=ttu";
-
-        // Verificar si el checkbox está marcado
-        if (checkbox.checked) {
-            // Redirigir a Google Maps
-            window.location.href = urlGoogleMaps;
-        }
-    }
-</script>
 
 
 
@@ -182,5 +157,34 @@
   </div>
 </footer>
 
+
+<script>
+    var checkbox = document.getElementById('miCheckbox');
+    checkbox.addEventListener('change',function(){
+        if(this.checked){
+            window.location = "acceso.html";
+        }
+    });
+
+</script>
+
+
+<script>
+    function redirigirAGoogleMaps() {
+        // Obtener el checkbox
+        var checkbox = document.getElementById("irAGoogleMaps");
+
+        // URL de Google Maps
+        var urlGoogleMaps = "https://www.google.es/maps/place/Pe%C3%B1ascal+Kooperatiba/@43.2474751,-2.9094779,17z/data=!3m1!5s0xd4e4fce9c2c2897:0x23a5cb723380a98c!4m14!1m7!3m6!1s0xd4e4fa9723128c7:0xbc3542d2f3c75723!2sPe%C3%B1ascal+Kooperatiba!8m2!3d43.2474712!4d-2.9069083!16s%2Fg%2F1tdknjrc!3m5!1s0xd4e4fa9723128c7:0xbc3542d2f3c75723!8m2!3d43.2474712!4d-2.9069083!16s%2Fg%2F1tdknjrc?entry=ttu";
+
+        // Verificar si el checkbox está marcado
+        if (checkbox.checked) {
+            // Redirigir a Google Maps
+            window.location.href = urlGoogleMaps;
+        }
+    }
+</script>
+
+<script src="script.js"></script>
 </body>
 </html>
