@@ -492,11 +492,17 @@ label{
     align-items: center;
 }
 
+#reloj {
+    margin: 1rem;
+    font-size: xx-large;
+}
+
 #calendario {
     justify-content: center;
     align-items: center;
+    text-align: center;
     margin: 1rem;
-    font-size: large;
+    font-size: xx-large;
 }
 
 /* pagina de categorias */
