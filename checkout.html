@@ -88,24 +88,23 @@
     <input class="inputCheckout" type="checkbox">
     
     <label>Recogida en tienda</label>
-    <input class="inputCheckout" type="checkbox">
-   
+    <input type="checkbox" id="irAGoogleMaps" onchange="redirigirAGoogleMaps()">
   </section>  
   <section class="formulario">
     <h2 class="h2Checkout">Dirección de entrega</h1>
 
     <label>Nombre y apellidos</label>
-    <input class="inputCheckout" type="text">
+    <input type="text" id="input1" class="input-box" onkeydown="saltar(event, 'input2')">
     <label>Dirección</label>
-    <input class="inputCheckout" type="text">
+    <input type="text" id="input2" class="input-box" onkeydown="saltar(event, 'input3')">
     <label>Código postal</label>
-    <input class="inputCheckout" type="text">
+    <input type="text" id="input3" class="input-box" onkeydown="saltar(event, 'input4')">
     <label>Ciudad</label>
-    <input class="inputCheckout" type="text">
+    <input type="text" id="input4" class="input-box" onkeydown="saltar(event, 'input5')">
     <label>Provincia</label>
-    <input class="inputCheckout" type="text">
+    <input type="text" id="input5" class="input-box" onkeydown="saltar(event, 'input6')">
     <label>País</label>
-    <input class="inputCheckout" type="text">
+    <input type="text" id="input6" class="input-box" onkeydown="saltar(event, 'input7')">
   </section>
 
   <section class="pago">
@@ -137,6 +136,23 @@
         }
     });
 
+</script>
+
+<script src="script.js"></script>
+<script>
+    function redirigirAGoogleMaps() {
+        // Obtener el checkbox
+        var checkbox = document.getElementById("irAGoogleMaps");
+
+        // URL de Google Maps
+        var urlGoogleMaps = "https://www.google.es/maps/place/Pe%C3%B1ascal+Kooperatiba/@43.2474751,-2.9094779,17z/data=!3m1!5s0xd4e4fce9c2c2897:0x23a5cb723380a98c!4m14!1m7!3m6!1s0xd4e4fa9723128c7:0xbc3542d2f3c75723!2sPe%C3%B1ascal+Kooperatiba!8m2!3d43.2474712!4d-2.9069083!16s%2Fg%2F1tdknjrc!3m5!1s0xd4e4fa9723128c7:0xbc3542d2f3c75723!8m2!3d43.2474712!4d-2.9069083!16s%2Fg%2F1tdknjrc?entry=ttu";
+
+        // Verificar si el checkbox está marcado
+        if (checkbox.checked) {
+            // Redirigir a Google Maps
+            window.location.href = urlGoogleMaps;
+        }
+    }
 </script>
 
 
