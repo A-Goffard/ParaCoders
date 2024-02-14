@@ -247,7 +247,8 @@ text-align: right;
   }
   .buttonAcceso:hover{
     background-color: #B0A326;
-    box-shadow: 0.5rem 0.5rem 0.5rem  rgba(255, 94, 0, 0.06);
+    box-shadow: 0.5rem 0.5rem 0.5rem  var(--naranja);
+
   }
 
 
@@ -262,20 +263,55 @@ text-align: right;
     display: flex;
     justify-content: center;
     font-size: 3rem;
-    margin-bottom: 1rem;
-}
-.Información-personal{
-    background-color:#F2F2F2;
-    width: 20rem;
+
+} 
+
+.Información{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 25rem;
-    border-radius: 2rem;
-    margin-bottom: 2rem;
+    
+
 
 }
+.Información input{
+    width: 15rem;
+    height: 1.5rem;
+    border-radius: 0.2rem;
+    background-color: var(--colorhuevo);
+    
+}
+
+.h2personal{
+    font-family: 'Comfortaa', sans-serif;
+margin-bottom: 1rem;
+    font-size: large;
+    color: var(--verdeocuro);
+
+}
+.h2tarjeta{
+    font-family: 'Comfortaa', sans-serif;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: large;
+    color:var(--verdeocuro);
+}
+.Información button{
+    background-color: #E5B50E;
+    width: 10rem;
+    height: 2rem;
+    margin-top: 2rem;
+
+}
+.Información button:hover{
+    background-color: #B0A326;
+    box-shadow: 0.5rem 0.5rem 0.5rem  var(--naranja);
+}
+
+
+
+
 
 
 

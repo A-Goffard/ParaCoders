@@ -84,9 +84,9 @@
 
 
 <h1 class="tittle1">Crear Cuenta</h1>
-<form action="procesar_registro.php" method="post">
-    <section class="Información-personal">
-    <h2>
+<form  class="crear-form Información" action="procesar_registro.php" method="post">
+    <section class="Información">
+    <h2 class="h2personal">
         Información personal
     </h2>
     <label for="nombre">Nombre</label>
@@ -100,9 +100,10 @@
 
     <label for="contrasena">Contraseña</label>
     <input type="password" id="contrasena" name="contrasena" required>
-   </section>
-   <section class="Información-Tarjeta">
-    <h2>Información de Tarjeta de Banco</h2>
+   
+    <h2 class="h2tarjeta"> 
+        Información de Tarjeta de Banco
+    </h2>
 
     <label for="numero_tarjeta">Número de Tarjeta</label>
     <input type="text" id="numero_tarjeta" name="numero_tarjeta" required>
@@ -115,9 +116,11 @@
 
     <label for="cvv">CVV</label>
     <input type="text" id="cvv" name="cvv" required>
-    </section>
-    <button type="submit">Crear Cuenta</button>
-    </form>
+    <button  type="submit">Crear Cuenta</button>
+</section>
+
+</div>
+</form>
 
 
 
