@@ -204,9 +204,15 @@ text-align: right;
     align-items: center;
     height: 25rem;
     border-radius: 2rem;
-    margin-bottom: 2rem;
+    
 
 
+}
+.formulario-acceso input{
+    background-color: #FFF0BA;
+    border-radius: 0.4rem;
+    width: 15rem;
+    height: 2rem;
 }
  
   .texto h1 h2{
@@ -230,10 +236,18 @@ text-align: right;
   }
   
   .buttonAcceso {
-    background-color: #00D264;
-    width: 7rem;
-    margin-top: 1rem;
-    margin-bottom: 4rem;
+    background-color: #E5B50E;
+    width: 13rem;
+    height: 2rem;
+    margin-top: 3rem;
+    border-radius: 0.4rem;
+    
+    
+
+  }
+  .buttonAcceso:hover{
+    background-color: #B0A326;
+    box-shadow: 0.5rem 0.5rem 0.5rem  rgba(255, 94, 0, 0.06);
   }
 
 
@@ -743,7 +757,7 @@ footer {
         display: none;
     }
 
-
+   
 }
 /* ..................................................................................................... */
 /* .............................................ABDERAHMANE .............................................*/
@@ -913,7 +927,12 @@ footer {
 /* ..................................................................................................... */
 /* .............................................ABDERAHMANE .............................................*/
 /* ..................................................................................................... */
-
+   .form-acceso{
+    width: 40rem;
+   }
+   .formulario-acceso input{
+    width: 30rem;
+   }
 
 /* ..................................................................................................... */
 /* .............................................SEBAS .............................................*/
