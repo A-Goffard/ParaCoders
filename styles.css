@@ -209,7 +209,7 @@ text-align: right;
 
 }
  
-  .texto h1{
+  .texto h1 h2{
     margin-bottom: 1rem;
     font-family: 'Comfortaa', sans-serif; 
     margin-left: 3rem;
@@ -235,6 +235,36 @@ text-align: right;
     margin-top: 1rem;
     margin-bottom: 4rem;
   }
+
+
+
+
+
+
+
+/*crear cuenta----------------------------------------------------------------------------------------------------------------------------------------------*/
+.tittle1{
+    font-family: 'Comfortaa', sans-serif;
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+.Información-personal{
+    background-color:#F2F2F2;
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 25rem;
+    border-radius: 2rem;
+    margin-bottom: 2rem;
+
+}
+
+
+
 
 
 /* SEBAS */
