@@ -816,8 +816,6 @@ label{
     background-color: var(--verdeclaro);
 }
 
-
-
 #estrellaBacia {
     color: var(--verdeocuro);
     position: absolute;
@@ -825,9 +823,42 @@ label{
     right: 1.7rem;
 }
 
+.favorite {
+    background-color: transparent;
+    border: none;
+    color: var(--verdeocuro);
+    position: absolute;
+    top: 21rem;
+    right: 1.9rem; 
+}
+
+#button-header-favorite {
+    background-color: transparent;
+    border: none; 
+}
+
 .puntuacion {
     color: var(--verdemedio);
 }
+
+/* ----------------favoritos-------------- */
+
+#added-favorite {
+    color: var(--verdeocuro);
+    display: none;
+}
+
+#favorite-regular.active {
+    color: var(--verdeocuro);
+    display: none;
+}
+
+#added-favorite.active {
+    display: block;
+    color: var(--verdeocuro);
+}
+
+
 
 /* ..................................................................................................... */
 /* .............................................FOOTER .............................................*/
