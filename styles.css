@@ -262,20 +262,42 @@ text-align: right;
     font-family: 'Comfortaa', sans-serif;
     display: flex;
     justify-content: center;
-    font-size: 3rem;
+    font-size: 2rem;
+    
 
 } 
 
-.Información{
+
+.por-personal{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
-
-
 }
-.Información input{
+
+
+
+
+
+.por-tarjeta{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.por-tarjeta input{
+    width: 15rem;
+    height: 1.5rem;
+    border-radius: 0.2rem;
+    background-color: var(--colorhuevo);
+    
+}
+
+.por-personal input{
     width: 15rem;
     height: 1.5rem;
     border-radius: 0.2rem;
@@ -290,6 +312,8 @@ margin-bottom: 1rem;
     color: var(--verdeocuro);
 
 }
+
+
 .h2tarjeta{
     font-family: 'Comfortaa', sans-serif;
     margin-top: 1rem;
@@ -297,21 +321,60 @@ margin-bottom: 1rem;
     font-size: large;
     color:var(--verdeocuro);
 }
-.Información button{
+.Información{
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.Información {
+   /*  position: absolute;
+    bottom: 10;
+    left: 50%;
+    transform: translate(-50%, -50%); */
     background-color: #E5B50E;
     width: 10rem;
     height: 2rem;
     margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.3rem;
+    
+
 
 }
-.Información button:hover{
+
+
+.Información:hover{
     background-color: #B0A326;
     box-shadow: 0.5rem 0.5rem 0.5rem  var(--naranja);
 }
 
 
+.sectionCrear{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
 
+}
 
+.sectionCrear form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  
+
+}
+
+.sectionCrear form .por-personal{
+    padding: 5rem;
+}
 
 
 
@@ -1186,6 +1249,15 @@ footer {
     width: 30rem;
    }
 
+
+   /*----------------------------------------------------------------------------------------------*/
+.por-personal{
+
+}
+
+
+
+   
 /* ..................................................................................................... */
 /* .............................................SEBAS .............................................*/
 /* ..................................................................................................... */
