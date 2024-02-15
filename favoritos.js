@@ -1,5 +1,9 @@
 const btnsFavorites = document.querySelectorAll(".favorite")
 const products = document.querySelectorAll(".card-product");
+const counterFavorite = document.querySelector(".counter-favorite");
+
+const containerListFavorites = document.querySelector(".container-list-favorites");
+const listFavorites = document.querySelector(".list-favorites");
 
 let favorites = [];
 
@@ -30,12 +34,47 @@ const toggleFavorite = product => {
     }
 };
 
-const showHTML = () => {
-    products.forEach(product => {
- //       const contentCard = product.querySelector(".content-card-product")
-        console.log(product);
-    });
+const updateFavoriteMenu = () => {
+    listFavorites.innerHTML = "";
+
+    favorites.forEach(product => {
+        const favoriteCard = document.createElement("div");
+        favoriteCard.classList.add("card-favorite");
+
+        const titleElement = document.createElement("p");
+        titleElement.classList.add("title");
+        titleElement.textContent = product.title;
+        favoriteCard.appendChild(titleElement);
+
+        const priceElement = document.createElement("p");
+        priceElement.textContent = product.title;
+        favoriteCard.appendChild(priceElement);
+
+        listFavorites.appendChild(favoriteCard);
+    })
 }
+
+const showHTML = () => {
+    products.forEach(product => {       
+        const contentCard = product.querySelector(".content-card-product");
+        const productId = contentCard.dataset.productId;
+        
+        //un metodo de arrays para saber si es true o false que está seleccionado
+        const isFavorite = favorites.some(
+            favorite =>favorite.id === productId
+        );
+        //esto añade la clase favorite-active a la estrella que está elegida
+        const favoriteButton = product.querySelector(".favorite");
+        const favoriteButtonActive = product.querySelector("#added-favorite");
+        const favoriteRegularIcon = product.querySelector("#favorite-regular");
+        
+        favoriteButtonActive.classList.toggle("active", isFavorite);
+        favoriteRegularIcon.classList.toggle("active", isFavorite);
+        favoriteButton.classList.toggle("favorite-active", isFavorite);
+    });
+    counterFavorite.textContent = favorites.length;
+    updateFavoriteMenu();
+};
 
 
 
@@ -56,3 +95,17 @@ btnsFavorites.forEach(button => {
         showHTML();
     });
 });
+
+const btnClose = document.querySelector("#btn-close");
+const buttonHeaderFavorite = document.querySelector("#button-header-favorite");
+
+buttonHeaderFavorite.addEventListener("click", (e) => {
+    containerListFavorites.classList.remove("show"); 
+})
+
+btnClose.addEventListener("click", e => {
+    containerListFavorites.classList.remove("show");
+})
+
+loadFavoritesFromLocalStorage();
+updateFavoriteMenu();
