@@ -20,7 +20,7 @@
     --verdeclarosintransp: #f1ffee;
     --colorhuevo: #FFF0BA;
     --gris: #D9D9D9;
-    --amarillo: yellow;
+    --amarillo: #e9cc0f;
 }
 
 h1 {
@@ -262,20 +262,42 @@ text-align: right;
     font-family: 'Comfortaa', sans-serif;
     display: flex;
     justify-content: center;
-    font-size: 3rem;
+    font-size: 2rem;
+    
 
 } 
 
-.Información{
+
+.por-personal{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
-
-
 }
-.Información input{
+
+
+
+
+
+.por-tarjeta{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.por-tarjeta input{
+    width: 15rem;
+    height: 1.5rem;
+    border-radius: 0.2rem;
+    background-color: var(--colorhuevo);
+    
+}
+
+.por-personal input{
     width: 15rem;
     height: 1.5rem;
     border-radius: 0.2rem;
@@ -290,6 +312,8 @@ margin-bottom: 1rem;
     color: var(--verdeocuro);
 
 }
+
+
 .h2tarjeta{
     font-family: 'Comfortaa', sans-serif;
     margin-top: 1rem;
@@ -297,21 +321,60 @@ margin-bottom: 1rem;
     font-size: large;
     color:var(--verdeocuro);
 }
-.Información button{
+.Información{
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.Información {
+   /*  position: absolute;
+    bottom: 10;
+    left: 50%;
+    transform: translate(-50%, -50%); */
     background-color: #E5B50E;
     width: 10rem;
     height: 2rem;
     margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.3rem;
+    
+
 
 }
-.Información button:hover{
+
+
+.Información:hover{
     background-color: #B0A326;
     box-shadow: 0.5rem 0.5rem 0.5rem  var(--naranja);
 }
 
 
+.sectionCrear{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
 
+}
 
+.sectionCrear form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  
+
+}
+
+.sectionCrear form .por-personal{
+    padding: 5rem;
+}
 
 
 
@@ -843,8 +906,6 @@ label{
     background-color: var(--verdeclaro);
 }
 
-
-
 #estrellaBacia {
     color: var(--verdeocuro);
     position: absolute;
@@ -852,9 +913,104 @@ label{
     right: 1.7rem;
 }
 
+.favorite {
+    background-color: transparent;
+    border: none;
+    color: var(--verdeocuro);
+    position: absolute;
+    top: 21rem;
+    right: 1.9rem; 
+}
+
+#button-header-favorite {
+    background-color: transparent;
+    border: none; 
+}
+
 .puntuacion {
     color: var(--verdemedio);
 }
+
+/* ********************************** */
+/*         LISTA DE FAVORITOS         */
+/* ********************************** */
+.container-list-favorites {
+	position: fixed;
+	top: 0;
+	right: 0;
+	transform: translateX(25rem);
+	background-color: #555;
+	opacity: 0;
+	width: 25rem;
+	height: 100vh;
+	transition: all 0.5s linear;
+}
+
+.container-list-favorites.show {
+	opacity: 1;
+	transform: translateX(0);
+}
+
+.header-favorite {
+	padding: 1.5rem 3rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header-favorite i {
+	cursor: pointer;
+}
+
+.list-favorites {
+	padding: 3.5rem 2rem;
+	display: flex;
+	flex-direction: column;
+	gap: 2.5rem;
+}
+
+.list-favorites .card-favorite {
+	width: 100%;
+	background-color: #fff;
+	box-shadow: 0px 0px 2rem #00000065;
+	padding: 2rem;
+	border-radius: 1rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 3rem;
+}
+
+.card-favorite .title {
+	color: #000;
+	flex: 1;
+}
+
+.card-favorite p:last-child {
+	font-weight: 700;
+	font-size: 2.2rem;
+	color: #000;
+}
+
+/* ------------------- */
+
+#added-favorite {
+	color:var(--amarillo);
+	display: none;
+}
+
+#favorite-regular.active {
+	background-color: red;
+	display: none;
+}
+
+#added-favorite.active {
+	display: block;
+	color: var(--amarillo);
+}
+
+
+
 
 /* ..................................................................................................... */
 /* .............................................FOOTER .............................................*/
@@ -1094,6 +1250,15 @@ footer {
     width: 30rem;
    }
 
+
+   /*----------------------------------------------------------------------------------------------*/
+.por-personal{
+
+}
+
+
+
+   
 /* ..................................................................................................... */
 /* .............................................SEBAS .............................................*/
 /* ..................................................................................................... */
