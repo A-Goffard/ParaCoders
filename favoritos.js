@@ -12,7 +12,7 @@ const loadFavoritesFromLocalStorage = () => {
 
     if(storedFavorites) {
         favorites = JSON.parse(storedFavorites);
-/*         showHTML(); */
+    showHTML(); 
     };
 };
 
@@ -32,7 +32,8 @@ const toggleFavorite = product => {
 
 const showHTML = () => {
     products.forEach(product => {
-        const contentCard = product.querySelector(".content-card-product")
+ //       const contentCard = product.querySelector(".content-card-product")
+        console.log(product);
     });
 }
 
@@ -52,6 +53,6 @@ btnsFavorites.forEach(button => {
         };
 
         toggleFavorite(product);
-
+        showHTML();
     });
 });
