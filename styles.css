@@ -338,14 +338,15 @@ margin-bottom: 1rem;
 .seleccionar-todo{
     width: 40%;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    padding-top: 2rem;
+    padding-left: 1.5rem;
+    
     
 }
 .limpiar-todo{
     width: 40%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     /* padding-left: 2rem;
     padding-right: 2rem; */
     align-items: center;
@@ -451,7 +452,7 @@ margin-bottom: 1rem;
 }
 .resumen{
     width: 50%;
-    height: 15rem;
+    height: 18rem;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
