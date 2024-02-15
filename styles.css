@@ -329,8 +329,10 @@ margin-bottom: 1rem;
 .menus_carrito{
     display: flex;
     justify-content: center;
-    margin-bottom: 2rem;
+    margin: 0 auto;
     margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 80%;
 }
 
 .seleccionar-todo{
@@ -359,12 +361,11 @@ margin-bottom: 1rem;
 
   .tienda_mobile_superior{
     width: 90%;
-    height: 90rem;
+    height: 70rem;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 1fr);
     margin: 0 auto;
-    padding-top: 4rem;
 } 
 .productos_carrito #boton_seleccion_carrito{
     display: flex;
@@ -549,6 +550,31 @@ display: none;
     display: flex;
     padding-right: 0;
 }
+.menus_carrito{
+    width: 100%;
+}
+.boton_check{
+    display: none;
+}
+.limpiar-todo{
+    width: 100%;
+    padding: 0.5rem;
+}
+.limpiar-todo .div{
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+}
+.resumen{
+    width: 80%;
+}
+.seleccionar-todo{
+    display: none;
+}
+#caja1{
+    display: none;
+}
+
 }
 
 
