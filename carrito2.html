@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ParaCoders</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Kdam+Thmor+Pro&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400&family=Roboto:wght@300;400;500;900&display=swap');
+      </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+
+        }
+    </style>
+</head>
+<body>
+
+    <header id="home" class="home">
+
+            <div class="fila1">
+               <div><a href="index.html"><img class="logo" src="img/logo.paracoders.webp" alt=""></a></div>
+               <h1 class="title">ParaCoders</h1>
+               
+
+            <div class="hamburguesa">
+                <label id="label_boton" for="boton_ham"> <i id="i" class="fa fa-bars ham"></i></label> 
+                <input id="boton_ham" type="checkbox" value="si">
+                
+
+                <div class="topnav" id="myTopnav">
+        
+                    <a href="/index.html" class="active">Home</a>
+                    <a href="productos.html#medicamentos" class="active" id="navMedicamentosB">Medicamentos</a>
+                    <a href="productos.html#cuidado" class="active" id="navCuidadoB">Cuidado natural</a>
+                    <a href="productos.html#herbolario" class="active" id="navHerbolarioB">Herbolario</a>
+                    <a href="productos.html#ortopedia" class="active" id="navOrtopediaB">Ortopedia</a>
+                
+                </div>
+           </div>
+
+            </div>
+            <div  class="fila2">
+                    <div><a href="index.html"><img class="logo2" src="img/logo.paracoders.webp" alt=""></a></div>
+                   <div class="buscar">
+                    <i class="fa-solid fa-magnifying-glass navegador"></i>
+                    <input type="text" placeholder=" Buscar...">
+                </div>
+                <div class="icono">
+                    <a href="/acceso.html"><i class="fa-solid fa-user navegador"></i></a>
+                    <a href="/carrito.html"><i class="fa-solid fa-cart-shopping navegador"></i></a>
+                    <a href="#"><i class="fa-solid fa-language"></i></a>
+                </div>
+            </div>
+
+</header>
+
+<section class="categorias">
+<div class="5 cat">
+    <i class="fa-solid fa-pills"></i>
+    <a href="productos.html#medicamentos" class="N" id="navMedicamentos">Medicamentos</a>
+</div>
+
+<div class="6 cat">
+    <i class="fa-solid fa-seedling"></i>
+    <a href="productos.html#cuidado" class="N" id="navCuidado">Cuidado natural</a>
+</div>
+                
+<div class="7 cat">
+    <i class="fa-brands fa-pagelines"></i>
+    <a href="productos.html#herbolario" class="N" id="navHerbolario">Herbolario</a>
+</div>
+   
+<div class="8 cat">
+    <i class="fa-solid fa-person-cane"></i>
+    <a href="productos.html#ortopedia" class="N" id="navOrtopedia">Ortopedia</a>
+</div>
+
+<!-- ESQUEMA -->
+
+<div class="container">
+    <div class="row">
+        <!-- Elementos generados a partir del JSON -->
+        <main id="items" class="col-sm-8 row"></main>
+        <!-- Carrito -->
+        <aside class="col-sm-4">
+            <h2>Carrito</h2>
+            <!-- Elementos del carrito -->
+            <ul id="carrito" class="list-group"></ul>
+            <hr>
+            <!-- Precio total -->
+            <p class="text-right">Total: <span id="total"></span>&euro;</p>
+            <button id="boton-vaciar" class="btn btn-danger">Vaciar</button>
+        </aside>
+    </div>
+</div>
+
+<!-- FOOTER -->
+
+<footer>
+    <div class="siguenos">
+        <h2 class="redesTit">Síguenos</h2>
+        <div class="RRSS">
+            <a href="#"><i class="fa-brands rrss fa-square-facebook"></i></a>
+            <a href="#"><i class="fa-brands rrss fa-square-instagram"></i></a>
+            <a href="#"><i class="fa-brands rrss fa-square-google-plus"></i></a>
+            <a href="#"><i class="fa-brands rrss fa-square-youtube"></i></a>
+
+
+        </div>
+    </div>
+    <div class="derechos">
+        <p>© 2024 ParaCoders SL.</p>
+        <p>Todos los derechos reservados.</p>
+        <p>Todos los productos incluyen IVA.</p>
+    </div>
+    <div class="politicas">
+        <a href="#"><p>Política de Privacidad</p></a>
+        <a href="#"><p>Condiciones de Uso</p></a>
+        <a href="#"><p>Condiciones de Contratación</p></a>
+        <a href="#"><p>Política de Cookies</p></a>
+    </div>
+</footer>
+<script src="carrito2js.js"></script>
+</body>
+</html>
