@@ -1231,7 +1231,7 @@ footer {
 /* .............................................TINA .............................................*/
 /* ..................................................................................................... */
 
-.modal {
+.modal{
     display: none; /* Por defecto, la ventana modal está oculta */
     position: fixed;
     z-index: 1;
@@ -1258,50 +1258,17 @@ footer {
     font-weight: bold;
   }
   
-  .close:hover,
-  .close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-  }
-  h2Checkout{
-    text-align: center;
-    background-color: #00D264;
-}
-
-.NPq {
-   
-    border-radius: 0.8rem;
-    color: var(--black);
-    width: 45%;
-    height: 2.5rem;
-    margin: 1rem;
-}
-
-.inputCheckout{
-    display: flex;
-
-}
-label{
-    display: flex;
-    padding: 5px;
-}
-
 .aCheckout{
-    background-color:#B0A326;
-    width: 15rem;
-    height: 2rem;
-    margin: 0 20px;
-    border: #B0A326;
     cursor: pointer;
-    border-radius: 0.8rem;
     text-align: center;
-}
-.btn{
     display: flex;
     justify-content: center;
-    cursor: pointer;
-    
+    background-color: var(--verdemostaza);
+    border-radius: 0.8rem;
+    color: var(--black);
+    width: 15rem;
+    height: 2.5rem;
+    margin: 1rem;
 }
 
 
