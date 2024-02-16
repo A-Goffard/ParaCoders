@@ -126,9 +126,9 @@
         </div>
         <div class="productos_carrito">
             <div class="boton_compra">
-                <button class="btn_cm"><i class="fa-solid fa-plus"></i></button>
+                <button id="primero" class="btn_cm"><i class="fa-solid fa-plus"></i></button>
                 <span class="num_compra">0</span>
-                <button class="btn_cm"><i class="fa-solid fa-minus"></i></button>
+                <button class="btn_cm_rest"><i class="fa-solid fa-minus"></i></button>
             </div>
         </div>
         <div class="productos_carrito" id="caja5">
@@ -156,7 +156,7 @@
             <div class="boton_compra">
                 <button class="btn_cm"><i class="fa-solid fa-plus"></i></button>
                 <span class="num_compra">0</span>
-                <button class="btn_cm"><i class="fa-solid fa-minus"></i></button>
+                <button class="btn_cm_rest"><i class="fa-solid fa-minus"></i></button>
             </div>
         </div>
     
@@ -183,8 +183,9 @@
              <div class="boton_compra">
                 <button class="btn_cm"><i class="fa-solid fa-plus"></i></button>
                 <span class="num_compra">0</span>
-                <button class="btn_cm"><i class="fa-solid fa-minus"></i></button>
+                <button class="btn_cm_rest"><i class="fa-solid fa-minus"></i></button>
             </div>
+            
 
         </div>
 
@@ -195,23 +196,23 @@
         <div class="resumen">
 
                 <div>
-                    <h3>Resumen</h3>
+                    <h3 class="resumen_compra">Resumen</h3>
                 </div>
 
                 <div class="detalles-compra">
                     <br>
                     <br>
-                    <p>Descuento</p>
+                    <p class="descuento">Descuento</p>
                     <br>
-                    <p>Subtotal</p>
+                    <p class="subtotal">Subtotal</p>
                     <br>
-                    <p>IVA</p>
+                    <p class="iva">IVA</p>
                     <br>
-                    <p>Envío</p>
+                    <p class="envio">Envío</p>
                     <br>
                     <br>
                     <br>
-                    <p class="titulo-total">Total</p>
+                    <p class="total-precio">Total</p>
                 </div>
             </div>
             
@@ -222,7 +223,7 @@
         </div>
 
             <div class="comprar">
-                <button class="boton-comprar">Comprar ahora</button>
+               <a href="/checkout.html"><input class="boton-comprar" type="button" value="Comprar Ahora"></a> 
                 
             </div>
 
@@ -254,7 +255,13 @@
         </div>
     </footer>
 
-    <script src="carrito.js"></script>
-    
+   <script src="carrito.js"></script>  
+
+
+
+
+
+
+   
 </body>
 </html>
