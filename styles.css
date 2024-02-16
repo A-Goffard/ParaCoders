@@ -215,7 +215,7 @@ text-align: right;
     height: 2rem;
 }
  
-  .texto h1 {
+  .texto h1 h2{
     margin-bottom: 1rem;
     font-family: 'Comfortaa', sans-serif; 
     margin-left: 3rem;
@@ -225,7 +225,7 @@ text-align: right;
  
 }
   
-  .texto h6  {
+  .texto h6 {
     text-align: center;
     color: gray;
     font-family: 'Comfortaa', sans-serif;
@@ -234,7 +234,6 @@ text-align: right;
     margin-left: 2rem;
 
   }
-  
   
   .buttonAcceso {
     background-color: #E5B50E;
@@ -264,7 +263,6 @@ text-align: right;
     display: flex;
     justify-content: center;
     font-size: 2rem;
-    margin-bottom: 1rem;
     
 
 } 
@@ -309,7 +307,7 @@ text-align: right;
 
 .h2personal{
     font-family: 'Comfortaa', sans-serif;
-   margin-bottom: 1rem;
+margin-bottom: 1rem;
     font-size: large;
     color: var(--verdeocuro);
 
@@ -378,15 +376,7 @@ text-align: right;
     padding: 5rem;
 }
 
-.sectionCrear h6 a{
-   
-    font-size: small;
-    
-}
-.sectionCrear h6{
-    color: gray;
-    font-size: small;
-}
+
 
 
 
@@ -1277,9 +1267,9 @@ footer {
 
 
    /*----------------------------------------------------------------------------------------------*/
-.por-personal{
+/* .por-personal{
 
-}
+} */
 
 
 
