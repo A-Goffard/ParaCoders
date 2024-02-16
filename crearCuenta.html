@@ -89,34 +89,42 @@
     <form id="signup-form" action="procesar_registro.php" method="post">
   
         <div class="por-personal">
-            <h2 class="h2personal">Información personal</h2>
-            <label for="nombre">Nombre</label>
-            <input type="text" id="input1" class="input-box" required onkeydown="saltar(event, 'input2')">
+    <h2 class="h2personal">
+        Información personal
+    </h2>
+    <label for="nombre">Nombre</label>
+  
+    <input type="text" id="input1" class="input-box"required onkeydown="saltar(event, 'input2')">
 
-            <label for="apellido">Apellido</label>
-            <input type="text" id="input2" class="input-box" required onkeydown="saltar(event, 'input3')">
+    <label for="apellido">Apellido</label>
+    <input type="text" id="input2" class="input-box"required onkeydown="saltar(event, 'input3')">
 
-            <label for="email">Correo Electrónico</label>
-            <input type="text" id="input3" class="input-box" required onkeydown="saltar(event, 'input4')">
+    <label for="email">Correo Electrónico</label>
+    <input type="text" id="input3" class="input-box"required onkeydown="saltar(event, 'input4')">
 
-            <label for="contrasena">Contraseña</label>
-            <input type="password" id="input4" class="input-box" required onkeydown="saltar(event, 'input5')">
+    <label for="contrasena">Contraseña</label>
+    <input type="text" id="input4" class="input-box"required onkeydown="saltar(event, 'input5')">
         </div>
 
         <div class="por-tarjeta">
-            <h2 class="h2tarjeta">Información de Tarjeta de Banco</h2>
-            <label for="numero_tarjeta">Número de Tarjeta</label>
-            <input type="text" id="input5" class="input-box" required onkeydown="saltar(event, 'input6')">
 
-            <label for="nombre_tarjeta">Nombre en la Tarjeta</label>
-            <input type="text" id="input6" class="input-box" required onkeydown="saltar(event, 'input7')">
+    <h2 class="h2tarjeta"> 
+        Información de Tarjeta de Banco
+    </h2>
 
-            <label for="fecha_expiracion">Fecha de Expiración</label>
-            <input type="text" id="input7" class="input-box" required onkeydown="saltar(event, 'input8')">
+    <label for="numero_tarjeta">Número de Tarjeta</label>
+    <input type="text" id="input5" class="input-box"required onkeydown="saltar(event, 'input6')">
 
-            <label for="cvv">CVV</label>
-            <input type="text" id="input8" class="input-box" required onkeydown="saltar(event, 'input9')">
-        </div>
+    <label for="nombre_tarjeta">Nombre en la Tarjeta</label>
+    <input type="text" id="input6" class="input-box"required onkeydown="saltar(event, 'input7')">
+
+    <label for="fecha_expiracion">Fecha de Expiración</label>
+    <input type="text" id="input7" class="input-box"required onkeydown="saltar(event, 'input8')">
+
+    <label for="cvv">CVV</label>
+    <input type="text" id="input8" class="input-box"required onkeydown="saltar(event, 'input9')">
+
+    </div>
 
         <button class="Información" type="submit" value="Enviar">Crear Cuenta</button>   
     </form>
