@@ -95,53 +95,80 @@
 <!-- checkout -->
 
 </section>
-  <section class="check">
-    <h2 class="h2Checkout NPq">Modo de envio</h2>
+<section class="check">
+  <h2 class="h2Checkout NPq">Modo de envio</h2>
 
-    <label>Domicilio</label> 
-    <input class="inputCheckout" type="checkbox">
-    
-    <label>Recogida en tienda</label>
-    <input type="checkbox" id="irAGoogleMaps" onchange="redirigirAGoogleMaps()">
-  </section>  
-  <section class="formulario">
-    <h2 class="h2Checkout NPq">Dirección de entrega</h1>
+  <label>Domicilio</label> 
+  <input class="inputCheckout" type="checkbox">
+  
+  <label>Recogida en tienda</label>
+  <input type="checkbox" id="irAGoogleMaps" onchange="redirigirAGoogleMaps()">
 
-    <label>Nombre y apellidos</label>
-    <input type="text" id="input1" class="input-box" onkeydown="saltar(event, 'input2')">
-    <label>Dirección</label>
-    <input type="text" id="input2" class="input-box" onkeydown="saltar(event, 'input3')">
-    <label>Código postal</label>
-    <input type="text" id="input3" class="input-box" onkeydown="saltar(event, 'input4')">
-    <label>Ciudad</label>
-    <input type="text" id="input4" class="input-box" onkeydown="saltar(event, 'input5')">
-    <label>Provincia</label>
-    <input type="text" id="input5" class="input-box" onkeydown="saltar(event, 'input6')">
-    <label>País</label>
-    <input type="text" id="input6" class="input-box" onkeydown="saltar(event, 'input7')">
-  </section>
+  <label>Envio 24h</label> 
+  <input class="inputCheckout" type="checkbox">
 
-  <section class="pago">
-    <h2 class="h2Checkout NPq">Forma de pago</h1>
-    <label>Tarjeta</label>
-    <input class="inputCheckout" type="checkbox"id ="miCheckbox">
-    
-    <label>Contrareembolso</label>
-    <input class="inputCheckout" type="checkbox">
- </section>
+  <label>Envio 48h/72h</label> 
+  <input class="inputCheckout" type="checkbox">
 
- <section class="pedido">
-    <h2 class="h2Checkout NPq">Resumen del pedido</h1>
-    <label>Productos</label>
-    <label>Subtotal</label>
-    <label>Gastos de envio</label>
-    <label>Total</label>
- </section>
 
- <section class="btn">
-    <a class="aCheckout" href="carrito.html"class="boton">Revisar carrito</a>
-    <a class="aCheckout" href="carrito.html"class="boton">Continuar y pagar</a>  
- </section>
+
+</section>  
+<section class="formulario">
+  <h2 class="h2Checkout NPq">Dirección de entrega</h1>
+
+  <label>Nombre y apellidos</label>
+  <input type="text" id="input1" class="input-box" onkeydown="saltar(event, 'input2')">
+  <label>Dirección</label>
+  <input type="text" id="input2" class="input-box" onkeydown="saltar(event, 'input3')">
+  <label>Código postal</label>
+  <input type="text" id="input3" class="input-box" onkeydown="saltar(event, 'input4')">
+  <label>Ciudad</label>
+  <input type="text" id="input4" class="input-box" onkeydown="saltar(event, 'input5')">
+  <label>Provincia</label>
+  <input type="text" id="input5" class="input-box" onkeydown="saltar(event, 'input6')">
+  <label>País</label>
+  <input type="text" id="input6" class="input-box" onkeydown="saltar(event, 'input7')">
+</section>
+
+<section class="pago">
+  <h2 class="h2Checkout NPq">Forma de pago</h1>
+  <label>Tarjeta</label>
+  <input class="inputCheckout" type="checkbox"id ="miCheckbox">
+  
+  <label>Contrareembolso</label>
+  <input class="inputCheckout" type="checkbox">
+
+  <label>Paypal</label>
+  <input class="inputCheckout" type="checkbox">
+
+  <label>trasferencia</label>
+  <input class="inputCheckout" type="checkbox">
+</section>
+
+<section class="pedido">
+  <h2 class="h2Checkout NPq">Resumen del pedido</h1>
+  <label>Productos</label>
+  <label>Subtotal</label>
+  <label>Gastos de envio</label>
+  <label>Total</label>
+</section>
+
+<section class="btn">
+  <a class="aCheckout" href="carrito.html"class="boton">Revisar carrito</a>
+  <!-- Botón para abrir la ventana modal -->
+  <button class="aCheckout" id="openModalBtn">Continuar</button>
+
+<!-- Ventana modal -->
+<div id="myModal" class="modal">
+<div class="modal-content">
+  <span class="close">&times;</span>
+  <p>¡Compra realizada con éxito! Muchas gracias.</p>
+</div>
+</div>
+
+</section>
+
+
 
 
 
@@ -200,5 +227,6 @@
 </script>
 
 <script src="script.js"></script>
+<script src="pago.js"></script>
 </body>
 </html>
