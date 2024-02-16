@@ -86,87 +86,43 @@
 
 <section class="sectionCrear">
     <h1 class="tittle1">Crear Cuenta</h1>
-<form   action="procesar_registro.php" method="post">
+    <form id="signup-form" action="procesar_registro.php" method="post">
   
         <div class="por-personal">
-    <h2 class="h2personal">
-        Información personal
-    </h2>
-    <label for="nombre">Nombre</label>
-  
-    <input type="text" id="input1" class="input-box"required onkeydown="saltar(event, 'input2')">
+            <h2 class="h2personal">Información personal</h2>
+            <label for="nombre">Nombre</label>
+            <input type="text" id="input1" class="input-box" required onkeydown="saltar(event, 'input2')">
 
-    <label for="apellido">Apellido</label>
-    <input type="text" id="input2" class="input-box"required onkeydown="saltar(event, 'input3')">
+            <label for="apellido">Apellido</label>
+            <input type="text" id="input2" class="input-box" required onkeydown="saltar(event, 'input3')">
 
-    <label for="email">Correo Electrónico</label>
-    <input type="text" id="input3" class="input-box"required onkeydown="saltar(event, 'input4')">
+            <label for="email">Correo Electrónico</label>
+            <input type="text" id="input3" class="input-box" required onkeydown="saltar(event, 'input4')">
 
-    <label for="contrasena">Contraseña</label>
-    <input type="text" id="input4" class="input-box"required onkeydown="saltar(event, 'input5')">
+            <label for="contrasena">Contraseña</label>
+            <input type="password" id="input4" class="input-box" required onkeydown="saltar(event, 'input5')">
         </div>
 
         <div class="por-tarjeta">
+            <h2 class="h2tarjeta">Información de Tarjeta de Banco</h2>
+            <label for="numero_tarjeta">Número de Tarjeta</label>
+            <input type="text" id="input5" class="input-box" required onkeydown="saltar(event, 'input6')">
 
-    <h2 class="h2tarjeta"> 
-        Información de Tarjeta de Banco
-    </h2>
+            <label for="nombre_tarjeta">Nombre en la Tarjeta</label>
+            <input type="text" id="input6" class="input-box" required onkeydown="saltar(event, 'input7')">
 
-    <label for="numero_tarjeta">Número de Tarjeta</label>
-    <input type="text" id="input5" class="input-box"required onkeydown="saltar(event, 'input6')">
+            <label for="fecha_expiracion">Fecha de Expiración</label>
+            <input type="text" id="input7" class="input-box" required onkeydown="saltar(event, 'input8')">
 
-    <label for="nombre_tarjeta">Nombre en la Tarjeta</label>
-    <input type="text" id="input6" class="input-box"required onkeydown="saltar(event, 'input7')">
+            <label for="cvv">CVV</label>
+            <input type="text" id="input8" class="input-box" required onkeydown="saltar(event, 'input9')">
+        </div>
 
-    <label for="fecha_expiracion">Fecha de Expiración</label>
-    <input type="text" id="input7" class="input-box"required onkeydown="saltar(event, 'input8')">
-
-    <label for="cvv">CVV</label>
-    <input type="text" id="input8" class="input-box"required onkeydown="saltar(event, 'input9')">
-
-    </div>
-
-     
-    
-    
-
-</form>
-
-<button class="Información" type="submit">Crear Cuenta</button>
-
+        <button class="Información" type="submit" value="Enviar">Crear Cuenta</button>   
+    </form>
 </section>
 
-
-
-
-      <footer>
-        <div class="siguenos">
-            <h2 class="redesTit">Síguenos</h2>
-            <div class="RRSS">
-                <a href="#"><i class="fa-brands rrss fa-square-facebook"></i></a>
-                <a href="#"><i class="fa-brands rrss fa-square-instagram"></i></a>
-                <a href="#"><i class="fa-brands rrss fa-square-google-plus"></i></a>
-                <a href="#"><i class="fa-brands rrss fa-square-youtube"></i></a>
-    
-    
-            </div>
-        </div>
-        <div class="derechos">
-            <p>© 2024 ParaCoders SL.</p>
-            <p>Todos los derechos reservados.</p>
-            <p>Todos los productos incluyen IVA.</p>
-        </div>
-        <div class="politicas">
-            <a href="#"><p>Política de Privacidad</p></a>
-            <a href="#"><p>Condiciones de Uso</p></a>
-            <a href="#"><p>Condiciones de Contratación</p></a>
-            <a href="#"><p>Política de Cookies</p></a>
-        </div>
-    </footer>
-    
-   <script src="crearcuenta.js"></script>
-   <script src="script.js"></script>
-
+<script src="crearcuenta.js"></script>
 </body>
 </html>
     
