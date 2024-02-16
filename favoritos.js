@@ -47,7 +47,7 @@ const updateFavoriteMenu = () => {
         favoriteCard.appendChild(titleElement);
 
         const priceElement = document.createElement("p");
-        priceElement.textContent = product.title;
+        priceElement.textContent = product.price;
         favoriteCard.appendChild(priceElement);
 
         listFavorites.appendChild(favoriteCard);

@@ -92,37 +92,28 @@
         <a href="#ortopedia" class="N" id="navOrtopedia">Ortopedia</a>
     </div>
 
-<!-- index -->
+    
 
-</section>
-<section class="intro">
+<!-- ESQUEMA -->
 
-    <div class="intro1">
-        <img class="fotointro HB" src="img/homees.png" alt="">
+<div class="container">
+    <div class="row">
+        <!-- Elementos generados a partir del JSON -->
+        <main id="items" class="col-sm-8 row"></main>
+        <!-- Carrito -->
+        <aside class="col-sm-4">
+            <h2>Carrito</h2>
+            <!-- Elementos del carrito -->
+            <ul id="carrito" class="list-group"></ul>
+            <hr>
+            <!-- Precio total -->
+            <p class="text-right">Total: <span id="total"></span>&euro;</p>
+            <button id="boton-vaciar" class="btn btn-danger">Vaciar</button>
+        </aside>
     </div>
-    <div class="introCostado">
-        <div class="fecha HB">
-            <div id="calendario"></div>
-            <div id="reloj"></div>
-            <script src="fecha.js"></script>
-        </div>
-        <div class="descuentoIVA">
-            <img class="fotointroDescuento HB" src="img/descuentoes1.png" alt="">
-        </div>
-        <div class="descuentoEnvios">
-            <img class="fotointroDescuento HB" src="img/descuentoes2.png" alt="">
-        </div>
-    </div>
+</div>
 
-
-</section>
-
-
-
-
-
-
-
+<!-- FOOTER -->
 
 <footer>
     <div class="siguenos">
@@ -148,6 +139,6 @@
         <a href="#"><p>Política de Cookies</p></a>
     </div>
 </footer>
-<!-- <script src="navegacion.js"></script> -->
+<script src="carrito2js.js"></script>
 </body>
 </html>

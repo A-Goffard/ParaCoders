@@ -26,32 +26,46 @@
     
                     <div class="topnav" id="myTopnav">
             
-                        <a href="/index.html" class="active">Home</a>
-                        <a href="#" class="active">Medicamentos</a>
-                        <a href="#" class="active">Cuidado natural</a>
-                        <a href="#" class="active">Herbolario</a>
-                        <a href="#" class="active">Ortopedia</a>
-    
-                
+                        <a href="index.html" class="active">Home</a>
+                        <a href="productos.html#medicamentos" class="active" id="navMedicamentosB">Medicamentos</a>
+                        <a href="#cuidado" class="active" id="navCuidadoB">Cuidado natural</a>
+                        <a href="#herbolario" class="active" id="navHerbolarioB">Herbolario</a>
+                        <a href="#ortopedia" class="active" id="navOrtopediaB">Ortopedia</a>
+                    
                     </div>
-
                </div>
-
-
-
-
 
             </div>
             <div  class="fila2">
                     <div><a href="index.html"><img class="logo2" src="/img/logo.paracoders.webp" alt=""></a></div>
                    <div class="buscar">
                     <i class="fa-solid fa-magnifying-glass navegador"></i>
-                    <input type="text" placeholder=" Buscar...">
+                    <input class="buscador" type="text" placeholder=" Buscar...">
                 </div>
                 <div class="icono">
                     <a href="/acceso.html"><i class="fa-solid fa-user navegador"></i></a>
                     <a href="/carrito.html"><i class="fa-solid fa-cart-shopping navegador"></i></a>
                     <a href="#"><i class="fa-solid fa-language"></i></a>
+
+                    <!-- foton para favoritos -->
+                    
+                    <button id="button-header-favorite">
+                        <i class="fa-regular fa-star"></i>
+                            <span class="counter-favorite">0</span>
+                    </button>
+                </div>
+            </div>
+            <div class="container-list-favorites">
+                <div class="header-favorite">
+                    <h3>Favoritos</h3>
+                    <i class="fa-solid fa-xmark" id="btn-close"></i>
+                </div>
+                <hr />
+                <div class="list-favorites">
+                    <div class="card-favorite">
+                        <p class="title">Marihuana de la buena</p>
+                        <p>20 €</p>
+                    </div>
                 </div>
             </div>
 
@@ -60,74 +74,93 @@
 <section class="categorias">
     <div class="5 cat">
         <i class="fa-solid fa-pills"></i>
-        <a href="#" class="N">Medicamentos</a>
+        <a href="productos.html#medicamentos" class="N" id="navMedicamentos">Medicamentos</a>
     </div>
 
     <div class="6 cat">
         <i class="fa-solid fa-seedling"></i>
-        <a href="#" class="N">Cuidado natural</a>
+        <a href="#cuidado" class="N" id="navCuidado">Cuidado natural</a>
     </div>
                     
     <div class="7 cat">
         <i class="fa-brands fa-pagelines"></i>
-        <a href="#" class="N">Herbolario</a>
+        <a href="#herbolario" class="N" id="navHerbolario">Herbolario</a>
     </div>
        
     <div class="8 cat">
         <i class="fa-solid fa-person-cane"></i>
-        <a href="#" class="N">Ortopedia</a>
+        <a href="#ortopedia" class="N" id="navOrtopedia">Ortopedia</a>
     </div>
 
+<!-- checkout -->
 
-<!--     <i class="fa-solid fa-cannabis"></i> -->
 </section>
-  <section class="check">
-    <h2 class="h2Checkout NPq">Modo de envio</h2>
-
-    <label>Domicilio</label> 
-    <input class="inputCheckout" type="checkbox">
+<section class="check">
+    <h2 class="h2Checkout NPq">Modo de envío</h2>
+  
+    <label><input type="radio" name="modoEnvio" value="Domicilio">Domicilio</label> 
     
-    <label>Recogida en tienda</label>
-    <input type="checkbox" id="irAGoogleMaps" onchange="redirigirAGoogleMaps()">
-  </section>  
-  <section class="formulario">
-    <h2 class="h2Checkout NPq">Dirección de entrega</h1>
-
-    <label>Nombre y apellidos</label>
-    <input type="text" id="input1" class="input-box" onkeydown="saltar(event, 'input2')">
-    <label>Dirección</label>
-    <input type="text" id="input2" class="input-box" onkeydown="saltar(event, 'input3')">
-    <label>Código postal</label>
-    <input type="text" id="input3" class="input-box" onkeydown="saltar(event, 'input4')">
-    <label>Ciudad</label>
-    <input type="text" id="input4" class="input-box" onkeydown="saltar(event, 'input5')">
-    <label>Provincia</label>
-    <input type="text" id="input5" class="input-box" onkeydown="saltar(event, 'input6')">
-    <label>País</label>
-    <input type="text" id="input6" class="input-box" onkeydown="saltar(event, 'input7')">
+    <label><input type="radio" name="modoEnvio" value="Recogida en tienda" id="irAGoogleMaps" onchange="redirigirAGoogleMaps()">Recogida en tienda</label>
+  
+    <label><input type="radio" name="modoEnvio" value="Envio 24h">Envío 24h</label>
+  
+    <label><input type="radio" name="modoEnvio" value="Envio 48h/72h">Envío 48h/72h</label>
   </section>
+  
+</section>  
+<section class="formulario">
+  <h2 class="h2Checkout NPq">Dirección de entrega</h1>
 
-  <section class="pago">
-    <h2 class="h2Checkout NPq">Forma de pago</h1>
-    <label>Tarjeta</label>
-    <input class="inputCheckout" type="checkbox"id ="miCheckbox">
+  <label>Nombre y apellidos</label>
+  <input type="text" id="input1" class="input-box" onkeydown="saltar(event, 'input2')">
+  <label>Dirección</label>
+  <input type="text" id="input2" class="input-box" onkeydown="saltar(event, 'input3')">
+  <label>Código postal</label>
+  <input type="text" id="input3" class="input-box" onkeydown="saltar(event, 'input4')">
+  <label>Ciudad</label>
+  <input type="text" id="input4" class="input-box" onkeydown="saltar(event, 'input5')">
+  <label>Provincia</label>
+  <input type="text" id="input5" class="input-box" onkeydown="saltar(event, 'input6')">
+  <label>País</label>
+  <input type="text" id="input6" class="input-box" onkeydown="saltar(event, 'input7')">
+</section>
+
+<section class="pago">
+    <h2 class="h2Checkout NPq">Forma de pago</h2>
+  
+    <label><input type="radio" name="formaPago" value="Tarjeta">Tarjeta</label>
     
-    <label>Contrareembolso</label>
-    <input class="inputCheckout" type="checkbox">
- </section>
+    <label><input type="radio" name="formaPago" value="Contrareembolso">Contrareembolso</label>
+  
+    <label><input type="radio" name="formaPago" value="Paypal">Paypal</label>
+  
+    <label><input type="radio" name="formaPago" value="Transferencia">Transferencia</label>
+  </section>
+  
+<section class="pedido">
+  <h2 class="h2Checkout NPq">Resumen del pedido</h1>
+  <label>Productos</label>
+  <label>Subtotal</label>
+  <label>Gastos de envio</label>
+  <label>Total</label>
+</section>
 
- <section class="pedido">
-    <h2 class="h2Checkout NPq">Resumen del pedido</h1>
-    <label>Productos</label>
-    <label>Subtotal</label>
-    <label>Gastos de envio</label>
-    <label>Total</label>
- </section>
+<section class="btn">
+  <a class="aCheckout" href="carrito.html"class="boton">Revisar carrito</a>
+  <!-- Botón para abrir la ventana modal -->
+  <button class="aCheckout" id="openModalBtn">Continuar</button>
 
- <section class="btn">
-    <a class="aCheckout" href="carrito.html"class="boton">Revisar carrito</a>
-    <a class="aCheckout" href="carrito.html"class="boton">Continuar y pagar</a>  
- </section>
+<!-- Ventana modal -->
+<div id="myModal" class="modal">
+<div class="modal-content">
+  <span class="close">&times;</span>
+  <p>¡Compra realizada con éxito! Muchas gracias.</p>
+</div>
+</div>
+
+</section>
+
+
 
 
 
@@ -186,5 +219,6 @@
 </script>
 
 <script src="script.js"></script>
+<script src="pago.js"></script>
 </body>
 </html>

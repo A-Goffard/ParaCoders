@@ -936,10 +936,18 @@ label{
 #button-header-favorite {
     background-color: transparent;
     border: none; 
+    cursor: pointer;
 }
 
 .puntuacion {
     color: var(--verdemedio);
+}
+
+.container-products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 /* ********************************** */
@@ -949,12 +957,13 @@ label{
 	position: fixed;
 	top: 0;
 	right: 0;
-	transform: translateX(25rem);
-	background-color: #555;
+	transform: translateX(50rem);
+	background-color: var(--verdeoscurillo);
 	opacity: 0;
-	width: 25rem;
+	width: 50rem;
 	height: 100vh;
 	transition: all 0.5s linear;
+    z-index: 200;
 }
 
 .container-list-favorites.show {
@@ -967,6 +976,8 @@ label{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+    color: var(--naranja);
+    font-size: larger;
 }
 
 .header-favorite i {
@@ -974,7 +985,7 @@ label{
 }
 
 .list-favorites {
-	padding: 3.5rem 2rem;
+	padding: 3rem 2rem;
 	display: flex;
 	flex-direction: column;
 	gap: 2.5rem;
@@ -982,14 +993,14 @@ label{
 
 .list-favorites .card-favorite {
 	width: 100%;
-	background-color: #fff;
-	box-shadow: 0px 0px 2rem #00000065;
-	padding: 2rem;
+	background-color: var(--verdeclaro);
+	box-shadow: 0px 0px 2rem var(--verdemedio);
+	padding: 1rem;
 	border-radius: 1rem;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	gap: 3rem;
+	gap: 2rem;
 }
 
 .card-favorite .title {
@@ -1227,6 +1238,49 @@ footer {
 /* .............................................TINA .............................................*/
 /* ..................................................................................................... */
 
+.modal{
+    display: none; /* Por defecto, la ventana modal está oculta */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+.aCheckout{
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    background-color: var(--verdemostaza);
+    border-radius: 0.8rem;
+    color: var(--black);
+    width: 15rem;
+    height: 2.5rem;
+    margin: 1rem;
+}
+
+
+
+
 
 /* ..................................................................................................... */
 /* .............................................AINTZANE .............................................*/
@@ -1263,9 +1317,9 @@ footer {
 
 
    /*----------------------------------------------------------------------------------------------*/
-.por-personal{
+/* .por-personal{
 
-}
+} */
 
 
 
@@ -1342,7 +1396,18 @@ footer {
 /* .............................................AINTZANE .............................................*/
 /* ..................................................................................................... */
 
-
+.container-list-favorites {
+	position: fixed;
+	top: 0;
+	right: 0;
+	transform: translateX(100%);
+	background-color: var(--verdeoscurillo);
+	opacity: 0;
+	width: 100%;
+	height: 100vh;
+	transition: all 0.5s linear;
+    z-index: 200;
+}
 
 
 }

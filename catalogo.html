@@ -9,48 +9,6 @@
         @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Kdam+Thmor+Pro&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400&family=Roboto:wght@300;400;500;900&display=swap');
       </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        .imagenCategorias{
-
-         width: 90%;
-        margin: 1rem;
-        border-radius: 0.8rem;
-        }
-
-        .contenedorfichas{
-
-        display: flex;
-        flex-direction: column;
-        width: 20rem;
-        height: 25rem;
-        margin: 2rem;
-        justify-content: center;
-        align-items: center;
-        box-shadow: 0rem 0rem 1rem 0.35rem var(--naranja);
-        border-radius: 0.8rem;
-        position: relative;
-        transition: 300ms ease;
-        }
-
-        .parrafoPrecio{
-            font-size: x-large;
-            margin: 1rem;
-        }
-
-        .butonAgregar {
-        
-        background-color: var(--naranja);
-        border-radius: 0.8rem;
-        color: var(--black);
-        width: 40%;
-        height: 2.5rem;
-        margin: 1rem;
-        }
-
-
-
-        
-    </style>
 </head>
 <body>
 
@@ -68,14 +26,13 @@
     
                     <div class="topnav" id="myTopnav">
             
-                        <a href="/index.html" class="active">Home</a>
-                        <a href="#" class="active">Medicamentos</a>
-                        <a href="#" class="active">Cuidado natural</a>
-                        <a href="#" class="active">Herbolario</a>
-                        <a href="#" class="active">Ortopedia</a>
-                
+                        <a href="index.html" class="active">Home</a>
+                        <a href="productos.html#medicamentos" class="active" id="navMedicamentosB">Medicamentos</a>
+                        <a href="#cuidado" class="active" id="navCuidadoB">Cuidado natural</a>
+                        <a href="#herbolario" class="active" id="navHerbolarioB">Herbolario</a>
+                        <a href="#ortopedia" class="active" id="navOrtopediaB">Ortopedia</a>
+                    
                     </div>
-
                </div>
 
             </div>
@@ -83,12 +40,32 @@
                     <div><a href="index.html"><img class="logo2" src="/img/logo.paracoders.webp" alt=""></a></div>
                    <div class="buscar">
                     <i class="fa-solid fa-magnifying-glass navegador"></i>
-                    <input type="text" placeholder=" Buscar...">
+                    <input class="buscador" type="text" placeholder=" Buscar...">
                 </div>
                 <div class="icono">
                     <a href="/acceso.html"><i class="fa-solid fa-user navegador"></i></a>
                     <a href="/carrito.html"><i class="fa-solid fa-cart-shopping navegador"></i></a>
                     <a href="#"><i class="fa-solid fa-language"></i></a>
+
+                    <!-- foton para favoritos -->
+                    
+                    <button id="button-header-favorite">
+                        <i class="fa-regular fa-star"></i>
+                            <span class="counter-favorite">0</span>
+                    </button>
+                </div>
+            </div>
+            <div class="container-list-favorites">
+                <div class="header-favorite">
+                    <h3>Favoritos</h3>
+                    <i class="fa-solid fa-xmark" id="btn-close"></i>
+                </div>
+                <hr />
+                <div class="list-favorites">
+                    <div class="card-favorite">
+                        <p class="title">Marihuana de la buena</p>
+                        <p>20 €</p>
+                    </div>
                 </div>
             </div>
 
@@ -97,26 +74,25 @@
 <section class="categorias">
     <div class="5 cat">
         <i class="fa-solid fa-pills"></i>
-        <a href="#" class="N">Medicamentos</a>
+        <a href="productos.html#medicamentos" class="N" id="navMedicamentos">Medicamentos</a>
     </div>
 
     <div class="6 cat">
         <i class="fa-solid fa-seedling"></i>
-        <a href="#" class="N">Cuidado natural</a>
+        <a href="#cuidado" class="N" id="navCuidado">Cuidado natural</a>
     </div>
                     
     <div class="7 cat">
         <i class="fa-brands fa-pagelines"></i>
-        <a href="#" class="N">Herbolario</a>
+        <a href="#herbolario" class="N" id="navHerbolario">Herbolario</a>
     </div>
        
     <div class="8 cat">
         <i class="fa-solid fa-person-cane"></i>
-        <a href="#" class="N">Ortopedia</a>
+        <a href="#ortopedia" class="N" id="navOrtopedia">Ortopedia</a>
     </div>
 
-
-<!--     <i class="fa-solid fa-cannabis"></i> -->
+    
 </section>
 
 <section class="container-products">
