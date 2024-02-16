@@ -100,7 +100,7 @@ const btnClose = document.querySelector("#btn-close");
 const buttonHeaderFavorite = document.querySelector("#button-header-favorite");
 
 buttonHeaderFavorite.addEventListener("click", (e) => {
-    containerListFavorites.classList.remove("show"); 
+    containerListFavorites.classList.toggle("show"); 
 })
 
 btnClose.addEventListener("click", e => {

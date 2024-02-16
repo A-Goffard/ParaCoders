@@ -93,16 +93,17 @@
         Información personal
     </h2>
     <label for="nombre">Nombre</label>
-    <input type="text" id="nombre" name="nombre" required>
+  
+    <input type="text" id="input1" class="input-box"required onkeydown="saltar(event, 'input2')">
 
     <label for="apellido">Apellido</label>
-    <input type="text" id="apellido" name="apellido" required>
+    <input type="text" id="input2" class="input-box"required onkeydown="saltar(event, 'input3')">
 
     <label for="email">Correo Electrónico</label>
-    <input type="email" id="email" name="email" required>
+    <input type="text" id="input3" class="input-box"required onkeydown="saltar(event, 'input4')">
 
     <label for="contrasena">Contraseña</label>
-    <input type="password" id="contrasena" name="contrasena" required>
+    <input type="text" id="input4" class="input-box"required onkeydown="saltar(event, 'input5')">
         </div>
 
         <div class="por-tarjeta">
@@ -112,16 +113,16 @@
     </h2>
 
     <label for="numero_tarjeta">Número de Tarjeta</label>
-    <input type="text" id="numero_tarjeta" name="numero_tarjeta" required>
+    <input type="text" id="input5" class="input-box"required onkeydown="saltar(event, 'input6')">
 
     <label for="nombre_tarjeta">Nombre en la Tarjeta</label>
-    <input type="text" id="nombre_tarjeta" name="nombre_tarjeta" required>
+    <input type="text" id="input6" class="input-box"required onkeydown="saltar(event, 'input7')">
 
     <label for="fecha_expiracion">Fecha de Expiración</label>
-    <input type="text" id="fecha_expiracion" name="fecha_expiracion" placeholder="MM/AA" required>
+    <input type="text" id="input7" class="input-box"required onkeydown="saltar(event, 'input8')">
 
     <label for="cvv">CVV</label>
-    <input type="text" id="cvv" name="cvv" required>
+    <input type="text" id="input8" class="input-box"required onkeydown="saltar(event, 'input9')">
 
     </div>
 
@@ -164,6 +165,8 @@
     </footer>
     
    <script src="crearcuenta.js"></script>
+   <script src="script.js"></script>
+
 </body>
 </html>
     
