@@ -481,6 +481,10 @@ margin-bottom: 1rem;
     width: 2rem;
     height: 2rem;
 }
+.boton_check_all{
+    width: 2rem;
+    height: 2rem;
+}
 
 .limpiar{
     grid-column: 2/5;
