@@ -2,9 +2,9 @@
 const baseDeDatos = [
     {
         id: 1,
-        nombre: 'Patata',
-        precio: 1,
-        imagen: 'patata.jpg'
+        nombre: 'Aceite de cannabis',
+        precio: 1.61
+        imagen: 'aceite-cannabis.jpg.webp'
     },
     {
         id: 2,
