@@ -9,7 +9,7 @@
         @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Kdam+Thmor+Pro&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400&family=Roboto:wght@300;400;500;900&display=swap');
       </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <style>
         .adminProducto{
             display: flex;
@@ -26,9 +26,9 @@
             width: 60%;
             margin-top: 130px;
         }
-        .adminCatalogo{
+        /* .adminCatalogo{
             background-color: yellowgreen;
-        }
+        } */
 
         button{
             border: none;
@@ -41,6 +41,16 @@
             height: 40px;
             border-radius: 50%;
         }
+
+    
+        .material-symbols-outlined {
+        font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+        }
+
 
         
     </style>
@@ -132,10 +142,12 @@
 
 <section class="container-products">
 
-    <div class="marginupdown"><h1>Productos</h1></div>
-    <div class="marginupdown"><p>Cuidamos tu salud de forma natural</p></div>
+    <div class="marginupdown">
+        <p style="display: block;">Cuidamos tu salud de forma natural</p>
+        <h1 style="display: block;">Productos</h1>
+    </div>
 
-    <div class="card-product">
+    <!-- <div class="card-product">
         <div class="productosGeneral content-card-product" data-product-id="1">
             <button class="favorite">
                 <i class="fa-regular fa-star" id="favorite-regular" class="estrellaBacia"></i>
@@ -158,7 +170,7 @@
 
             <button class="NPq" id="admin-btn-agregar-catalogo">Añadir</button>
         </div>
-    </div>
+    </div> -->
 
 </section>
 
@@ -169,7 +181,7 @@
             <!-- Lista de Productos -->
             <div class="lista-productos">
                 <!-- Header Lista Productos -->
-                <div style="width: 100%;text-align: center;background-color:rgb(255, 255, 255); color: orange;">
+                <div  style="width: 100%;text-align: center;background-color:#8E9E31; ">
                     <h1 style="display: inline;">Mis Productos</h1>
                     <button id="add-btn" class="circular" style="float: right;background-color: white;margin-right: 10px;">+</button>
                 </div>
@@ -178,7 +190,7 @@
                 <!-- Productos -->
                 <div id="adminProductos" style="padding: 20px;">
                     <!-- Producto -->
-                    <div class="adminProducto">
+                    <div class="adminProducto" >
                         <!-- Producto Info -->
                         <div style="width: 70%">
                             <h2>Aceite</h2>
@@ -189,11 +201,19 @@
                         <!--// Producto Info //-->
                         <!-- Producto acciones -->
                         <div style="width: 30%;display: flex;justify-content: space-between;align-items: center;">
-                            <button id="delete-btn" class="circular" style="background-color: red;">D</button>
+                            <button id="delete-btn" class="circular " ><span class="material-symbols-outlined">
+                                delete
+                                </span></button>
+                            
+                            <!-- <button class="circular" style="background-color: rgb(106, 255, 0);"><span class="material-symbols-outlined">
+                                delete
+                                </span></button> -->
 
-                            <button class="circular" style="background-color: rgb(106, 255, 0);">C</button>
-
-                            <button class="circular" style="background-color: rgb(60, 128, 232);">E</button>
+                            <button class="circular" >
+                                <span class="material-symbols-outlined">
+                                    update
+                                </span>
+                            </button>
 
                         </div>
                         <!--// Producto acciones //-->
@@ -327,7 +347,7 @@
 
 <script>
 
-let productosCatalogo=[
+    let productosCatalogo=[
     //Medicamentos
     {
         id:"med-01",
@@ -465,6 +485,78 @@ let productosCatalogo=[
 
     }
 ];
+  // Read: Traer Lista de productos del JSON y mostrar en el HTML
+  document.addEventListener("DOMContentLoaded", function() {
+ 
+ function fillProductosOnThePage() {
+    const adminProductosContainer = document.getElementById("adminProductos");
+    adminProductosContainer.innerHTML = "";
+
+    let index=0;
+    for (const product of productosCatalogo) {
+        const nombreProd = product.nombre;
+        const precioProd = product.precio;
+
+        const adminProductoHTML = `
+            <div class="adminProducto">
+                <div style="width: 70%">
+                    <h2>${nombreProd}</h2>
+                    <span>${precioProd}</span>
+                </div>
+                <div style="width: 30%;display: flex;justify-content: space-between;align-items: center;">
+                    <button onclick="eliminarProducto(${index})" class="circular" style="background-color: red;">D</button>
+                    <button class="circular" style="background-color: rgb(60, 128, 232);">E</button>
+                </div>
+            </div>
+        `;
+        adminProductosContainer.innerHTML += adminProductoHTML;
+
+        index++
+    }
+}
+
+// Llama a la función para llenar los productos una vez que el DOM esté cargado
+fillProductosOnThePage();
+
+// Create: Crear Productos Nuevos
+ document.getElementById("add-btn").addEventListener("click", () => {
+    let nombreProducto = prompt("Nombre del Producto");
+    let precioProducto = prompt("Precio del Producto");
+    // Add logic to create new products
+let prodObj=
+        {
+            "id":"med-05",
+            "nombre":nombreProducto,
+            "imagen":"img/Categorias/Medicamentos/Medicamentos_Epidyolex.png",
+            "categoria":"medicamentos",
+            "precio":precioProducto
+        }      
+    productosCatalogo.push(prodObj);
+    storeCatalogo();
+    fillProductosOnThePage();
+});
+
+}
+
+);
+
+function getProductoFromStorage(){
+    let retrievedProductos=JSON.parse(localStorage.getItem("productosCatalogo"));
+
+    /* if(retrievedProductos==null){
+        productosCatalogo=[];
+    }else {
+        productosCatalogo=retrievedProductos;
+    } */
+
+    productosCatalogo=retrievedProductos ?? [];
+
+    
+
+}
+
+getProductoFromStorage();
+
     function fillProductosOnThePage() {
             const adminProductosContainer = document.getElementById("adminProductos");
             adminProductosContainer.innerHTML = "";
@@ -481,8 +573,14 @@ let productosCatalogo=[
                             <span>${precioProd}</span>
                         </div>
                         <div style="width: 30%;display: flex;justify-content: space-between;align-items: center;">
-                            <button onclick="eliminarProducto(${index})" class="circular" style="background-color: red;">D</button>
-                            <button class="circular" style="background-color: rgb(60, 128, 232);">E</button>
+                            <button onclick="eliminarProducto(${index})" class="circular">
+                                <span class="material-symbols-outlined">
+                                         delete
+                                </span>
+                            </button>
+                            <button onclick="modificarProducto(${index})" class="circular"><span class="material-symbols-outlined">
+                                    update
+                                </span></button>
                         </div>
                     </div>
                 `;
@@ -493,83 +591,36 @@ let productosCatalogo=[
         }
 
         // Llama a la función para llenar los productos una vez que el DOM esté cargado
-        fillProductosOnThePage();
+    fillProductosOnThePage();
+
     function eliminarProducto(index){
-                      productosCatalogo.splice(index,1);
-                      fillProductosOnThePage();
-                }
-    
+        let isConfirmed=confirm("Estas Seguro de eliminar : "+productosCatalogo.nombre);
 
-    document.addEventListener("DOMContentLoaded", function() {
-        //Catalogo
-       
-
-
-        // Read: Traer Lista de productos del JSON y mostrar en el HTML
-        function fillProductosOnThePage() {
-            const adminProductosContainer = document.getElementById("adminProductos");
-            adminProductosContainer.innerHTML = "";
-
-            let index=0;
-            for (const product of productosCatalogo) {
-                const nombreProd = product.nombre;
-                const precioProd = product.precio;
-
-                const adminProductoHTML = `
-                    <div class="adminProducto">
-                        <div style="width: 70%">
-                            <h2>${nombreProd}</h2>
-                            <span>${precioProd}</span>
-                        </div>
-                        <div style="width: 30%;display: flex;justify-content: space-between;align-items: center;">
-                            <button onclick="eliminarProducto(${index})" class="circular" style="background-color: red;">D</button>
-                            <button class="circular" style="background-color: rgb(60, 128, 232);">E</button>
-                        </div>
-                    </div>
-                `;
-                adminProductosContainer.innerHTML += adminProductoHTML;
-
-                index++
-            }
+        if(isConfirmed){
+            productosCatalogo.splice(index,1);
+            storeCatalogo();
+            fillProductosOnThePage();
         }
-
-        // Llama a la función para llenar los productos una vez que el DOM esté cargado
-        fillProductosOnThePage();
-
-        // Create: Crear Productos Nuevos
-        
-            document.getElementById("add-btn").addEventListener("click", () => {
-            let nombreProducto = prompt("Nombre del Producto");
-            let precioProducto = prompt("Precio del Producto");
-            // Add logic to create new products
-            let prodObj=
-                {
-                    "id":"med-05",
-                    "nombre":nombreProducto,
-                    "imagen":"img/Categorias/Medicamentos/Medicamentos_Epidyolex.png",
-                    "categoria":"medicamentos",
-                    "precio":precioProducto
-                }
-                
-                productosCatalogo.push(prodObj);
-                fillProductosOnThePage();
-
-                
-           
-        });
-        
-        
-        
-
-        
-
-        
+            
     }
 
+    function modificarProducto(index){
+        let producto=productosCatalogo[index];
+        let nombreProductoNuevo=prompt("Nombre Nuevo",producto.nombre);    
+        producto.nombre=nombreProductoNuevo;
+        storeCatalogo();
+        fillProductosOnThePage();
+    }
+        
    
+    
+    //========= Storage Functions ========
 
-    );
-
+    function storeCatalogo(){
+        let catalogoString=JSON.stringify(productosCatalogo);
+             console.log(catalogoString);
+        localStorage.setItem("productosCatalogo",catalogoString);
+    }
     
 </script>
 </body>
