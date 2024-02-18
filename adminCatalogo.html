@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ParaCoders</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Kdam+Thmor+Pro&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400&family=Roboto:wght@300;400;500;900&display=swap');
+      </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        .adminProducto{
+            display: flex;
+            padding: 4px;
+            border-bottom: solid black;
+            transition: box-shadow 0.2s;
+
+        }
+        .adminProducto:hover{
+            box-shadow: 0px 3px 15px rgba(97, 97, 97, 0.843);
+        }
+        .lista-productos{
+            background: rgb(239, 239, 239);
+            width: 60%;
+            margin-top: 130px;
+        }
+        .adminCatalogo{
+            background-color: yellowgreen;
+        }
+
+        button{
+            border: none;
+            font-size: 20px;
+            box-shadow: 0px 3px 5px rgba(168, 168, 168, 0.3);
+        }
+
+        button.circular{
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+
+        
+    </style>
+</head>
+<body>
+
+    <header id="home" class="home">
+
+            <div class="fila1">
+               <div><a href="index.html"><img class="logo" src="/img/logo.paracoders.webp" alt=""></a></div>
+               <h1 class="title">ParaCoders</h1>
+               
+
+                <div class="hamburguesa">
+                    <label id="label_boton" for="boton_ham"> <i id="i" class="fa fa-bars ham"></i></label> 
+                    <input id="boton_ham" type="checkbox" value="si">
+                    
+    
+                    <div class="topnav" id="myTopnav">
+            
+                        <a href="index.html" class="active">Home</a>
+                        <a href="productos.html#medicamentos" class="active" id="navMedicamentosB">Medicamentos</a>
+                        <a href="#cuidado" class="active" id="navCuidadoB">Cuidado natural</a>
+                        <a href="#herbolario" class="active" id="navHerbolarioB">Herbolario</a>
+                        <a href="#ortopedia" class="active" id="navOrtopediaB">Ortopedia</a>
+                    
+                    </div>
+               </div>
+
+            </div>
+            <div  class="fila2">
+                    <div><a href="index.html"><img class="logo2" src="/img/logo.paracoders.webp" alt=""></a></div>
+                   <div class="buscar">
+                    <i class="fa-solid fa-magnifying-glass navegador"></i>
+                    <input class="buscador" type="text" placeholder=" Buscar...">
+                </div>
+                <div class="icono">
+                    <a href="/acceso.html"><i class="fa-solid fa-user navegador"></i></a>
+                    <a href="/carrito.html"><i class="fa-solid fa-cart-shopping navegador"></i></a>
+                    <a href="#"><i class="fa-solid fa-language"></i></a>
+
+                    <!-- foton para favoritos -->
+                    
+                    <button id="button-header-favorite">
+                        <i class="fa-regular fa-star"></i>
+                            <span class="counter-favorite">0</span>
+                    </button>
+                </div>
+            </div>
+            <div class="container-list-favorites">
+                <div class="header-favorite">
+                    <h3>Favoritos</h3>
+                    <i class="fa-solid fa-xmark" id="btn-close"></i>
+                </div>
+                <hr />
+                <div class="list-favorites">
+                    <div class="card-favorite">
+                        <p class="title">Marihuana de la buena</p>
+                        <p>20 €</p>
+                    </div>
+                </div>
+            </div>
+
+    </header>
+
+<section class="categorias">
+    <div class="5 cat">
+        <i class="fa-solid fa-pills"></i>
+        <a href="productos.html#medicamentos" class="N" id="navMedicamentos">Medicamentos</a>
+    </div>
+
+    <div class="6 cat">
+        <i class="fa-solid fa-seedling"></i>
+        <a href="#cuidado" class="N" id="navCuidado">Cuidado natural</a>
+    </div>
+                    
+    <div class="7 cat">
+        <i class="fa-brands fa-pagelines"></i>
+        <a href="#herbolario" class="N" id="navHerbolario">Herbolario</a>
+    </div>
+       
+    <div class="8 cat">
+        <i class="fa-solid fa-person-cane"></i>
+        <a href="#ortopedia" class="N" id="navOrtopedia">Ortopedia</a>
+    </div>
+
+    
+</section>
+
+<section class="container-products">
+
+    <div class="marginupdown"><h1>Productos</h1></div>
+    <div class="marginupdown"><p>Cuidamos tu salud de forma natural</p></div>
+
+    <div class="card-product">
+        <div class="productosGeneral content-card-product" data-product-id="1">
+            <button class="favorite">
+                <i class="fa-regular fa-star" id="favorite-regular" class="estrellaBacia"></i>
+                <i class="fa-solid fa-star" id="added-favorite" class="estrellaLLena"></i>
+            </button>
+
+            <img class="fotoCategoria" src="img/aceite-cannabis.jpg.webp" alt="">
+
+            <h3>Aceite de cannabis</h3>
+
+            <span class="precio">15,61 €</span>
+
+            <div class="puntuacion">
+                <i id="cannabito" class="fa-solid fa-cannabis"></i>
+                <i id="cannabito" class="fa-solid fa-cannabis"></i>
+                <i id="cannabito" class="fa-solid fa-cannabis"></i>
+                <i id="cannabito" class="fa-solid fa-cannabis"></i>
+                <i id="cannabito" class="fa-solid fa-cannabis"></i>
+            </div>
+
+            <button class="NPq" id="admin-btn-agregar-catalogo">Añadir</button>
+        </div>
+    </div>
+
+</section>
+
+<section class="adminCatalogo">
+    <div style="direction: rtl;">
+        <!-- Center DIV -->
+        <div style="display: flex;justify-content: center;align-items: center;">
+            <!-- Lista de Productos -->
+            <div class="lista-productos">
+                <!-- Header Lista Productos -->
+                <div style="width: 100%;text-align: center;background-color:rgb(255, 255, 255); color: orange;">
+                    <h1 style="display: inline;">Mis Productos</h1>
+                    <button id="add-btn" class="circular" style="float: right;background-color: white;margin-right: 10px;">+</button>
+                </div>
+                <!--// Header Lista Productos //-->
+
+                <!-- Productos -->
+                <div id="adminProductos" style="padding: 20px;">
+                    <!-- Producto -->
+                    <div class="adminProducto">
+                        <!-- Producto Info -->
+                        <div style="width: 70%">
+                            <h2>Aceite</h2>
+
+                            <span>15,91</span>
+
+                        </div>
+                        <!--// Producto Info //-->
+                        <!-- Producto acciones -->
+                        <div style="width: 30%;display: flex;justify-content: space-between;align-items: center;">
+                            <button id="delete-btn" class="circular" style="background-color: red;">D</button>
+
+                            <button class="circular" style="background-color: rgb(106, 255, 0);">C</button>
+
+                            <button class="circular" style="background-color: rgb(60, 128, 232);">E</button>
+
+                        </div>
+                        <!--// Producto acciones //-->
+                    </div>
+
+                    <!--// Producto //-->
+                </div>
+                <!--// Productos //-->
+            </div>
+
+            <!--// Lista de Productos //-->
+        </div>
+        <!--// Center DIV //-->
+    </div>
+
+</section>
+
+
+
+    <footer>
+        <div class="siguenos">
+            <h2 class="redesTit">Síguenos</h2>
+            <div class="RRSS">
+                <a href="#"><i class="fa-brands rrss fa-square-facebook"></i></a>
+                <a href="#"><i class="fa-brands rrss fa-square-instagram"></i></a>
+                <a href="#"><i class="fa-brands rrss fa-square-google-plus"></i></a>
+                <a href="#"><i class="fa-brands rrss fa-square-youtube"></i></a>
+    
+    
+            </div>
+        </div>
+        <div class="derechos">
+            <p>© 2024 ParaCoders SL.</p>
+            <p>Todos los derechos reservados.</p>
+            <p>Todos los productos incluyen IVA.</p>
+        </div>
+        <div class="politicas">
+            <a href="#"><p>Política de Privacidad</p></a>
+            <a href="#"><p>Condiciones de Uso</p></a>
+            <a href="#"><p>Condiciones de Contratación</p></a>
+            <a href="#"><p>Política de Cookies</p></a>
+        </div>
+    </footer>
+
+<!-- <script>
+
+
+
+    const imagen_prod1="img/aceite-cannabis.jpg.webp";
+    const imagen_prod2="img/bastonBambu.jpg";
+    const productos=[
+        {id:1 ,nombre:"Balsamo", precio:"15 €",imagen:imagen_prod1},
+        {id:2 ,nombre:"baston", precio:"25 €",imagen:imagen_prod2}
+    ];
+
+    const contenedor=document.querySelector(".main");
+
+    productos.forEach(function (item){
+        console.log(item.nombre);
+        console.log(item.precio);
+
+        let caja=document.createElement("div");
+        let titulo=document.createElement("h3");
+        let valor=document.createElement("p");
+        let ima=document.createElement("img");
+        let btn=document.createElement("button");
+
+        let iconoMaria=document.getElementById("cannabito");
+        let iMaria=iconoMaria.cloneNode(true);
+
+
+
+        let textoTitulo=document.createTextNode(item.nombre);
+        let textoValor=document.createTextNode(item.precio);
+        ima.src=item.imagen;/* la imagen no funciona igual para llamarla */
+        /* iconoMaria=node.cloneNode("cannabito"); */
+
+
+
+        
+
+        titulo.appendChild(textoTitulo);
+        valor.appendChild(textoValor);
+        ima.classList.add("imagenCategorias");
+        caja.classList.add("contenedorfichas");
+        valor.classList.add("parrafoPrecio");
+
+
+       /*  caja.classList.add("content-card-product"); */
+
+        caja.appendChild(ima);
+        caja.appendChild(titulo);
+        caja.appendChild(valor);
+
+       /*  for(let i=0;i<5; i++){
+
+            iMaria=document.createElement("i");
+
+            iMaria.classList.add("fa-cannabis");
+
+            caja.appendChild(iMaria);
+        } */
+    
+       
+
+        
+
+
+         // Crear un botón
+        let boton = document.createElement("button");
+        boton.textContent = "Añadir";
+        boton.classList.add("butonAgregar"); // Agregar clases de CSS si es necesario
+
+        caja.appendChild(boton)
+
+        // Agregar un event listener al botón si deseas ejecutar alguna acción al hacer clic
+        boton.addEventListener("click", function() {
+            // Aquí puedes agregar la lógica para agregar el producto al carrito
+            console.log("Producto agregado al carrito:", item.nombre);
+        });
+
+
+        contenedor.appendChild(caja);
+
+    
+    });
+
+
+</script> -->
+
+
+<script>
+
+let productosCatalogo=[
+    //Medicamentos
+    {
+        id:"med-01",
+        nombre:"Epidyolex",
+        imagen:"img/Categorias/Medicamentos/Medicamentos_Epidyolex.png",
+        categoria:"medicamentos",
+        precio:10
+        
+    },
+    {
+        id:"med-02",
+        nombre:"Marinolpng",
+        imagen:"img/Categorias/Medicamentos/Medicamentos_Marinolpng",
+        categoria:"medicamentos",
+        precio:12
+
+    },
+    {
+        id:"med-03",
+        nombre:"Sativex",
+        imagen:"img/Categorias/Medicamentos/Medicamentos_Sativex.png",
+        categoria:"medicamentos",
+        precio:14
+
+    },
+    {
+        id:"med-04",
+        nombre:"Syndros",
+        imagen:"img/Categorias/Medicamentos/Medicamentos_Syndros.png",
+        categoria:"medicamentos",
+        precio:16
+
+    },
+
+
+    //Cuidado Natural
+    {
+        id:"nat-01",
+        nombre:"Aceite de Cañamo.",
+        imagen:"img/Categorias/CuidadoNatural/CuidadoNatural_AceiteCanamo.png",
+        categoria:"natural",
+        precio:21
+
+    },
+    {
+        id:"nat-02",
+        nombre:"Kernnabis",
+        imagen:"img/Categorias/CuidadoNatural/CuidadoNatural_Kernnabis.png",
+        categoria:"natural",
+        precio:23
+
+    },
+    {
+        id:"nat-03",
+        nombre:"Pentalium",
+        imagen:"img/Categorias/CuidadoNatural/CuidadoNatural_Pentalium.png",
+        categoria:"natural",
+        precio:25
+
+    },
+    {
+        id:"nat-04",
+        nombre:"Syndros",
+        imagen:"img/Categorias/Medicamentos/Medicamentos_Syndros.png",
+        categoria:"natural",
+        precio:27
+
+    },
+
+     //Herbolario
+     {
+        id:"herb-01",
+        nombre:"AceiteCBD",
+        imagen:"img/Categorias/Herbolario/Herbolario_AceiteCBD.png",
+        categoria:"herbolario",
+        precio:31
+
+    },
+    {
+        id:"herb-02",
+        nombre:"Cannabidiol",
+        imagen:"img/Categorias/Herbolario/Herbolario_Cannabidiol.png",
+        categoria:"herbolario",
+        precio:32
+
+    },
+    {
+        id:"herb-03",
+        nombre:"Pentalium",
+        imagen:"img/Categorias/Herbolario/Herbolario_Santosha.png",
+        categoria:"herbolario",
+        precio:33
+
+    },
+    {
+        id:"herb-04",
+        nombre:"Syndros",
+        imagen:"img/Categorias/Herbolario/Herbolario_TerraVerda.png",
+        categoria:"herbolario",
+        precio:34
+
+    },
+
+     //Ortopedia
+     {
+        id:"ort-01",
+        nombre:"AceiteCBD",
+        imagen:"img/Categorias/Ortopedia/Ortopedia_Baston.png",
+        categoria:"ortopedia",
+        precio:41
+
+    },
+    {
+        id:"ort-02",
+        nombre:"Muñequera",
+        imagen:"img/Categorias/Ortopedia/Ortopedia_Munequera.png",
+        categoria:"ortopedia",
+        precio:42
+
+    },
+    {
+        id:"ort-03",
+        nombre:"Pentalium",
+        imagen:"img/Categorias/Ortopedia/Ortopedia_Rodillera.png",
+        categoria:"ortopedia",
+        precio:43
+
+    },
+    {
+        id:"ort-04",
+        nombre:"Syndros",
+        imagen:"img/Categorias/Ortopedia/Ortopedia_SillaRueda.png",
+        categoria:"ortopedia",
+        precio:44
+
+    }
+];
+    function fillProductosOnThePage() {
+            const adminProductosContainer = document.getElementById("adminProductos");
+            adminProductosContainer.innerHTML = "";
+
+            let index=0;
+            for (const product of productosCatalogo) {
+                const nombreProd = product.nombre;
+                const precioProd = product.precio;
+
+                const adminProductoHTML = `
+                    <div class="adminProducto">
+                        <div style="width: 70%">
+                            <h2>${nombreProd}</h2>
+                            <span>${precioProd}</span>
+                        </div>
+                        <div style="width: 30%;display: flex;justify-content: space-between;align-items: center;">
+                            <button onclick="eliminarProducto(${index})" class="circular" style="background-color: red;">D</button>
+                            <button class="circular" style="background-color: rgb(60, 128, 232);">E</button>
+                        </div>
+                    </div>
+                `;
+                adminProductosContainer.innerHTML += adminProductoHTML;
+
+                index++
+            }
+        }
+
+        // Llama a la función para llenar los productos una vez que el DOM esté cargado
+        fillProductosOnThePage();
+    function eliminarProducto(index){
+                      productosCatalogo.splice(index,1);
+                      fillProductosOnThePage();
+                }
+    
+
+    document.addEventListener("DOMContentLoaded", function() {
+        //Catalogo
+       
+
+
+        // Read: Traer Lista de productos del JSON y mostrar en el HTML
+        function fillProductosOnThePage() {
+            const adminProductosContainer = document.getElementById("adminProductos");
+            adminProductosContainer.innerHTML = "";
+
+            let index=0;
+            for (const product of productosCatalogo) {
+                const nombreProd = product.nombre;
+                const precioProd = product.precio;
+
+                const adminProductoHTML = `
+                    <div class="adminProducto">
+                        <div style="width: 70%">
+                            <h2>${nombreProd}</h2>
+                            <span>${precioProd}</span>
+                        </div>
+                        <div style="width: 30%;display: flex;justify-content: space-between;align-items: center;">
+                            <button onclick="eliminarProducto(${index})" class="circular" style="background-color: red;">D</button>
+                            <button class="circular" style="background-color: rgb(60, 128, 232);">E</button>
+                        </div>
+                    </div>
+                `;
+                adminProductosContainer.innerHTML += adminProductoHTML;
+
+                index++
+            }
+        }
+
+        // Llama a la función para llenar los productos una vez que el DOM esté cargado
+        fillProductosOnThePage();
+
+        // Create: Crear Productos Nuevos
+        
+            document.getElementById("add-btn").addEventListener("click", () => {
+            let nombreProducto = prompt("Nombre del Producto");
+            let precioProducto = prompt("Precio del Producto");
+            // Add logic to create new products
+            let prodObj=
+                {
+                    "id":"med-05",
+                    "nombre":nombreProducto,
+                    "imagen":"img/Categorias/Medicamentos/Medicamentos_Epidyolex.png",
+                    "categoria":"medicamentos",
+                    "precio":precioProducto
+                }
+                
+                productosCatalogo.push(prodObj);
+                fillProductosOnThePage();
+
+                
+           
+        });
+        
+        
+        
+
+        
+
+        
+    }
+
+   
+
+    );
+
+    
+</script>
+</body>
+</html>
