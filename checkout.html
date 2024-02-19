@@ -98,7 +98,7 @@
 <section class="check">
     <h2 class="h2Checkout NPq">Modo de envío</h2>
   
-    <label><input type="radio" name="modoEnvio" value="Domicilio">Domicilio</label> 
+   <!--  <label><input type="radio" name="modoEnvio" value="Domicilio">Domicilio</label>  -->
     
     <label><input type="radio" name="modoEnvio" value="Recogida en tienda" id="irAGoogleMaps" onchange="redirigirAGoogleMaps()">Recogida en tienda</label>
   
@@ -109,7 +109,8 @@
   
 </section>  
 <section class="formulario">
-  <h2 class="h2Checkout NPq">Dirección de entrega</h1>
+  <!--   <form id="signup-form" action="procesar_registro.php" method="post"> -->
+  <h2 class="h2Checkout NPq">Dirección de entrega</h2>
 
   <label>Nombre y apellidos</label>
   <input type="text" id="input1" class="input-box" onkeydown="saltar(event, 'input2')">
@@ -123,12 +124,37 @@
   <input type="text" id="input5" class="input-box" onkeydown="saltar(event, 'input6')">
   <label>País</label>
   <input type="text" id="input6" class="input-box" onkeydown="saltar(event, 'input7')">
+
+  <button id="guardarDatos">Guardar Datos</button>
 </section>
 
 <section class="pago">
     <h2 class="h2Checkout NPq">Forma de pago</h2>
   
     <label><input type="radio" name="formaPago" value="Tarjeta">Tarjeta</label>
+    <button id="openFirstModalBtn">Continuar con tarjeta</button>
+
+<!-- Primera ventana modal para ingresar los datos de la tarjeta -->
+<div id="firstModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Ingrese los datos de su tarjeta</h2>
+
+    <label for="cardNombre">Nombre y apellidos:</label>
+    <input type="text" id="cardNombre" name="cardNombre" required>
+
+    <label for="cardNumero">Número de tarjeta:</label>
+    <input type="text" id="cardNumero" name="cardNumero" required>
+
+    <label for="cardFecha">Fecha de caducidad:</label>
+    <input type="text" id="cardFecha" name="cardFecha" required>
+
+    <label for="cardCVV">CVV:</label>
+    <input type="text" id="cardCVV" name="cardCVV" required>
+
+    <button id="guardarDatosT">Guardar Datos</button>
+  </div>
+</div>
     
     <label><input type="radio" name="formaPago" value="Contrareembolso">Contrareembolso</label>
   
@@ -145,19 +171,21 @@
   <label>Total</label>
 </section>
 
-<section class="btn">
-  <a class="aCheckout" href="carrito.html"class="boton">Revisar carrito</a>
-  <!-- Botón para abrir la ventana modal -->
-  <button class="aCheckout" id="openModalBtn">Continuar</button>
 
-<!-- Ventana modal -->
-<div id="myModal" class="modal">
-<div class="modal-content">
-  <span class="close">&times;</span>
-  <p>¡Compra realizada con éxito! Muchas gracias.</p>
-</div>
-</div>
 
+<section class="botonesCheckout">
+    <a class="aCheckout" href="carrito.html"class="boton">Revisar carrito</a>
+<!-- Botón para abrir la segunda ventana modal -->
+    <button id="openSecondModalBtn">Continuar</button>
+</section>  
+
+<!-- Segunda ventana modal -->
+<div id="secondModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Compra realizada muchas gracias!!!!</h2>
+  </div>
+</div>  
 </section>
 
 
@@ -220,5 +248,8 @@
 
 <script src="script.js"></script>
 <script src="pago.js"></script>
+<script src="storage.js"></script>
+<script src="storageTarjeta.js"></script>
+
 </body>
 </html>
