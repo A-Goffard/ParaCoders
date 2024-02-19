@@ -1422,7 +1422,7 @@ footer {
     font-weight: bold;
   }
   
-.aCheckout{
+.aCheckout, button{
     cursor: pointer;
     text-align: center;
     display: flex;
@@ -1434,6 +1434,30 @@ footer {
     height: 2.5rem;
     margin: 1rem;
 }
+
+/* Estilo común para los botones de checkout */
+.botonCheckout {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+.botonesCheckout{
+    display: flex;
+    
+}
+
+.botonCheckout:hover {
+    background-color: #45a049;
+}
+
 
 
 
