@@ -424,7 +424,7 @@ margin-bottom: 1rem;
 }
 
   .tienda_mobile_superior{
-    width: 90%;
+    width: 80%;
     height: 70rem;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -565,12 +565,18 @@ margin-bottom: 1rem;
     width: 3rem;
     height: 3rem;
     background-color: #B0A326;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .btn_cm_rest{
     width: 3rem;
     height: 3rem;
     background-color: #B0A326;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .num_compra{
@@ -929,7 +935,7 @@ label{
     border: none;
     color: var(--verdeocuro);
     position: absolute;
-    top: 21rem;
+    top: 22.2rem;
     right: 1.9rem; 
 }
 
@@ -1107,6 +1113,8 @@ width: fit-content;
 
 .botonesDivSR {
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 0.25rem;
 }
 
