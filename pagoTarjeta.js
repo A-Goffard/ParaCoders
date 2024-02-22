@@ -8,6 +8,12 @@ var secondModal = document.getElementById("secondModal");
 var openSecondModalBtn = document.getElementById("openSecondModalBtn");
 var closeSecondModal = document.querySelector("#secondModal .close");
 
+// Obtener referencias a los elementos del DOM para la tercera ventana modal
+var terceraModal = document.getElementById("terceraModal");
+var openTerceraModalBtn = document.getElementById("openTerceraModalBtn");
+var closeTerceraModal = document.querySelector("#terceraModal .close");
+
+
 // Funciones para mostrar y ocultar la primera ventana modal
 openFirstModalBtn.onclick = function() {
   firstModal.style.display = "block";
@@ -25,6 +31,16 @@ openSecondModalBtn.onclick = function() {
 closeSecondModal.onclick = function() {
   secondModal.style.display = "none";
 }
+
+// Funciones para mostrar y ocultar la tercera ventana modal
+openTerceraModalBtn.onclick = function() {
+  terceraModal.style.display = "block";
+}
+
+closeTerceraModal.onclick = function() {
+  terceraModal.style.display = "none";
+}
+
 
 // Función para cerrar las ventanas modales haciendo clic fuera de ellas
 /* window.onclick = function(event) {

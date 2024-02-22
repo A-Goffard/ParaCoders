@@ -113,17 +113,17 @@
   <!--   <form id="signup-form" action="procesar_registro.php" method="post"> -->
   <h2 class="h2Checkout NPq">Dirección de entrega</h2>
 
-  <label>Nombre y apellidos</label>
+  <label>Nombre y apellidos:</label>
   <input type="text" id="input1" class="input-box" onkeydown="saltar(event, 'input2')">
-  <label>Dirección</label>
+  <label>Dirección:</label>
   <input type="text" id="input2" class="input-box" onkeydown="saltar(event, 'input3')">
-  <label>Código postal</label>
+  <label>Código postal:</label>
   <input type="text" id="input3" class="input-box" onkeydown="saltar(event, 'input4')">
-  <label>Ciudad</label>
+  <label>Ciudad:</label>
   <input type="text" id="input4" class="input-box" onkeydown="saltar(event, 'input5')">
-  <label>Provincia</label>
+  <label>Provincia:</label>
   <input type="text" id="input5" class="input-box" onkeydown="saltar(event, 'input6')">
-  <label>País</label>
+  <label>País:</label>
   <input type="text" id="input6" class="input-box" onkeydown="saltar(event, 'input7')">
 
   <button id="guardarDatos">Guardar Datos</button>
@@ -143,15 +143,15 @@
     <i class="fa-brands fa-cc-visa"></i>
     <i class="fa-brands fa-cc-mastercard"></i>
 
-    <label for="cardNombre">Nombre y apellidos:</label>
-    <input type="text" id="cardNombre" name="cardNombre" required>
+    <label>Nombre y Apellidos:</label>
+    <input type="text" id="cardNombre" class="input-box" onkeydown="saltar(event, 'cardNumero')">
 
-    <label for="cardNumero">Número de tarjeta:</label>
-    <input type="text" id="cardNumero" name="cardNumero" required>
+    <label>Número de tarjeta:</label>
+    <input type="text" id="cardNumero" class="input-box" onkeydown="saltar(event, 'cardFecha')">
 
-    <label for="cardFecha">Fecha de caducidad:</label>
-    <input type="text" id="cardFecha" name="cardFecha" required>
-
+    <label>Fecha de caducidad:</label>
+    <input type="text" id="cardFecha" class="input-box" onkeydown="saltar(event, 'cardCVV')">
+    
     <label for="cardCVV">CVV:</label>
     <input type="text" id="cardCVV" name="cardCVV" required>
 
@@ -161,9 +161,16 @@
     
     <label><input type="radio" name="formaPago" value="Contrareembolso"><i class="fa-solid fa-hand-holding-dollar"></i>Contrareembolso</label>
   
-    <label><input type="radio" name="formaPago" value="Paypal"><i class="fa-brands fa-paypal"></i>Paypal</label>
+    <label>
+        <input type="radio" name="formaPago" value="Paypal">
+        <a href="https://www.paypal.com/">
+            <i class="fa-brands fa-paypal"></i> PayPal
+        </a>
+    </label>
+    
   
     <label><input type="radio" name="formaPago" value="Transferencia"><i class="fa-solid fa-money-bill-transfer"></i>Transferencia</label>
+    <button id="openTerceraModalBtn">Continuar con Transferencia</button>
   </section>
   
 <section class="pedido">
@@ -187,15 +194,16 @@
   <div class="modal-content">
     <span class="close">&times;</span>
     <h2>Compra realizada muchas gracias!!!! <i class="fa-solid fa-heart fa-beat" style="--fa-beat-fade-opacity: 0.1; --fa-beat-fade-scale: 1.25;"></i></h2>
-  
-   
   </div>
 </div>  
-</section>
 
-
-
-
+<!-- tercera ventana modal -->
+<div id="terceraModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Número de cuenta: IBAN 134267893434561645878</h2>
+    </div>
+  </div> 
 
 
 <footer>
@@ -223,18 +231,6 @@
   </div>
 </footer>
 
-
-<script>
-    var checkbox = document.getElementById('miCheckbox');
-    checkbox.addEventListener('change',function(){
-        if(this.checked){
-            window.location = "crearCuenta.html";
-        }
-    });
-
-</script>
-
-
 <script>
     function redirigirAGoogleMaps() {
         // Obtener el checkbox
@@ -251,8 +247,8 @@
     }
 </script>
 
-<script src="script.js"></script>
-<script src="pago.js"></script>
+<script src="saltoEnter.js"></script>
+<script src="pagoTarjeta.js"></script>
 <script src="storage.js"></script>
 <script src="storageTarjeta.js"></script>
 
