@@ -1,7 +1,4 @@
-// Obtener referencias a los elementos del DOM para la primera ventana modal
-var firstModal = document.getElementById("firstModal");
-var openFirstModalBtn = document.getElementById("openFirstModalBtn");
-var closeFirstModal = document.querySelector("#firstModal .close");
+
 
 // Obtener referencias a los elementos del DOM para la segunda ventana modal
 var secondModal = document.getElementById("secondModal");
@@ -13,15 +10,30 @@ var terceraModal = document.getElementById("terceraModal");
 var openTerceraModalBtn = document.getElementById("openTerceraModalBtn");
 var closeTerceraModal = document.querySelector("#terceraModal .close");
 
+document.addEventListener('DOMContentLoaded', function() {
+  // Get the modal
+  var modal = document.getElementById('firstModal');
+  // Get the radio button
+  var radio = document.getElementById('Tarjeta');
 
-// Funciones para mostrar y ocultar la primera ventana modal
-openFirstModalBtn.onclick = function() {
-  firstModal.style.display = "block";
-}
+  // Add event listener to the radio button
+  radio.addEventListener('change', function() {
+      if (this.checked) {
+          modal.style.display = 'block'; // Show the modal
+      } else {
+          modal.style.display = 'none'; // Hide the modal
+      }
+  });
 
-closeFirstModal.onclick = function() {
-  firstModal.style.display = "none";
-}
+  // Get the close button
+  var closeButton = document.querySelector('.close');
+
+  // Cerrar modal cuando se da al boton
+  closeButton.addEventListener('click', function() {
+      modal.style.display = 'none';
+  });
+});
+
 
 // Funciones para mostrar y ocultar la segunda ventana modal
 openSecondModalBtn.onclick = function() {
@@ -41,15 +53,3 @@ closeTerceraModal.onclick = function() {
   terceraModal.style.display = "none";
 }
 
-
-// Función para cerrar las ventanas modales haciendo clic fuera de ellas
-/* window.onclick = function(event) {
-  if (event.target == firstModal) {
-    firstModal.style.display = "none";
-  }
-  if (event.target == secondModal) {
-    secondModal.style.display = "none";
-  }
-}
-
- */
