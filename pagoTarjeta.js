@@ -1,15 +1,3 @@
-
-
-// Obtener referencias a los elementos del DOM para la segunda ventana modal
-var secondModal = document.getElementById("secondModal");
-var openSecondModalBtn = document.getElementById("openSecondModalBtn");
-var closeSecondModal = document.querySelector("#secondModal .close");
-
-// Obtener referencias a los elementos del DOM para la tercera ventana modal
-var terceraModal = document.getElementById("terceraModal");
-var openTerceraModalBtn = document.getElementById("openTerceraModalBtn");
-var closeTerceraModal = document.querySelector("#terceraModal .close");
-
 document.addEventListener('DOMContentLoaded', function() {
   // Get the modal
   var modal = document.getElementById('firstModal');
@@ -33,23 +21,47 @@ document.addEventListener('DOMContentLoaded', function() {
       modal.style.display = 'none';
   });
 });
+/////////////////////////////////////////////////////////////////////
+document.addEventListener('DOMContentLoaded', function() {
+  // Get the modal
+  var modal1 = document.getElementById('secondModal');
+  // Get the radio button
+  var radio1 = document.getElementById('Transferencia');
+
+  // Add event listener to the radio button
+  radio1.addEventListener('change', function() {
+      if (this.checked) {
+          modal1.style.display = 'block'; // Show the modal
+      } else {
+          modal1.style.display = 'none'; // Hide the modal
+      }
+  });
+
+  // Get the close button
+  var closeButton1 = modal1.querySelector('.close');
 
 
-// Funciones para mostrar y ocultar la segunda ventana modal
-openSecondModalBtn.onclick = function() {
-  secondModal.style.display = "block";
-}
+  // Cerrar modal cuando se da al boton
+  closeButton1.addEventListener('click', function() {
+      modal1.style.display = 'none';
+  });
+});
+/////////////////////////////////////////////////////////////////////
+document.addEventListener('DOMContentLoaded', function() {
+  var openModalBtn = document.getElementById('openModalBtn');
+  var modal = document.getElementById('terceraModal');
+  var closeButton = modal.querySelector('.close');
 
-closeSecondModal.onclick = function() {
-  secondModal.style.display = "none";
-}
+  // Event listener para abrir la ventana modal
+  openModalBtn.addEventListener('click', function() {
+    modal.style.display = 'block';
+  });
 
-// Funciones para mostrar y ocultar la tercera ventana modal
-openTerceraModalBtn.onclick = function() {
-  terceraModal.style.display = "block";
-}
+  // Event listener para cerrar la ventana modal al hacer clic en el botón de cierre
+  closeButton.addEventListener('click', function() {
+    modal.style.display = 'none';
+  });
+});
 
-closeTerceraModal.onclick = function() {
-  terceraModal.style.display = "none";
-}
+
 

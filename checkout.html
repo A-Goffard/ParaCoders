@@ -168,9 +168,18 @@
         </a>
     </label>
     
-  
-    <label><input type="radio" name="formaPago" value="Transferencia"><i class="fa-solid fa-money-bill-transfer"></i>Transferencia</label>
-    <button id="openTerceraModalBtn">Continuar con Transferencia</button>
+    <label><input type="radio" name="formaPago" id="Transferencia"><i class="fa-solid fa-money-bill-transfer"></i>Transferencia</label>
+   
+<!-- segunda ventana modal -->
+<div id="secondModal" class="modal1">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Número de cuenta: IBAN 134267893434561645878</h2>
+    </div>
+  </div> 
+
+
+
   </section>
   
 <section class="pedido">
@@ -184,27 +193,19 @@
 
 
 <section class="botonesCheckout">
-    <a class="aCheckout" href="carrito.html"class="boton">Revisar carrito</a>
-<!-- Botón para abrir la segunda ventana modal -->
-    <button id="openSecondModalBtn">Continuar</button>
-</section>  
+    <a class="aCheckout" href="carrito.html"class="boton">Revisar carrito</a>   
+ 
 
-<!-- Segunda ventana modal -->
-<div id="secondModal" class="modal">
+<!-- tercera ventana modal -->
+<button id="openModalBtn">Continuar</button>
+
+<div id="terceraModal" class="modal">
   <div class="modal-content">
     <span class="close">&times;</span>
     <h2>Compra realizada muchas gracias!!!! <i class="fa-solid fa-heart fa-beat" style="--fa-beat-fade-opacity: 0.1; --fa-beat-fade-scale: 1.25;"></i></h2>
   </div>
-</div>  
-
-<!-- tercera ventana modal -->
-<div id="terceraModal" class="modal">
-    <div class="modal-content">
-      <span class="close">&times;</span>
-      <h2>Número de cuenta: IBAN 134267893434561645878</h2>
-    </div>
-  </div> 
-
+</div>
+</section> 
 
 <footer>
   <div class="siguenos">
