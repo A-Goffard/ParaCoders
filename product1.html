@@ -180,16 +180,11 @@
         <a href="#"><p data-value="CondicionesContratacion">Condiciones de Contratación</p></a>
         <a href="#"><p data-value="PoliticaCookies">Política de Cookies</p></a>
     </div>
-</footer> 
-
-
+</footer>         
 
 <script>
 
 document.addEventListener("DOMContentLoaded", function() {
-
-    
-
 
     const botonIdioma=document.getElementById("boton-idioma");
 
@@ -217,6 +212,7 @@ document.addEventListener("DOMContentLoaded", function() {
 </script>
 <script>
     document.addEventListener('DOMContentLoaded', () => {
+         
     // Ruta al archivo JSON de productos
     const productosURL = 'productos.json';
 
@@ -239,9 +235,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Actualiza el contenido HTML con los detalles del producto
     const productDetailsContainer = document.getElementById('productContainer');
-    console.log(productDetailsContainer);
     productDetailsContainer.innerHTML = `
-    <section id="producto-solo" class="producto-solo-descripcion">
+    <section id="producto-solo" class="producto-solo-descripcion"}>
     
     
     <div class="col3 productosGeneral marginupdown">
@@ -307,10 +302,12 @@ document.addEventListener("DOMContentLoaded", function() {
 </section>
 
     `;
+
 }
 
-            // Por ejemplo, puedes mostrar los detalles del primer producto
-        mostrarDetallesProducto(productos[0].id);
+            // Muestra los detalles del producto basados en el ID
+    mostrarDetallesProducto(1);
+        
 
             
         })
@@ -320,5 +317,6 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 </script>
 <script src="favoritos.js"></script>
+
 </body>
 </html>
