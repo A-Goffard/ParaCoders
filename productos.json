@@ -4,7 +4,7 @@
         "tipo": "medicamentos",
         "nombre": "Aceite de cannabis CBD 25%",
         "precio": 15.61,
-        "imagen": "/img/27.png",
+        "imagen": "img/aceite-cannabis.jpg.webp",
         "otrafoto": "/img/aceite-cannabis.jpg.webp",
         "descripcion": "¡JB Oil 25% es un aceite rico en CBD de la nueva línea JB OIL!En el JB Oil 25% encontramos una alta concentración de CBD, posible gracias a métodos innovadores de extracción y dilución de la sustancia en los que solo se utilizan materias primas orgánicas excepcionales. Mediante disolventes supercríticos de CO2, se extrae el CBD aislado que luego se mezclará con aceite de coco MCT (obtenido en cambio mediante una extracción en frío) para obtener el producto final totalmente inodoro e incoloro. La combinación con aceite de coco le da un sabor delicado e interesante. De esta forma Justbob, cuyo fin último es mantener altos estándares de calidad en cada uno de sus productos, consigue incluir en su catálogo un aceite portentoso y natural, cuyas beneficiosas propiedades están intactas. Nuestro práctico y versátil aceite JB Oil será capaz de brindarte una intensa sensación de placer para disfrutar de momentos de pura relajación."
     },
@@ -13,7 +13,7 @@
         "tipo": "herbolario",
         "nombre": "AMNESIA CBD BOOST",
         "precio": 10.75,
-        "imagen": "/img/8.png",
+        "imagen": "img/27.png",
         "otrafoto": "/img/Marihuana-amnesia-cbd-boost-500x390.jpg",
         "descripcion": "Ha llegado la nueva LÍNEA CBD BOOST de JustBob, una nueva Línea desarrollada por primera vez en Italia en 2022 después de numerosos estudios sobre variedades de CBD. Uno de los productos más innovadores de esta nueva línea es AMNESIA CBD BOOST. Un producto completamente nuevo que sorprenderá a todos con sus infinitas cualidades. La característica principal de esta variedad es una presencia muy alta de CBD, que ronda el 40%. Este resultado, que va más allá del potencial natural de la planta, se obtiene gracias a un tratamiento especial con resinas naturales que se realiza en la fase final de floración de la planta. El nombre es una clara referencia a la alta presencia de CBD en las flores de la planta. Esto hace que el producto sea único. El porcentaje total de cannabinoides es de hasta el 50%."
     },
@@ -22,7 +22,7 @@
         "tipo": "medicamentos",
         "nombre": "WELCOME WINTER KIT",
         "precio": 50.00,
-        "imagen": "/img/1.png",
+        "imagen": "img/11.png",
         "otrafoto": "/img/welcome-winter-kit-de-marihuana-cbd.jpg",
         "descripcion": "¿El frío y el invierno te están derribando? Recupera tu sonrisa con nuestros nuevos winter kit: ¡una selección de nuestros mejores marihuana CBD diseñados para que tú también salgas indemne de esta temporada! Desde Gorilla Glue hasta Tamizado Mix Indoor, pasando por Ak 47 cbd boost: el Welcome Winter Kit ofrece la selección más variada de marihuana CBD jamás propuesta por JustBob, ¡para todos aquellos que no están satisfechos! AK47 CBD BOOST - 5 GRAMOS | INDOOR | CBD < 47% GELATO CBD BOOST - 5 GRAMOS | GLASSHOUSE | CBD < 42,5% CALIFORNIA SMALL BUDS - 5 GRAMOS | INDOOR | CBD < 21% GORILLA GLUE – 5 GRAMOS | INDOOR | CBD < 20% TAMIZADO MIX INDOOR - 10 GRAMOS | TAMIZADO | CBD < 10%"
     },
@@ -81,7 +81,7 @@
         "descripcion": "Manzanilla amarga flor o Mahón. Forma parte de las plantas que por sus propiedades y características han pasado a ser llamadas plantas medicinales. Ha sido recolectada y envasada en su mejor momento con el fin de conservar intactos los principios activos que la caracterizan."
     },
     {
-        "id": 11,
+        "id": 10,
         "tipo": "ortopedia",
         "nombre": "Cojines con espelta",
         "precio": 3.19,
@@ -90,7 +90,7 @@
         "descripcion": "Este práctico set de dos almohaditas rellenas de raíz de valeriana hará correr y saltar a tu gato de alegría. Rellenas de raíz de valeriana de calidad farmacéutica, animarán e incitarán a tu mascota al juego. Lánzalas, deja que tu gato perciba el aroma y verás como empieza enseguida a jugar con ellas. Muchas horas de diversión le esperan a tu gato con estas dos almohaditas naturales. Con solo 5 g de raíz de valeriana, el aroma no está tan concentrado, por ello es ideal para gatos de todas las edades. El relleno contiene además espelta de gran calidad. Las fundas de las almohaditas están certificadas por el Öko-Tex Standard."
     },
     {
-        "id": 12,
+        "id": 11,
         "tipo": "ortopedia",
         "nombre": "Cojín Cuadrado en Yute",
         "precio": 16.95,
@@ -99,7 +99,7 @@
         "descripcion": "El Cojín Cuadrado en Yute (40x40 cm) Ticmon es una apuesta segura para aquellos que buscan mantener la gama cromática neutra en su salón o dormitorio. Está fabricado en yute, un material respetuoso con el medioambiente que aporta a tu espacio la riqueza de su aspecto rústico y artesanal. El diseño característico del trenzado del yute da vitalidad a la estancia, respetando el ambiente relajado y luminoso que construyen los tonos claros. De estilo natural, Ticmon es un clásico que se adapta a la actualidad con la puesta en valor de las fibras naturales. Puede presentar variaciones y detalles únicos debido a su fabricación a mano. ¡Una pieza única!"
     },
     {
-        "id": 13,
+        "id": 12,
         "tipo": "ortopedia",
         "nombre": "Bastón caña de bambú",
         "precio": 24.00,
@@ -108,7 +108,7 @@
         "descripcion": "Bastón realizado con una elegante caña de bambú barnizada y empuñadura de madera de haya. Este tipo de bastón es muy ligero, ya que la caña pesa menos que la madera y tiene una gran fuerza. Ideal para personas con movilidad reducida o simplemente para pasear de forma cómoda.  Dispone de la opción de personalizarse con un grabado con tu nombre, iniciales o lo que desees totalmente gratis. Y si es para regalo queda muy original. También existe la opción de corte a medida gratis. Solo tienes que indicar estas opciones en los apartados de personalización. Los artículos personalizados no tienen devolución."
     },
     {
-        "id": 14,
+        "id": 13,
         "tipo": "ortopedia",
         "nombre": "Calcetín de Bambú",
         "precio": 14.99,
@@ -117,7 +117,7 @@
         "descripcion": "Calcetín de Bambú indicado para su uso por personas con Diabetes o con Pies Sensibles, debido a las características técnicas diferenciales del tejido de bambú en relación al tejido de algodón. Disponible en los colores beige y negro. Tallas disponibles desde el 35 hasta el 44. En cada envase se incluyen 2 calcetines (1 par)."
     },
     {
-        "id": 15,
+        "id": 14,
         "tipo": "cuidado",
         "nombre": "Cannabis Crema De Dia",
         "precio": 17.00,
@@ -126,7 +126,7 @@
         "descripcion": "La Crema de día de Natura Premium, está diseñada para uso diario. Emulsión fina y suave que deja un tacto ligero y aterciopelado. Su alta concentración de Aceite de Cáñamo otorga una intensa hidratación en la dermis protegiéndola de factores externos irritantes y aportando una profunda sensación de calma y serenidad a la piel, que favorece de forma holística a toda la dermis. PROPIEDADES: Combate las inflamaciones cutáneas gracias a su efecto antiinflamatorio. Ayuda a curar las lesiones cutáneas. Efecto antioxidante. Previene el daño tisular. Ofrece cierta protección contra la exposición al sol UV. Contiene propiedades que facilitan la acción hidratante. El aceite no es graso, y se absorbe fácilmente por los poros, sin obstruirlos."
     },
     {
-        "id": 16,
+        "id": 15,
         "tipo": "cuidado",
         "nombre": "Bálsamo de cannabis con CBD",
         "precio": 14.50,
@@ -135,7 +135,7 @@
         "descripcion": "Bálsamo de cannabis 100% natural elaborado artesanalmente con aceite de cannabis de variedad terapéutica “Indica“, cera natural de abeja, esencia pura natural de clavo y CBD liofilizado. El aceite de cáñamo o cannabis es un analgésico natural que está indicado para dolores musculares y articulares en general, normalmente dolores de tipo crónico, como artrosis, artritis, reumas, fibromialgias, etc… El aceite esencial de clavo es un potentísimo analgésico natural. La sinergia de ambos aceites, junto con el CBD liofilizado, hacen de este bálsamo de cannabis un potente y muy efectivo antiinflamatorio y analgésico. El aceite de cáñamo es eficaz también en el tratamiento de dolencias de la piel como eczemas, psoriasis, dermatitis atópica… Este bálsamo tiene una textura untuosa, algo aceitosa, que permite que se extienda y penetre en la piel muy facilmente. Su aroma fresco y mentolado proporciona una sensación inmediata de paz y calma. Se aplica como una pomada masajeando la zona afectada y se absorbe muy rápidamente. Es preferible usar muy poquita cantidad 2 o 3 veces al día. No contiene THC. Está indicado para uso diario. Formato: 50gr."
     },
     {
-        "id": 17,
+        "id": 16,
         "tipo": "cuidado",
         "nombre": "Crema manos Cannabis",
         "precio": 3.45,
@@ -144,7 +144,7 @@
         "descripcion": "Puedes comprar el Cannabis Crema de Manos Nutritiva 50 ml de BABARIA al mejor precio en nuestra parafarmacia online. Si quieres conocer como Cannabis Crema de Manos Nutritiva 50 ml Babaria, puede ayudarte, aquí te explicamos como funciona y que hace. Este producto cuenta con una delicada fórmula, cuidadosamente diseñada para brindar el mejor cuidado a las pieles más sensibles. Tiene como ingrediente principal el aceite de cannabis que es rico en ácidos grasos esenciales, vitaminas, aminoácidos y antioxidantes. Su efecto es suave y su absorción rápida, por lo que resulta cómoda su aplicación en diversas horas del día. El uso prolongado de esta crema, tendrá como resultado, la hidratación y nutrición profunda de las capas superiores de la epidermis. Todos los productos con los que contamos de la marca BABARIA, están probados y cuidadosamente elegidos para ofrecer el mejor resultado. Contamos con los mejores productos de la marca BABARIA."
     },
     {
-        "id": 18,
+        "id": 17,
         "tipo": "cuidado",
         "nombre": "Bálsamo labial regenerador",
         "precio": 4.93,
@@ -153,7 +153,7 @@
         "descripcion": "Su fórmula especial lubrica suavemente los labios, formando una capa protectora y brillante sobre la piel, protegiendo contra factores externos, como el aire frío o el viento. Al mismo tiempo, el lápiz labial hidrata y da a los labios un aspecto sano y saludable. Se puede utilizar tanto en los labios como en la piel, por ejemplo para aliviar la irritación, el picor y la inflamación después de la picadura de un insecto."
     },
     {
-        "id": 19,
+        "id": 18,
         "tipo": "cuidado",
         "nombre": "Cannabis Lote de Regalo",
         "precio": 4.93,

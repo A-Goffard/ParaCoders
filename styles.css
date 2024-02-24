@@ -688,13 +688,12 @@ display: none;
 
 #producto-solo{
 display: flex;
+width: 100%;
 
-width: 80vw;
 
 }
 .producto-solo-imagen{
-    width: 90%;
-
+    width: 80%;
 }
 
 /* ..................................................................................................... */
@@ -848,7 +847,8 @@ label{
 }
 
 .fotoCategoria {
-    width: 90%;
+    width: 40%;
+    height: auto;
     margin: 1rem;
     border-radius: 0.8rem;
 }
@@ -1279,7 +1279,11 @@ footer {
 
 .producto-solo-descripcion{
     display: grid;
-    grid-template-columns: minmax(auto, 1fr) 25vw minmax(auto, 1fr);
+    grid-template-columns: minmax(auto, 1fr) 20vw minmax(auto, 1fr);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 
 }
 
@@ -1360,7 +1364,7 @@ footer {
 .col2 .marijuana-list 
   {
     list-style: none;
-    padding: 0;
+    
   }
 
   .col2 .marijuana-list li i{
@@ -1398,6 +1402,7 @@ footer {
     display: flex;
 
   }
+ 
 
 /* ..................................................................................................... */
 /* .............................................TINA .............................................*/

@@ -9,6 +9,8 @@
         @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Kdam+Thmor+Pro&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400&family=Roboto:wght@300;400;500;900&display=swap');
       </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="productDetailles.js"></script>
+    
 </head>
 <body>
 
@@ -112,64 +114,94 @@
 
         <div class="card-product">
             <div class="productosGeneral content-card-product" data-product-id="1">
-                <button class="favorite">
-                    <i class="fa-regular fa-star" id="favorite-regular" class="estrellaBacia"></i>
-                    <i class="fa-solid fa-star" id="added-favorite" class="estrellaLLena"></i>
-                </button>
-                <img class="fotoCategoria" src="img/aceite-cannabis.jpg.webp" alt="">
-                <h3>Aceite de cannabis</h3>
-                <span class="precio">15,61 €</span>
-                <div class="puntuacion"><i id="cannabito" class="fa-solid fa-cannabis"></i><i id="cannabito" class="fa-solid fa-cannabis"></i><i id="cannabito" class="fa-solid fa-cannabis"></i><i id="cannabito" class="fa-solid fa-cannabis"></i><i id="cannabito" class="fa-solid fa-cannabis"></i></div>
-                <button class="NPq" id="añadir">Añadir</button>
+                    <button class="favorite">
+                        <i class="fa-regular fa-star" id="favorite-regular" class="estrellaBacia"></i>
+                        <i class="fa-solid fa-star" id="added-favorite" class="estrellaLLena"></i>
+                    </button>
+                    <img class="fotoCategoria" src="img/aceite-CDB-828x548.jpg" alt="Product Image !">
+                    <h3>Aceite de cannabis CBD 25%</h3>
+                    <span class="precio">15,61 €</span>
+                    <div class="puntuacion">
+                        <i id="cannabito" class="fa-solid fa-cannabis"></i>
+                        <i id="cannabito" class="fa-solid fa-cannabis"></i>
+                        <i id="cannabito" class="fa-solid fa-cannabis"></i>
+                        <i id="cannabito" class="fa-solid fa-cannabis"></i>
+                        <i id="cannabito" class="fa-solid fa-cannabis"></i>
+                    </div>
+                    <button class="NPq mas-info" onclick="mostrarDetallesProducto(0);">Mas Info</button>
+                    <button class="NPq" id="añadir">Añadir</button>
             </div>
         </div>
 
-
+        <!-- PRODUCTO 2 -->
         <div class="card-product">
             <div class="productosGeneral content-card-product" data-product-id="2">
                 <button class="favorite">
                     <i class="fa-regular fa-star" id="favorite-regular" class="estrellaBacia"></i>
                     <i class="fa-solid fa-star" id="added-favorite" class="estrellaLLena"></i>
                 </button>
-                <img class="fotoCategoria" src="img/aceite-cannabis.jpg.webp" alt="">
-                <h3>Aceite de cannabis</h3>
-                <span class="precio">15,61 €</span>
-                <div class="puntuacion"><i id="cannabito" class="fa-solid fa-cannabis"></i><i id="cannabito" class="fa-solid fa-cannabis"></i><i id="cannabito" class="fa-solid fa-cannabis"></i><i id="cannabito" class="fa-solid fa-cannabis"></i><i id="cannabito" class="fa-solid fa-cannabis"></i></div>
+                <img class="fotoCategoria" src="img/27.png" alt="Product Image !">
+                <h3>AMNESIA CBD BOOST</h3>
+                <span class="precio"> 10,75 €</span>
+                <div class="puntuacion">
+                    <i id="cannabito" class="fa-solid fa-cannabis"></i>
+                    <i id="cannabito" class="fa-solid fa-cannabis"></i>
+                    <i id="cannabito" class="fa-solid fa-cannabis"></i>
+                    <i id="cannabito" class="fa-solid fa-cannabis"></i>
+                    <i id="cannabito" class="fa-solid fa-cannabis"></i>
+                </div>
+                <button class="NPq mas-info">Mas Info</button>
                 <button class="NPq" id="añadir">Añadir</button>
             </div>
         </div>
 
+        <!-- PRODUCTO 3 -->
         <div class="card-product">
             <div class="productosGeneral content-card-product" data-product-id="3">
                 <button class="favorite">
                     <i class="fa-regular fa-star" id="favorite-regular" class="estrellaBacia"></i>
                     <i class="fa-solid fa-star" id="added-favorite" class="estrellaLLena"></i>
                 </button>
-                <img class="fotoCategoria" src="img/aceite-cannabis.jpg.webp" alt="">
-                <h3>Aceite de cannabis</h3>
-                <span class="precio">15,61 €</span>
-                <div class="puntuacion"><i id="cannabito" class="fa-solid fa-cannabis"></i><i id="cannabito" class="fa-solid fa-cannabis"></i><i id="cannabito" class="fa-solid fa-cannabis"></i><i id="cannabito" class="fa-solid fa-cannabis"></i><i id="cannabito" class="fa-solid fa-cannabis"></i></div>
+                <img class="fotoCategoria" src="img/11.png" alt="Product Image !">
+                <h3>WELCOME WINTER KIT</h3>
+                <span class="precio"> 50,00 €</span>
+                <div class="puntuacion">
+                    <i id="cannabito" class="fa-solid fa-cannabis"></i>
+                    <i id="cannabito" class="fa-solid fa-cannabis"></i>
+                    <i id="cannabito" class="fa-solid fa-cannabis"></i>
+                    <i id="cannabito" class="fa-solid fa-cannabis"></i>
+                    <i id="cannabito" class="fa-solid fa-cannabis"></i>
+                </div>
+                <button class="NPq mas-info">Mas Info</button>
                 <button class="NPq" id="añadir">Añadir</button>
             </div>
         </div>
 
+        <!-- PRODUCTO 4 -->
         <div class="card-product">
             <div class="productosGeneral content-card-product" data-product-id="4">
                 <button class="favorite">
                     <i class="fa-regular fa-star" id="favorite-regular" class="estrellaBacia"></i>
                     <i class="fa-solid fa-star" id="added-favorite" class="estrellaLLena"></i>
                 </button>
-                <img class="fotoCategoria" src="img/aceite-cannabis.jpg.webp" alt="">
-                <h3>Aceite de cannabis</h3>
-                <span class="precio">15,61 €</span>
-                <div class="puntuacion"><i id="cannabito" class="fa-solid fa-cannabis"></i><i id="cannabito" class="fa-solid fa-cannabis"></i><i id="cannabito" class="fa-solid fa-cannabis"></i><i id="cannabito" class="fa-solid fa-cannabis"></i><i id="cannabito" class="fa-solid fa-cannabis"></i></div>
+                <img class="fotoCategoria" src="img/3.png" alt="Product Image !">
+                <h3>SHATTER CBD LEMON</h3>
+                <span class="precio"> 4,5 €</span>
+                <div class="puntuacion">
+                    <i id="cannabito" class="fa-solid fa-cannabis"></i>
+                    <i id="cannabito" class="fa-solid fa-cannabis"></i>
+                    <i id="cannabito" class="fa-solid fa-cannabis"></i>
+                    <i id="cannabito" class="fa-solid fa-cannabis"></i>
+                    <i id="cannabito" class="fa-solid fa-cannabis"></i>
+                </div>
+                <button class="NPq mas-info">Mas Info</button>
                 <button class="NPq" id="añadir">Añadir</button>
             </div>
         </div>
 
     </div>
 
-    <!-- CUIDADO NATURAL -->
+   
 
 <div class="marginupdown" id="cuidado"><h1>Cuidado natural</h1></div>
 
@@ -182,10 +214,17 @@
                     <i class="fa-regular fa-star" id="favorite-regular" class="estrellaBacia"></i>
                     <i class="fa-solid fa-star" id="added-favorite" class="estrellaLLena"></i>
                 </button>
-                <img class="fotoCategoria" src="img/aceite-cannabis.jpg.webp" alt="">
-                <h3>Aceite de cannabis</h3>
-                <span class="precio">15,61 €</span>
-                <div class="puntuacion"><i id="cannabito" class="fa-solid fa-cannabis"></i><i id="cannabito" class="fa-solid fa-cannabis"></i><i id="cannabito" class="fa-solid fa-cannabis"></i><i id="cannabito" class="fa-solid fa-cannabis"></i><i id="cannabito" class="fa-solid fa-cannabis"></i></div>
+                <img class="fotoCategoria" src="img/7.png" alt="Product Image !">
+                <h3>CESAMET</h3>
+                <span class="precio"> 17,17 €</span>
+                <div class="puntuacion">
+                    <i id="cannabito" class="fa-solid fa-cannabis"></i>
+                    <i id="cannabito" class="fa-solid fa-cannabis"></i>
+                    <i id="cannabito" class="fa-solid fa-cannabis"></i>
+                    <i id="cannabito" class="fa-solid fa-cannabis"></i>
+                    <i id="cannabito" class="fa-solid fa-cannabis"></i>
+                </div>
+                <button class="NPq mas-info">Mas Info</button>
                 <button class="NPq" id="añadir">Añadir</button>
             </div>
         </div>
@@ -197,10 +236,17 @@
                     <i class="fa-regular fa-star" id="favorite-regular" class="estrellaBacia"></i>
                     <i class="fa-solid fa-star" id="added-favorite" class="estrellaLLena"></i>
                 </button>
-                <img class="fotoCategoria" src="img/aceite-cannabis.jpg.webp" alt="">
-                <h3>Aceite de cannabis</h3>
-                <span class="precio">15,61 €</span>
-                <div class="puntuacion"><i id="cannabito" class="fa-solid fa-cannabis"></i><i id="cannabito" class="fa-solid fa-cannabis"></i><i id="cannabito" class="fa-solid fa-cannabis"></i><i id="cannabito" class="fa-solid fa-cannabis"></i><i id="cannabito" class="fa-solid fa-cannabis"></i></div>
+                <img class="fotoCategoria" src="img/6.png" alt="Product Image !">
+                <h3>Cannabidol Oral</h3>
+                <span class="precio"> 19,60 €</span>
+                <div class="puntuacion">
+                    <i id="cannabito" class="fa-solid fa-cannabis"></i>
+                    <i id="cannabito" class="fa-solid fa-cannabis"></i>
+                    <i id="cannabito" class="fa-solid fa-cannabis"></i>
+                    <i id="cannabito" class="fa-solid fa-cannabis"></i>
+                    <i id="cannabito" class="fa-solid fa-cannabis"></i>
+                </div>
+                <button class="NPq mas-info">Mas Info</button>
                 <button class="NPq" id="añadir">Añadir</button>
             </div>
         </div>
@@ -211,10 +257,17 @@
                     <i class="fa-regular fa-star" id="favorite-regular" class="estrellaBacia"></i>
                     <i class="fa-solid fa-star" id="added-favorite" class="estrellaLLena"></i>
                 </button>
-                <img class="fotoCategoria" src="img/aceite-cannabis.jpg.webp" alt="">
-                <h3>Aceite de cannabis</h3>
-                <span class="precio">15,61 €</span>
-                <div class="puntuacion"><i id="cannabito" class="fa-solid fa-cannabis"></i><i id="cannabito" class="fa-solid fa-cannabis"></i><i id="cannabito" class="fa-solid fa-cannabis"></i><i id="cannabito" class="fa-solid fa-cannabis"></i><i id="cannabito" class="fa-solid fa-cannabis"></i></div>
+                <img class="fotoCategoria" src="img/8.png" alt="Product Image !">
+                <h3>Flores Secas de Lavanda</h3>
+                <span class="precio"> 11,99 €</span>
+                <div class="puntuacion">
+                    <i id="cannabito" class="fa-solid fa-cannabis"></i>
+                    <i id="cannabito" class="fa-solid fa-cannabis"></i>
+                    <i id="cannabito" class="fa-solid fa-cannabis"></i>
+                    <i id="cannabito" class="fa-solid fa-cannabis"></i>
+                    <i id="cannabito" class="fa-solid fa-cannabis"></i>
+                </div>
+                <button class="NPq mas-info">Mas Info</button>
                 <button class="NPq" id="añadir">Añadir</button>
             </div>
         </div>
@@ -225,10 +278,17 @@
                     <i class="fa-regular fa-star" id="favorite-regular" class="estrellaBacia"></i>
                     <i class="fa-solid fa-star" id="added-favorite" class="estrellaLLena"></i>
                 </button>
-                <img class="fotoCategoria" src="img/aceite-cannabis.jpg.webp" alt="">
-                <h3>Aceite de cannabis</h3>
-                <span class="precio">15,61 €</span>
-                <div class="puntuacion"><i id="cannabito" class="fa-solid fa-cannabis"></i><i id="cannabito" class="fa-solid fa-cannabis"></i><i id="cannabito" class="fa-solid fa-cannabis"></i><i id="cannabito" class="fa-solid fa-cannabis"></i><i id="cannabito" class="fa-solid fa-cannabis"></i></div>
+                <img class="fotoCategoria" src="img/2.png" alt="Product Image !">
+                <h3>Raíz de Valeriana Eco</h3>
+                <span class="precio"> 7,90 €</span>
+                <div class="puntuacion">
+                    <i id="cannabito" class="fa-solid fa-cannabis"></i>
+                    <i id="cannabito" class="fa-solid fa-cannabis"></i>
+                    <i id="cannabito" class="fa-solid fa-cannabis"></i>
+                    <i id="cannabito" class="fa-solid fa-cannabis"></i>
+                    <i id="cannabito" class="fa-solid fa-cannabis"></i>
+                </div>
+                <button class="NPq mas-info">Mas Info</button>
                 <button class="NPq" id="añadir">Añadir</button>
             </div>
         </div>
@@ -247,10 +307,17 @@
                     <i class="fa-regular fa-star" id="favorite-regular" class="estrellaBacia"></i>
                     <i class="fa-solid fa-star" id="added-favorite" class="estrellaLLena"></i>
                 </button>
-                <img class="fotoCategoria" src="img/aceite-cannabis.jpg.webp" alt="">
-                <h3>Aceite de cannabis</h3>
-                <span class="precio">15,61 €</span>
-                <div class="puntuacion"><i id="cannabito" class="fa-solid fa-cannabis"></i><i id="cannabito" class="fa-solid fa-cannabis"></i><i id="cannabito" class="fa-solid fa-cannabis"></i><i id="cannabito" class="fa-solid fa-cannabis"></i><i id="cannabito" class="fa-solid fa-cannabis"></i></div>
+                <img class="fotoCategoria" src="img/10.png" alt="Product Image !">
+                <h3>Manzanilla Amarga Flor</h3>
+                <span class="precio"> 7,90 €</span>
+                <div class="puntuacion">
+                    <i id="cannabito" class="fa-solid fa-cannabis"></i>
+                    <i id="cannabito" class="fa-solid fa-cannabis"></i>
+                    <i id="cannabito" class="fa-solid fa-cannabis"></i>
+                    <i id="cannabito" class="fa-solid fa-cannabis"></i>
+                    <i id="cannabito" class="fa-solid fa-cannabis"></i>
+                </div>
+                <button class="NPq mas-info">Mas Info</button>
                 <button class="NPq" id="añadir">Añadir</button>
             </div>
         </div>
@@ -262,10 +329,17 @@
                     <i class="fa-regular fa-star" id="favorite-regular" class="estrellaBacia"></i>
                     <i class="fa-solid fa-star" id="added-favorite" class="estrellaLLena"></i>
                 </button>
-                <img class="fotoCategoria" src="img/aceite-cannabis.jpg.webp" alt="">
-                <h3>Aceite de cannabis</h3>
-                <span class="precio">15,61 €</span>
-                <div class="puntuacion"><i id="cannabito" class="fa-solid fa-cannabis"></i><i id="cannabito" class="fa-solid fa-cannabis"></i><i id="cannabito" class="fa-solid fa-cannabis"></i><i id="cannabito" class="fa-solid fa-cannabis"></i><i id="cannabito" class="fa-solid fa-cannabis"></i></div>
+                <img class="fotoCategoria" src="img/18.png" alt="Product Image !">
+                <h3>Cojines con espelta</h3>
+                <span class="precio"> 3,18 €</span>
+                <div class="puntuacion">
+                    <i id="cannabito" class="fa-solid fa-cannabis"></i>
+                    <i id="cannabito" class="fa-solid fa-cannabis"></i>
+                    <i id="cannabito" class="fa-solid fa-cannabis"></i>
+                    <i id="cannabito" class="fa-solid fa-cannabis"></i>
+                    <i id="cannabito" class="fa-solid fa-cannabis"></i>
+                </div>
+                <button class="NPq mas-info">Mas Info</button>
                 <button class="NPq" id="añadir">Añadir</button>
             </div>
         </div>
@@ -276,10 +350,17 @@
                     <i class="fa-regular fa-star" id="favorite-regular" class="estrellaBacia"></i>
                     <i class="fa-solid fa-star" id="added-favorite" class="estrellaLLena"></i>
                 </button>
-                <img class="fotoCategoria" src="img/aceite-cannabis.jpg.webp" alt="">
-                <h3>Aceite de cannabis</h3>
-                <span class="precio">15,61 €</span>
-                <div class="puntuacion"><i id="cannabito" class="fa-solid fa-cannabis"></i><i id="cannabito" class="fa-solid fa-cannabis"></i><i id="cannabito" class="fa-solid fa-cannabis"></i><i id="cannabito" class="fa-solid fa-cannabis"></i><i id="cannabito" class="fa-solid fa-cannabis"></i></div>
+                <img class="fotoCategoria" src="img/19.png" alt="Product Image !">
+                <h3>Cojín Cuadrado en Yute</h3>
+                <span class="precio"> 16,95 €</span>
+                <div class="puntuacion">
+                    <i id="cannabito" class="fa-solid fa-cannabis"></i>
+                    <i id="cannabito" class="fa-solid fa-cannabis"></i>
+                    <i id="cannabito" class="fa-solid fa-cannabis"></i>
+                    <i id="cannabito" class="fa-solid fa-cannabis"></i>
+                    <i id="cannabito" class="fa-solid fa-cannabis"></i>
+                </div>
+                <button class="NPq mas-info">Mas Info</button>
                 <button class="NPq" id="añadir">Añadir</button>
             </div>
         </div>
@@ -290,10 +371,17 @@
                     <i class="fa-regular fa-star" id="favorite-regular" class="estrellaBacia"></i>
                     <i class="fa-solid fa-star" id="added-favorite" class="estrellaLLena"></i>
                 </button>
-                <img class="fotoCategoria" src="img/aceite-cannabis.jpg.webp" alt="">
-                <h3>Aceite de cannabis</h3>
-                <span class="precio">15,61 €</span>
-                <div class="puntuacion"><i id="cannabito" class="fa-solid fa-cannabis"></i><i id="cannabito" class="fa-solid fa-cannabis"></i><i id="cannabito" class="fa-solid fa-cannabis"></i><i id="cannabito" class="fa-solid fa-cannabis"></i><i id="cannabito" class="fa-solid fa-cannabis"></i></div>
+                <img class="fotoCategoria" src="img/22.png" alt="Product Image !">
+                <h3>Bastón caña de bambú</h3>
+                <span class="precio"> 24,00 €</span>
+                <div class="puntuacion">
+                    <i id="cannabito" class="fa-solid fa-cannabis"></i>
+                    <i id="cannabito" class="fa-solid fa-cannabis"></i>
+                    <i id="cannabito" class="fa-solid fa-cannabis"></i>
+                    <i id="cannabito" class="fa-solid fa-cannabis"></i>
+                    <i id="cannabito" class="fa-solid fa-cannabis"></i>
+                </div>
+                <button class="NPq mas-info">Mas Info</button>
                 <button class="NPq" id="añadir">Añadir</button>
             </div>
         </div>
@@ -313,10 +401,17 @@
                     <i class="fa-regular fa-star" id="favorite-regular" class="estrellaBacia"></i>
                     <i class="fa-solid fa-star" id="added-favorite" class="estrellaLLena"></i>
                 </button>
-                <img class="fotoCategoria" src="img/aceite-cannabis.jpg.webp" alt="">
-                <h3>Aceite de cannabis</h3>
+                <img class="fotoCategoria" src="img/21.png" alt="Product Image !">
+                <h3>Calcetín de Bambú</h3>
                 <span class="precio">15,61 €</span>
-                <div class="puntuacion"><i id="cannabito" class="fa-solid fa-cannabis"></i><i id="cannabito" class="fa-solid fa-cannabis"></i><i id="cannabito" class="fa-solid fa-cannabis"></i><i id="cannabito" class="fa-solid fa-cannabis"></i><i id="cannabito" class="fa-solid fa-cannabis"></i></div>
+                <div class="puntuacion">
+                    <i id="cannabito" class="fa-solid fa-cannabis"></i>
+                    <i id="cannabito" class="fa-solid fa-cannabis"></i>
+                    <i id="cannabito" class="fa-solid fa-cannabis"></i>
+                    <i id="cannabito" class="fa-solid fa-cannabis"></i>
+                    <i id="cannabito" class="fa-solid fa-cannabis"></i>
+                </div>
+                <button class="NPq mas-info">Mas Info</button>
                 <button class="NPq" id="añadir">Añadir</button>
             </div>
         </div>
@@ -328,10 +423,17 @@
                     <i class="fa-regular fa-star" id="favorite-regular" class="estrellaBacia"></i>
                     <i class="fa-solid fa-star" id="added-favorite" class="estrellaLLena"></i>
                 </button>
-                <img class="fotoCategoria" src="img/aceite-cannabis.jpg.webp" alt="">
-                <h3>Aceite de cannabis</h3>
-                <span class="precio">15,61 €</span>
-                <div class="puntuacion"><i id="cannabito" class="fa-solid fa-cannabis"></i><i id="cannabito" class="fa-solid fa-cannabis"></i><i id="cannabito" class="fa-solid fa-cannabis"></i><i id="cannabito" class="fa-solid fa-cannabis"></i><i id="cannabito" class="fa-solid fa-cannabis"></i></div>
+                <img class="fotoCategoria" src="img/17.png" alt="Product Image !">
+                <h3>Cannabis Crema De Dia</h3>
+                <span class="precio">17,00 €</span>
+                <div class="puntuacion">
+                    <i id="cannabito" class="fa-solid fa-cannabis"></i>
+                    <i id="cannabito" class="fa-solid fa-cannabis"></i>
+                    <i id="cannabito" class="fa-solid fa-cannabis"></i>
+                    <i id="cannabito" class="fa-solid fa-cannabis"></i>
+                    <i id="cannabito" class="fa-solid fa-cannabis"></i>
+                </div>
+                <button class="NPq mas-info">Mas Info</button>
                 <button class="NPq" id="añadir">Añadir</button>
             </div>
         </div>
@@ -342,24 +444,38 @@
                     <i class="fa-regular fa-star" id="favorite-regular" class="estrellaBacia"></i>
                     <i class="fa-solid fa-star" id="added-favorite" class="estrellaLLena"></i>
                 </button>
-                <img class="fotoCategoria" src="img/aceite-cannabis.jpg.webp" alt="">
-                <h3>Aceite de cannabis</h3>
-                <span class="precio">15,61 €</span>
-                <div class="puntuacion"><i id="cannabito" class="fa-solid fa-cannabis"></i><i id="cannabito" class="fa-solid fa-cannabis"></i><i id="cannabito" class="fa-solid fa-cannabis"></i><i id="cannabito" class="fa-solid fa-cannabis"></i><i id="cannabito" class="fa-solid fa-cannabis"></i></div>
+                <img class="fotoCategoria" src="img/23.png" alt="Product Image !">
+                <h3>Bálsamo de cannabis con CBD</h3>
+                <span class="precio">14,50 €</span>
+                <div class="puntuacion">
+                    <i id="cannabito" class="fa-solid fa-cannabis"></i>
+                    <i id="cannabito" class="fa-solid fa-cannabis"></i>
+                    <i id="cannabito" class="fa-solid fa-cannabis"></i>
+                    <i id="cannabito" class="fa-solid fa-cannabis"></i>
+                    <i id="cannabito" class="fa-solid fa-cannabis"></i>
+                </div>
+                <button class="NPq mas-info">Mas Info</button>
                 <button class="NPq" id="añadir">Añadir</button>
             </div>
         </div>
-
+c
         <div class="card-product">
             <div class="productosGeneral content-card-product" data-product-id="16">
                 <button class="favorite">
                     <i class="fa-regular fa-star" id="favorite-regular" class="estrellaBacia"></i>
                     <i class="fa-solid fa-star" id="added-favorite" class="estrellaLLena"></i>
                 </button>
-                <img class="fotoCategoria" src="img/aceite-cannabis.jpg.webp" alt="">
-                <h3>Aceite de cannabis</h3>
-                <span class="precio">15,61 €</span>
-                <div class="puntuacion"><i id="cannabito" class="fa-solid fa-cannabis"></i><i id="cannabito" class="fa-solid fa-cannabis"></i><i id="cannabito" class="fa-solid fa-cannabis"></i><i id="cannabito" class="fa-solid fa-cannabis"></i><i id="cannabito" class="fa-solid fa-cannabis"></i></div>
+                <img class="fotoCategoria" src="img/16.png" alt="Product Image !">
+                <h3>Crema manos Cannabis</h3>
+                <span class="precio">3,45 €</span>
+                <div class="puntuacion">
+                    <i id="cannabito" class="fa-solid fa-cannabis"></i>
+                    <i id="cannabito" class="fa-solid fa-cannabis"></i>
+                    <i id="cannabito" class="fa-solid fa-cannabis"></i>
+                    <i id="cannabito" class="fa-solid fa-cannabis"></i>
+                    <i id="cannabito" class="fa-solid fa-cannabis"></i>
+                </div>
+                <button class="NPq mas-info" >Mas Info</button>
                 <button class="NPq" id="añadir">Añadir</button>
             </div>
         </div>
@@ -368,19 +484,6 @@
 
 
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
 
   <footer>
     <div class="siguenos">
@@ -408,6 +511,7 @@
 </footer>
 
     <script src="favoritos.js"></script>
+    
 <!-- <script src="navegacion.js"></script> -->
 </body>
 </html>

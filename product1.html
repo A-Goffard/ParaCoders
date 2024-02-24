@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product 1</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Kdam+Thmor+Pro&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400&family=Roboto:wght@300;400;500;900&display=swap');
+      </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header id="home" class="home">
+
+            <div class="fila1">
+               <div><a href="index.html"><img class="logo" src="img/logo.paracoders.webp" alt=""></a></div>
+               <h1 class="title">ParaCoders</h1>
+               
+
+                <div class="hamburguesa">
+                    <label id="label_boton" for="boton_ham"> <i id="i" class="fa fa-bars ham"></i></label> 
+                    <input id="boton_ham" type="checkbox" value="si">
+                    
+    
+                    <div class="topnav" id="myTopnav">
+            
+                        <a href="index.html" class="active" >Home</a>
+                        <a href="productos.html#medicamentos" class="active" id="navMedicamentosB" data-value="Medicamentos">Medicamentos</a>
+                        <a href="#cuidado" class="active" id="navCuidadoB" data-value="CuidadoNatural"></a>>Cuidado natural</a>
+                        <a href="#herbolario" class="active" id="navHerbolarioB" data-value="Herbolario"></a>>Herbolario</a>
+                        <a href="#ortopedia" class="active" id="navOrtopediaB" data-value="Ortopedia"></a>>Ortopedia</a>
+                    
+                    </div>
+               </div>
+
+            </div>
+            <div  class="fila2">
+                    <div><a href="index.html"><img class="logo2" src="img/logo.paracoders.webp" alt=""></a></div>
+                   <div class="buscar">
+                    <i class="fa-solid fa-magnifying-glass navegador"></i>
+                    <input class="buscador" type="text" placeholder=" Buscar...">
+                </div>
+                <div class="icono">
+                    <a href="acceso.html"><i class="fa-solid fa-user navegador"></i></a>
+                    <a href="carrito.html"><i class="fa-solid fa-cart-shopping navegador"></i></a>
+                    <i id="boton-idioma" class="fa-solid fa-language" data-languages="en"></i>
+
+                    <!-- foton para favoritos -->
+                    
+                    <button id="button-header-favorite">
+                        <i class="fa-regular fa-star"></i>
+                            <span class="counter-favorite">0</span>
+                    </button>
+                </div>
+            </div>
+            <div class="container-list-favorites">
+                <div class="header-favorite">
+                    <h3>Favoritos</h3>
+                    <i class="fa-solid fa-xmark" id="btn-close"></i>
+                </div>
+                <hr />
+                <div class="list-favorites">
+                    <div class="card-favorite">
+                        <p class="title">Marihuana de la buena</p>
+                        <p>20 €</p>
+                    </div>
+                </div>
+            </div>
+
+    </header>
+
+<section class="categorias">
+    <div class="5 cat">
+        <i class="fa-solid fa-pills"></i>
+        <a href="productos.html#medicamentos" class="N" id="navMedicamentos">Medicamentos</a>
+    </div>
+
+    <div class="6 cat">
+        <i class="fa-solid fa-seedling"></i>
+        <a href="#cuidado" class="N" id="navCuidado">Cuidado natural</a>
+    </div>
+                    
+    <div class="7 cat">
+        <i class="fa-brands fa-pagelines"></i>
+        <a href="#herbolario" class="N" id="navHerbolario">Herbolario</a>
+    </div>
+       
+    <div class="8 cat">
+        <i class="fa-solid fa-person-cane"></i>
+        <a href="#ortopedia" class="N" id="navOrtopedia">Ortopedia</a>
+    </div>
+
+
+<!--     producto -->
+</section>
+
+<div id="productContainer">
+<!-- <section id="producto-solo" class="producto-solo-descripcion">
+    
+    
+    <div class="col3 productosGeneral marginupdown">
+    
+    <div class="imagen-producto">
+        <img class="small-imagen-producto" src="img/aceite-cannabis.jpg.webp" alt="">
+        <p>Aceite de cannabis</p>
+        <p class="precio"><b>15,61 €</b></p>
+        <div class="puntuacion"><i class="fa-solid fa-cannabis"></i><i class="fa-solid fa-cannabis"></i><i class="fa-solid fa-cannabis"></i><i class="fa-solid fa-cannabis"></i><i class="fa-solid fa-cannabis"></i></div>
+    </div>
+
+    <div class="butones-contador ">
+        <button class="decrement-btn NPo">-</button>
+        <span class="count">0</span>
+        <button class="increment-btn NPo">+</button>
+    </div>
+    
+    <div class="butones-anadir">
+        <button class="favorite">
+            <i class="fa-regular fa-star" id="favorite-regular" class="estrellaBacia"></i>
+            <i class="fa-solid fa-star" id="added-favorite" class="estrellaLLena"></i>
+        </button>
+        <button class="NPa" id="mas-info">Añadir</button>
+    </div>
+    </div>
+    <div class="col2 marginupdown">
+        <ul class="marijuana-list"> 
+            <li data-value="TexturaUntuosa"><i class="fa-solid fa-cannabis" ></i>Textura untuosa</li>
+
+            <li data-value="AromaFrescoMentolado"><i class="fa-solid fa-cannabis"></i>Aroma fresco y mentolado </li>  
+
+            <li data-value="NoContieneTHC"><i class="fa-solid fa-cannabis"></i>No contiene THC.</li>
+
+            <li data-value="IndicadoUsoDiario"><i class="fa-solid fa-cannabis"></i>Está indicado para uso diario.</li>  
+
+            <li data-value="Formato"><i class="fa-solid fa-cannabis"></i>Formato: 50gr</li>
+        </ul>
+
+    </div>
+    <div class="col1 marginupdown">
+        <h5 data-value="Descripcion">Descripcion :</h5>
+        <p data-value="BalsamoCannabis">
+            Bálsamo de cannabis 100% natural elaborado artesanalmente con aceite de cannabis de variedad terapéutica “Indica“, cera natural de abeja, esencia pura natural de clavo y CBD liofilizado.
+        </p>
+        <h6 data-value="AnalgésicoNatural">El aceite de cáñamo o cannabis es un analgésico natural :</h6>
+        <ul class="lista-dolores">
+            <li data-value="DoloresMusculares">Dolores musculares</li>
+            <li data-value="DoloresArticulares">Dolores articulares</li>
+            <li data-value="DoloresCronicos">Dolores crónicos: artrosis, artritis, reúmas, fibromialgias...</li>
+            <li data-value="Eczemas">Eczemas</li>
+            <li data-value="Psoriasis">Psoriasis </li>
+            <li data-value="DermatitisAtopica">Dermatitis atópica…</li>
+        </ul>
+
+    </div>
+
+</section> -->
+</div>
+
+  <footer>
+    <div class="siguenos">
+        <h2 class="redesTit" data-value="Síguenos">Síguenos</h2>
+        <div class="RRSS">
+            <a href="#"><i class="fa-brands rrss fa-square-facebook"></i></a>
+            <a href="#"><i class="fa-brands rrss fa-square-instagram"></i></a>
+            <a href="#"><i class="fa-brands rrss fa-square-google-plus"></i></a>
+            <a href="#"><i class="fa-brands rrss fa-square-youtube"></i></a>
+
+
+        </div>
+    </div>
+    <div class="derechos">
+        <p>© 2024 ParaCoders SL.</p>
+        <p data-value="TodosDerechosReservados">Todos los derechos reservados.</p>
+        <p data-value="ProductosIncluyenIVA">Todos los productos incluyen IVA.</p>
+    </div>
+    <div class="politicas">
+        <a href="#"><p data-value="PoliticaPrivacidad">Política de Privacidad</p></a>
+        <a href="#"><p data-value="CondicionesUso">Condiciones de Uso</p></a>
+        <a href="#"><p data-value="CondicionesContratacion">Condiciones de Contratación</p></a>
+        <a href="#"><p data-value="PoliticaCookies">Política de Cookies</p></a>
+    </div>
+</footer> 
+
+
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function() {
+
+    
+
+
+    const botonIdioma=document.getElementById("boton-idioma");
+
+
+    const textsToChange=document.querySelectorAll("[data-value]")
+    //funcion para leer el JSON
+    const changeLanguage=async (language)=>{
+        const requestJSON=await fetch(`./languages/${language}.json`);
+        const texts=await requestJSON.json();
+        /* console.log(text); */
+        for(const textToChange of textsToChange){
+            /* console.log(textToChange) */
+            const value=textToChange.dataset.value;
+            /* console.log(value); */
+            textToChange.innerHTML=texts[value];
+        }
+        
+    }
+
+    botonIdioma.addEventListener("click",(e)=>{
+    /* console.log(e.target); */
+    changeLanguage(e.target.dataset.languages);
+});
+})    
+</script>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+    // Ruta al archivo JSON de productos
+    const productosURL = 'productos.json';
+
+    // Fetch para obtener los datos del archivo JSON
+    fetch(productosURL)
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Error al cargar los productos');
+            }
+            return response.json();
+        })
+        .then(productos => {
+            // Una vez que se cargan los datos, puedes trabajar con ellos aquí
+            console.log('Productos cargados:', productos);
+
+            function mostrarDetallesProducto(idProducto) {
+    // Aquí puedes utilizar los datos de productos cargados para mostrar los detalles del producto
+    // Encuentra el producto por su ID
+    const producto = productos.find(producto => producto.id === idProducto);
+
+    // Actualiza el contenido HTML con los detalles del producto
+    const productDetailsContainer = document.getElementById('productContainer');
+    console.log(productDetailsContainer);
+    productDetailsContainer.innerHTML = `
+    <section id="producto-solo" class="producto-solo-descripcion">
+    
+    
+    <div class="col3 productosGeneral marginupdown">
+    
+    <div class="imagen-producto">
+        <img class="small-imagen-producto" src="${producto.imagen}" alt="${producto.nombre}">
+        <p>${producto.nombre}</p>
+        <p class="precio"><b>${producto.precio} €</b></p>
+        <div class="puntuacion">
+            <i class="fa-solid fa-cannabis"></i>
+            <i class="fa-solid fa-cannabis"></i>
+            <i class="fa-solid fa-cannabis"></i>
+            <i class="fa-solid fa-cannabis"></i>
+            <i class="fa-solid fa-cannabis"></i>
+        </div>
+    </div>
+
+    <div class="butones-contador ">
+        <button class="decrement-btn NPo">-</button>
+        <span class="count">0</span>
+        <button class="increment-btn NPo">+</button>
+    </div>
+    
+    <div class="butones-anadir">
+        <button class="favorite">
+            <i class="fa-regular fa-star" id="favorite-regular" class="estrellaBacia"></i>
+            <i class="fa-solid fa-star" id="added-favorite" class="estrellaLLena"></i>
+        </button>
+        <button class="NPa" id="mas-info">Añadir</button>
+    </div>
+    </div>
+    <div class="col2 marginupdown">
+        <ul class="marijuana-list"> 
+            <li data-value="TexturaUntuosa"><i class="fa-solid fa-cannabis" ></i>Textura untuosa</li>
+
+            <li data-value="AromaFrescoMentolado"><i class="fa-solid fa-cannabis"></i>Aroma fresco y mentolado </li>  
+
+            <li data-value="NoContieneTHC"><i class="fa-solid fa-cannabis"></i>No contiene THC.</li>
+
+            <li data-value="IndicadoUsoDiario"><i class="fa-solid fa-cannabis"></i>Está indicado para uso diario.</li>  
+
+            <li data-value="Formato"><i class="fa-solid fa-cannabis"></i>Formato: 50gr</li>
+        </ul>
+
+    </div>
+    <div class="col1 marginupdown">
+        <h5 data-value="Descripcion">Descripcion :</h5>
+        <p data-value="BalsamoCannabis">
+            ${producto.descripcion}
+        </p>
+        <h6 data-value="AnalgésicoNatural">El aceite de cáñamo o cannabis es un analgésico natural :</h6>
+        <ul class="lista-dolores">
+            <li data-value="DoloresMusculares">Dolores musculares</li>
+            <li data-value="DoloresArticulares">Dolores articulares</li>
+            <li data-value="DoloresCronicos">Dolores crónicos: artrosis, artritis, reúmas, fibromialgias...</li>
+            <li data-value="Eczemas">Eczemas</li>
+            <li data-value="Psoriasis">Psoriasis </li>
+            <li data-value="DermatitisAtopica">Dermatitis atópica…</li>
+        </ul>
+
+    </div>
+
+</section>
+
+    `;
+}
+
+            // Por ejemplo, puedes mostrar los detalles del primer producto
+        mostrarDetallesProducto(productos[0].id);
+
+            
+        })
+        .catch(error => console.error('Error:', error));
+    
+        
+});
+</script>
+<script src="favoritos.js"></script>
+</body>
+</html>
