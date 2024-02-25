@@ -1,9 +1,10 @@
 document.addEventListener("DOMContentLoaded", function() {
     // Verificar si hay datos almacenados en el Local Storage al cargar la página
     if(localStorage.getItem("formData")) {
+        console.log(FormData)
         // Si hay datos almacenados, significa que el usuario ya tiene una cuenta
         // En lugar de mostrar el formulario de inicio de sesión, podrías redirigirlo a otra página o realizar alguna otra acción
-        alert("Ya tienes una cuenta. Serás redirigido a la página principal.");
+        window.location.href = "index.html";
         // Aquí podrías redirigir al usuario usando window.location.href = "URL de la página principal";
     } else {
         // Si no hay datos almacenados, significa que el usuario no tiene una cuenta

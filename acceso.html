@@ -14,62 +14,62 @@
 
     <header id="home" class="home">
 
-            <div class="fila1">
-               <div><a href="index.html"><img class="logo" src="/img/logo.paracoders.webp" alt=""></a></div>
-               <h1 class="title">ParaCoders</h1>
-               
+        <div class="fila1">
+           <div><a href="index.html"><img class="logo" src="/img/logo.paracoders.webp" alt=""></a></div>
+           <h1 class="title">ParaCoders</h1>
+           
 
-                <div class="hamburguesa">
-                    <label id="label_boton" for="boton_ham"> <i id="i" class="fa fa-bars ham"></i></label> 
-                    <input id="boton_ham" type="checkbox" value="si">
-                    
-    
-                    <div class="topnav" id="myTopnav">
-            
-                        <a href="index.html" class="active">Home</a>
-                        <a href="productos.html#medicamentos" class="active" id="navMedicamentosB">Medicamentos</a>
-                        <a href="#cuidado" class="active" id="navCuidadoB">Cuidado natural</a>
-                        <a href="#herbolario" class="active" id="navHerbolarioB">Herbolario</a>
-                        <a href="#ortopedia" class="active" id="navOrtopediaB">Ortopedia</a>
-                    
-                    </div>
-               </div>
+            <div class="hamburguesa">
+                <label id="label_boton" for="boton_ham"> <i id="i" class="fa fa-bars ham"></i></label> 
+                <input id="boton_ham" type="checkbox" value="si">
+                
 
+                <div class="topnav" id="myTopnav">
+        
+                    <a href="index.html" class="active">Home</a>
+                    <a href="productos.html#medicamentos" class="active" id="navMedicamentosB">Medicamentos</a>
+                    <a href="#cuidado" class="active" id="navCuidadoB">Cuidado natural</a>
+                    <a href="#herbolario" class="active" id="navHerbolarioB">Herbolario</a>
+                    <a href="#ortopedia" class="active" id="navOrtopediaB">Ortopedia</a>
+                
+                </div>
+           </div>
+
+        </div>
+        <div  class="fila2">
+                <div><a href="index.html"><img class="logo2" src="/img/logo.paracoders.webp" alt=""></a></div>
+               <div class="buscar">
+                <i class="fa-solid fa-magnifying-glass navegador"></i>
+                <input class="buscador" type="text" placeholder=" Buscar...">
             </div>
-            <div  class="fila2">
-                    <div><a href="index.html"><img class="logo2" src="/img/logo.paracoders.webp" alt=""></a></div>
-                   <div class="buscar">
-                    <i class="fa-solid fa-magnifying-glass navegador"></i>
-                    <input class="buscador" type="text" placeholder=" Buscar...">
-                </div>
-                <div class="icono">
-                    <a href="/acceso.html"><i class="fa-solid fa-user navegador"></i></a>
-                    <a href="/carrito.html"><i class="fa-solid fa-cart-shopping navegador"></i></a>
-                    <a href="#"><i class="fa-solid fa-language"></i></a>
+            <div class="icono">
+                <a href="/acceso.html"><i class="fa-solid fa-user navegador"></i></a>
+                <a id="cart-btn"><i id="show-hide-cart" class="fa-solid fa-cart-shopping navegador"></i></a>
+                <a href="#"><i class="fa-solid fa-language"></i></a>
 
-                    <!-- foton para favoritos -->
-                    
-                    <button id="button-header-favorite">
-                        <i class="fa-regular fa-star"></i>
-                            <span class="counter-favorite">0</span>
-                    </button>
+                <!-- boton para favoritos -->
+                
+                <button id="button-header-favorite">
+                    <i class="fa-regular fa-star"></i>
+                        <span class="counter-favorite">0</span>
+                </button>
+            </div>
+        </div>
+        <div class="container-list-favorites">
+            <div class="header-favorite">
+                <h3>Favoritos</h3>
+                <i class="fa-solid fa-xmark" id="btn-close"></i>
+            </div>
+            <hr />
+            <div class="list-favorites">
+                <div class="card-favorite">
+                    <p class="title">Marihuana de la buena</p>
+                    <p>20 €</p>
                 </div>
             </div>
-            <div class="container-list-favorites">
-                <div class="header-favorite">
-                    <h3>Favoritos</h3>
-                    <i class="fa-solid fa-xmark" id="btn-close"></i>
-                </div>
-                <hr />
-                <div class="list-favorites">
-                    <div class="card-favorite">
-                        <p class="title">Marihuana de la buena</p>
-                        <p>20 €</p>
-                    </div>
-                </div>
-            </div>
+        </div>
 
-    </header>
+</header>
 
 <section class="categorias">
     <div class="5 cat">
@@ -143,7 +143,10 @@
         </div>
     </footer>
     
-    <script src="registro.js"></script>  
+    <script src="registro.js"></script>
+    <script src="shoppingCart.js"></script>
+    <script src="favoritos.js"></script> 
+    <script src="productDetailles.js"></script>  
 </body>
 </html>
     
